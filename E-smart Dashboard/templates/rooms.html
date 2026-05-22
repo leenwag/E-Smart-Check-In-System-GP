@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ hotel_name }} Rooms</title>
+  <link rel="stylesheet" href="{{ url_for('static', path='/style.css') }}">
+
+  <style>
+  .rooms-card {
+    background: white;
+    border-radius: 22px;
+    padding: 30px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    margin-top: 30px;
+  }
+
+  .rooms-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .rooms-table th {
+    background: #111827;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+  }
+
+  .rooms-table td {
+    padding: 14px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: center;
+  }
+
+  .rooms-table tr:hover {
+    background: #f3f4f6;
+  }
+
+  .status-select {
+    padding: 8px 14px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .status-available {
+    background: #dcfce7;
+    color: #166534;
+  }
+
+  .status-occupied {
+    background: #fee2e2;
+    color: #991b1b;
+  }
+
+  .page-subtitle {
+    color: #6b7280;
+    font-size: 18px;
+  }
+  </style>
+</head>
+
+<body>
+
+<div class="dashboard">
+
+  <aside class="sidebar">
+    <div class="logo">
+      <h2>E-Smart</h2>
+      <p>Manager Panel</p>
+    </div>
+
+    <div class="hotel-info">
+      <h3>{{ hotel_name }}</h3><br>
+    </div>
+
+    <nav class="nav-links">
+      <a href="/dashboard">Dashboard</a>
+      <a href="/checkins">Check-ins</a>
+      <a href="/rooms" class="active">Rooms</a>
+      <a href="/settings">Settings</a>
+      <a href="/logout">Logout</a>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+
+    <header class="topbar">
+      <div>
+        <h1>{{ hotel_name }} - Rooms Management</h1>
+        
+      </div>
+    </header>
+
+    <div class="panel large-panel">
+
+     <div class="rooms-card">
+  <table class="rooms-table">
+    <thead>
+      <tr>
+        <th>Room Number</th>
+        <th>Room Type</th>
+        <th>Status</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {% for room in rooms %}
+      <tr>
+        <td>{{ room.room_number }}</td>
+        <td>{{ room.room_type or "Standard" }}</td>
+
+        <td>
+          <form method="post" action="/update-room-status">
+            <input type="hidden" name="room_id" value="{{ room.id }}">
+
+            <select
+              name="status"
+              onchange="this.form.submit()"
+              class="status-select {% if room.status == 'available' %}status-available{% else %}status-occupied{% endif %}"
+            >
+              <option value="available" {% if room.status == "available" %}selected{% endif %}>
+                Available
+              </option>
+
+              <option value="occupied" {% if room.status == "occupied" %}selected{% endif %}>
+                Occupied
+              </option>
+            </select>
+          </form>
+        </td>
+
+        <td>${{ room.price or "0" }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+    </div>
+
+  </main>
+</div>
+
+</body>
+</html>

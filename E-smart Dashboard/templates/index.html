@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ hotel_name }} Dashboard</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', path='/style.css') }}" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <div class="dashboard">
+
+    <aside class="sidebar">
+      <div class="logo">
+        <h2>E-Smart</h2>
+        <p>Manager Panel</p>
+      </div>
+
+      <div class="hotel-info">
+        <h3>{{ hotel_name }}</h3><br>
+      </div>
+
+      <nav class="nav-links">
+        <a href="/dashboard" class="active">Dashboard</a>
+        <a href="/checkins">Check-ins</a>
+        <a href="/rooms">Rooms</a>
+        <a href="/settings">Settings</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <h1>{{ hotel_name }} Dashboard</h1>
+        </div>
+
+        <div class="topbar-right">
+         
+          <div class="manager-profile">
+            <span class="profile-circle">M</span>
+            <div>
+              <h4>Manager</h4>
+              <p>Hotel Admin</p>
+            </div>
+          </div>
+
+          <a href="{{ url_for('logout') }}" class="logout-btn">Logout</a>
+        </div>
+      </header>
+
+      <section class="cards">
+        <div class="card">
+          <h3>Total Check-Ins</h3>
+          <p>{{ data.total_checkins }}</p>
+        </div>
+
+        <div class="card">
+          <h3>Available Rooms</h3>
+          <p>{{ data.available_rooms }}</p>
+        </div>
+
+        <div class="card">
+          <h3>Occupied Rooms</h3>
+          <p>{{ data.occupied_rooms }}</p>
+        </div>
+
+        <div class="card">
+        <h3>Total Revenue</h3>
+        <h2>${{ data.revenue }}</h2>
+    </div>
+      </section>
+
+      <section class="content-grid">
+
+        <div class="panel large-panel">
+          <h3>Check-In Time Overview</h3>
+          <canvas id="checkinChart"></canvas>
+        </div>
+
+        <div class="panel">
+          <h3>Age Groups Chart</h3>
+          <div style="height: 260px;">
+            <canvas id="ageChart"></canvas>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3>Room Status</h3>
+          <ul class="status-list">
+            <li><span>Clean</span><strong>{{ data.room_status.get('Clean', 0) }}</strong></li>
+            <li><span>Occupied</span><strong>{{ data.room_status.get('Occupied', 0) }}</strong></li>
+            <li><span>Needs Service</span><strong>{{ data.room_status.get('Needs Service', 0) }}</strong></li>
+            <li><span>Available</span><strong>{{ data.room_status.get('Available', 0) }}</strong></li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h3>Recent Guests</h3>
+          <ul class="guest-list">
+            {% if data.recent_guests %}
+              {% for guest in data.recent_guests %}
+                <li>
+                  {{ guest.guest_name }}
+                  <span>Hotel ID {{ guest.room }}</span>
+                </li>
+              {% endfor %}
+            {% else %}
+              <li>No recent guests yet.</li>
+            {% endif %}
+          </ul>
+        </div>
+
+        
+
+        <div class="panel">
+          <h3>Peak Month</h3>
+          <div style="height: 260px;">
+            <canvas id="peakMonthChart"></canvas>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3>Gender Mix Chart</h3>
+          <div style="height: 260px;">
+            <canvas id="genderChart"></canvas>
+          </div>
+        </div>
+
+      </section>
+    </main>
+  </div>
+
+
+  <div class="card chart-card">
+  <h3>Revenue Chart</h3>
+  <canvas id="revenueChart"></canvas>
+</div>
+
+ <script>
+  const checkinLabels = {{ data.get("checkin_labels", []) | tojson | safe }};
+  const checkinValues = {{ data.get("checkin_values", []) | tojson | safe }};
+
+  const genderLabels = {{ data.get("gender_labels", []) | tojson | safe }};
+  const genderValues = {{ data.get("gender_values", []) | tojson | safe }};
+
+  const peakMonthLabels = {{ data.get("month_labels", []) | tojson | safe }};
+  const peakMonthValues = {{ data.get("month_values", []) | tojson | safe }};
+
+  const ageLabels = {{ data.get("age_labels", []) | tojson | safe }};
+  const ageValues = {{ data.get("age_values", []) | tojson | safe }};
+
+  if (checkinValues.length > 0) {
+    new Chart(document.getElementById("checkinChart"), {
+      type: "bar",
+      data: {
+        labels: checkinLabels,
+        datasets: [{
+          label: "Check-ins",
+          data: checkinValues,
+          backgroundColor: "#2563eb"
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false }
+        }
+      }
+    });
+  }
+
+  if (ageValues.length > 0) {
+    new Chart(document.getElementById("ageChart"), {
+      type: "bar",
+      data: {
+        labels: ageLabels,
+        datasets: [{
+          label: "Guests by Age Group",
+          data: ageValues,
+          backgroundColor: "#f59e0b"
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false }
+        }
+      }
+    });
+  }
+
+  if (peakMonthValues.length > 0) {
+    new Chart(document.getElementById("peakMonthChart"), {
+      type: "bar",
+      data: {
+        labels: peakMonthLabels,
+        datasets: [{
+          label: "Check-ins",
+          data: peakMonthValues,
+          backgroundColor: "#10b981"
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false }
+        }
+      }
+    });
+  }
+
+  if (genderValues.length > 0) {
+    new Chart(document.getElementById("genderChart"), {
+      type: "pie",
+      data: {
+        labels: genderLabels,
+        datasets: [{
+          data: genderValues,
+          backgroundColor: ["#6366f1", "#ec4899", "#94a3b8"]
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false
+      }
+    });
+  }
+</script>
+
+<script>
+const revenueLabels = {{ data.revenue_labels | tojson | safe }};
+const revenueValues = {{ data.revenue_values | tojson | safe }};
+
+new Chart(document.getElementById("revenueChart"), {
+  type: "bar",
+  data: {
+    labels: revenueLabels,
+    datasets: [{
+      label: "Revenue ($)",
+      data: revenueValues,
+      backgroundColor: "#22c55e"
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false
+  }
+});
+</script>
+
+</body>
+</html>

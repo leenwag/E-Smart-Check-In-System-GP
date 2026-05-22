@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ hotel_name }} Check-ins</title>
+  <link rel="stylesheet" href="{{ url_for('static', path='/style.css') }}">
+<
+  <style>
+    .checkins-card {
+      background: white;
+      border-radius: 22px;
+      padding: 28px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+      margin-top: 30px;
+      overflow-x: auto;
+    }
+
+    .checkins-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 1350px;
+    }
+
+    .checkins-table th {
+      background: #111827;
+      color: white;
+      padding: 14px;
+      font-size: 15px;
+      text-align: left;
+    }
+
+    .checkins-table td {
+      padding: 13px 14px;
+      border-bottom: 1px solid #e5e7eb;
+      color: #1f2937;
+      vertical-align: middle;
+    }
+
+    .checkins-table tr:hover {
+      background: #f3f4f6;
+    }
+
+    .guest-name {
+      font-weight: 700;
+      color: #111827;
+    }
+
+    .gender-badge,
+    .count-badge {
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+      display: inline-block;
+    }
+
+    .gender-male {
+      background: #dbeafe;
+      color: #1d4ed8;
+    }
+
+    .gender-female {
+      background: #fce7f3;
+      color: #be185d;
+    }
+
+    .count-badge {
+      background: #eef2ff;
+      color: #4338ca;
+    }
+
+    .submitted-date {
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    .approve-btn,
+    .reject-btn,
+    .docs-btn,
+    .approve-all-btn {
+      border: none;
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .approve-btn {
+      background: #16a34a;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 10px;
+      margin-right: 6px;
+    }
+
+    .reject-btn {
+      background: #dc2626;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 10px;
+    }
+
+    .approve-all-btn {
+      background: #16a34a;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+    }
+
+    .docs-btn {
+      background: #2563eb;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 10px;
+    }
+
+    .no-docs {
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    .status-approved {
+      background: #dcfce7;
+      color: #166534;
+      padding: 7px 12px;
+      border-radius: 999px;
+      font-weight: 700;
+    }
+
+    .status-rejected {
+      background: #fee2e2;
+      color: #991b1b;
+      padding: 7px 12px;
+      border-radius: 999px;
+      font-weight: 700;
+    }
+
+    /* Document popup modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.75);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background: white;
+      width: 70%;
+      max-width: 850px;
+      height: 80%;
+      border-radius: 20px;
+      padding: 20px;
+      position: relative;
+      text-align: center;
+    }
+
+    .modal-content img {
+      max-width: 100%;
+      max-height: 85%;
+      border-radius: 12px;
+    }
+
+    .close-btn {
+      position: absolute;
+      right: 20px;
+      top: 15px;
+      font-size: 28px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .doc-nav {
+      margin-top: 15px;
+    }
+
+    .doc-nav button {
+      padding: 10px 16px;
+      margin: 0 8px;
+      border: none;
+      border-radius: 10px;
+      background: #111827;
+      color: white;
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+
+    .filter-bar {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0 25px 0;
+  flex-wrap: wrap;
+}
+
+.filter-bar a.filter-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 12px;
+  background: #e5e7eb;
+  text-decoration: none !important;
+  color: #111827 !important;
+  font-weight: 700;
+}
+
+.filter-bar a.filter-btn:hover {
+  background: #cbd5e1;
+}
+
+.filter-bar a.active-filter {
+  background: #111827 !important;
+  color: white !important;
+}
+  </style> -->
+</head>
+
+<body>
+
+<div class="dashboard">
+
+  <aside class="sidebar">
+    <div class="logo">
+      <h2>E-Smart</h2>
+      <p>Manager Panel</p>
+    </div>
+
+    <div class="hotel-info">
+      <h3>{{ hotel_name }}</h3><br>
+    </div>
+
+    <nav class="nav-links">
+      <a href="/dashboard">Dashboard</a>
+      <a href="/checkins" class="active">Check-ins</a>
+      <a href="/rooms">Rooms</a>
+      <a href="/settings">Settings</a>
+      <a href="/logout">Logout</a>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+
+    <header class="topbar">
+      <div>
+        <h1>{{ hotel_name }} - Pre Check-ins</h1>
+        <p>Review guest submissions, documents, and approval status</p>
+      </div>
+    </header>
+
+    <div class="checkins-card">
+
+      <!-- Approve all pending guests -->
+      <form method="post" action="/approve-all-guests">
+        <button type="submit" class="approve-all-btn">
+          Approve All Pending Guests
+        </button>
+      </form>
+
+      <div class="filter-bar">
+  <a href="/checkins?status=all"
+     class="filter-btn {% if status_filter == 'all' %}active-filter{% endif %}">
+    All
+  </a>
+
+  <a href="/checkins?status=approved"
+     class="filter-btn {% if status_filter == 'approved' %}active-filter{% endif %}">
+    Approved
+  </a>
+
+  <a href="/checkins?status=pending"
+     class="filter-btn {% if status_filter == 'pending' %}active-filter{% endif %}">
+    Pending
+  </a>
+
+  <a href="/checkins?status=rejected"
+     class="filter-btn {% if status_filter == 'rejected' %}active-filter{% endif %}">
+    Rejected
+  </a>
+</div>
+      
+
+      
+
+      <table class="checkins-table">
+        <thead>
+          <tr>
+            <th>Guest Name</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>Nationality</th>
+            <th>ID / Passport No.</th>
+            <th>Documents</th>
+            <th>Booked Guests</th>
+            <th>Submitted Guests</th>
+            <th>Submitted At</th>
+            <th>Validation</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {% for guest in checkins %}
+          <tr>
+            <td class="guest-name">{{ guest.guest_full_name }}</td>
+            <td>{{ guest.guest_email }}</td>
+
+            <td>
+              <span class="gender-badge {% if guest.guest_gender == 'male' %}gender-male{% else %}gender-female{% endif %}">
+                {{ guest.guest_gender }}
+              </span>
+            </td>
+
+            <td>{{ guest.nationality }}</td>
+
+            <!-- ID / passport number column -->
+            <td>
+              <span class="count-badge">
+                {{ guest.id_passport_number or "Not provided" }}
+              </span>
+            </td>
+
+            <!-- Guest uploaded documents column -->
+            <td>
+              {% if guest.identity_document_uploads %}
+                <button
+                  type="button"
+                  class="docs-btn"
+                  data-docs='{{ guest.identity_document_uploads | tojson | safe }}'
+                  onclick="openDocs(this)">
+                  View Documents
+                </button>
+              {% else %}
+                <span class="no-docs">No documents</span>
+              {% endif %}
+            </td>
+
+            <td>
+              <span class="count-badge">{{ guest.booked_guests_count }}</span>
+            </td>
+
+            <td>
+              <span class="count-badge">{{ guest.submitted_guests_count }}</span>
+            </td>
+
+            <td class="submitted-date">
+              {{ guest.submitted_at }}
+            </td>
+
+            <!-- Admin validation column -->
+            <td>
+              {% if guest.verification_status == "approved" %}
+                <span class="status-approved">Approved</span>
+
+              {% elif guest.verification_status == "rejected" %}
+                <span class="status-rejected">Rejected</span>
+
+              {% else %}
+                <form method="post" action="/approve-guest" style="display:inline;">
+                  <input type="hidden" name="guest_id" value="{{ guest.id }}">
+                  <button type="submit" class="approve-btn">Approve</button>
+                </form>
+
+                <form method="post" action="/reject-guest" style="display:inline;">
+                  <input type="hidden" name="guest_id" value="{{ guest.id }}">
+                  <button type="submit" class="reject-btn">Reject</button>
+                </form>
+              {% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+    </div>
+
+  </main>
+</div>
+
+<!-- Document viewer popup -->
+<div id="docsModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeDocs()">&times;</span>
+
+    <img id="docImage" src="" alt="Guest Document">
+
+    <div class="doc-nav">
+      <button type="button" onclick="prevDoc()">Previous</button>
+      <span id="docCounter"></span>
+      <button type="button" onclick="nextDoc()">Next</button>
+    </div>
+  </div>
+</div>
+<script>
+let docs = [];
+let currentDocIndex = 0;
+
+const SUPABASE_URL = "https://uawxrfxbzczpadvhirjd.supabase.co";
+
+function openDocs(button) {
+  let documentData = button.getAttribute("data-docs");
+
+  if (!documentData) return;
+
+  let parsed = JSON.parse(documentData);
+
+  docs = [];
+
+  // Extract files from your database JSON structure
+  if (parsed.guests) {
+    parsed.guests.forEach(guest => {
+      guest.files.forEach(file => {
+        const publicUrl =
+          `${SUPABASE_URL}/storage/v1/object/public/${file.bucket}/${file.object_path}`;
+
+        docs.push(publicUrl);
+      });
+    });
+  }
+
+  currentDocIndex = 0;
+  showDoc();
+
+  document.getElementById("docsModal").style.display = "flex";
+}
+
+function showDoc() {
+  const img = document.getElementById("docImage");
+  const counter = document.getElementById("docCounter");
+
+  if (docs.length === 0) {
+    img.alt = "No document found";
+    counter.innerText = "0 / 0";
+    return;
+  }
+
+  img.src = docs[currentDocIndex];
+  counter.innerText = `${currentDocIndex + 1} / ${docs.length}`;
+}
+
+function nextDoc() {
+  if (docs.length === 0) return;
+  currentDocIndex = (currentDocIndex + 1) % docs.length;
+  showDoc();
+}
+
+function prevDoc() {
+  if (docs.length === 0) return;
+  currentDocIndex = (currentDocIndex - 1 + docs.length) % docs.length;
+  showDoc();
+}
+
+function closeDocs() {
+  document.getElementById("docsModal").style.display = "none";
+}
+</script>
+
+</body>
+</html>
