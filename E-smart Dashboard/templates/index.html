@@ -70,9 +70,23 @@
         <h3>Total Revenue</h3>
         <h2>${{ data.revenue }}</h2>
     </div>
+
+      <div class="card ai-card">
+      <h3>AI Congestion Prediction</h3>
+      <h2>{{ data.ai_prediction }}</h2>
+      <p>{{ data.ai_prediction_probability }}% risk</p>
+      <small>{{ data.ai_prediction_message }}</small>
+    </div>
       </section>
 
       <section class="content-grid">
+
+        <div class="panel large-panel">
+        <h3>30-Day AI Congestion Forecast</h3>
+        <div style="height: 320px;">
+          <canvas id="aiForecastChart"></canvas>
+        </div>
+      </div>
 
         <div class="panel large-panel">
           <h3>Check-In Time Overview</h3>
@@ -133,11 +147,7 @@
   </div>
 
 
-  <div class="card chart-card">
-  <h3>Revenue Chart</h3>
-  <canvas id="revenueChart"></canvas>
-</div>
-
+  
  <script>
   const checkinLabels = {{ data.get("checkin_labels", []) | tojson | safe }};
   const checkinValues = {{ data.get("checkin_values", []) | tojson | safe }};
@@ -250,6 +260,42 @@ new Chart(document.getElementById("revenueChart"), {
     maintainAspectRatio: false
   }
 });
+
+
+const aiForecastLabels = {{ data.ai_forecast_labels | tojson | safe }};
+const aiForecastValues = {{ data.ai_forecast_values | tojson | safe }};
+
+if (aiForecastValues.length > 0) {
+  new Chart(document.getElementById("aiForecastChart"), {
+    type: "line",
+    data: {
+      labels: aiForecastLabels,
+      datasets: [{
+        label: "Predicted Congestion Risk (%)",
+        data: aiForecastValues,
+        borderWidth: 3,
+        tension: 0.35,
+        fill: true,
+        pointRadius: 3
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        y: {
+          min: 0,
+          max: 100,
+          ticks: {
+            callback: value => value + "%"
+          }
+        }
+      }
+    }
+  });
+}
+
+
 </script>
 
 </body>

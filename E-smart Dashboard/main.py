@@ -2,6 +2,7 @@ import os
 import pandas as pd
 from dotenv import load_dotenv
 from supabase import create_client
+import joblib
 
 from fastapi import FastAPI, Request, Form
 from fastapi.responses import RedirectResponse, JSONResponse, HTMLResponse
@@ -23,6 +24,10 @@ if not SUPABASE_URL or not SUPABASE_SERVICE_ROLE_KEY:
     raise ValueError("Missing SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY in .env")
 
 supabase = create_client(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY)
+
+
+#load ai model
+congestion_model = joblib.load("congestion_model.pkl")
 
 
 # -----------------------------
@@ -198,34 +203,24 @@ def dashboard(request: Request):
             "revenue": total_revenue,
             "revenue_labels": revenue_labels,
              "revenue_values": revenue_values,
+
+
+            "ai_prediction": "Low Congestion",
+            "ai_prediction_label": "Safe",
+            "ai_prediction_probability": 0,
+            "ai_prediction_message": "Normal check-in activity expected.",
+
+
+            "ai_forecast_labels": [],
+            "ai_forecast_values": [],
+
         }
 
-        # =========================
-        # 6. Default AI insights
-        # =========================
-        ai = {
-            "bedding_prediction": "No data available yet.",
-            "peak_hour": "N/A",
-            "avg_revenue": 0
-        }
-
-        # Stop here if there are no check-ins
-        if df.empty:
-            return templates.TemplateResponse(
-                request,
-                "index.html",
-                {
-                    "data": data,
-                    "ai": ai,
-                    "hotel_name": hotel_name
-                }
-            )
 
         # =========================
         # 7. Check-in time analysis
         # Used for:
         # - Check-In Time Overview chart
-        # - Peak Hour AI insight
         # - Peak Month chart
         # =========================
         if "submitted_at" in df.columns:
@@ -246,7 +241,6 @@ def dashboard(request: Request):
 
                 if not hour_counts.empty:
                     peak_hour = int(hour_counts.idxmax())
-                    ai["peak_hour"] = f"{peak_hour}:00"
 
                 # Peak month chart
                 month_counts = valid_dates["submitted_at"].dt.month_name().value_counts()
@@ -258,7 +252,6 @@ def dashboard(request: Request):
         # 8. Gender analysis
         # Used for:
         # - Gender Mix Chart
-        # - Gender text in AI panel
         # =========================
         if "guest_gender" in df.columns:
             df["guest_gender"] = (
@@ -327,12 +320,7 @@ def dashboard(request: Request):
 
         data["recent_guests"] = recent_guests
 
-        # =========================
-        # 11. AI message
-        # =========================
-        ai["bedding_prediction"] = "AI is analyzing guest check-in behavior."
-
-
+       
         # ==============================
         # 12. Revenue Chart Data
         # ==============================
@@ -399,6 +387,103 @@ def dashboard(request: Request):
 
 
         # =========================
+        # AI Congestion Prediction
+        # =========================
+        try:
+            now = datetime.now()
+
+            month = now.month
+            weekday = now.weekday()
+            is_weekend = 1 if weekday >= 5 else 0
+
+            if not df.empty and "booked_guests_count" in df.columns:
+                booked_guests_count = pd.to_numeric(
+                    df["booked_guests_count"],
+                    errors="coerce"
+                ).fillna(1).mean()
+            else:
+                booked_guests_count = 1
+
+            submitted_guests_count = len(df)
+
+            if not df.empty and "requires_additional_payment" in df.columns:
+                requires_additional_payment = int(
+                    pd.to_numeric(
+                        df["requires_additional_payment"],
+                        errors="coerce"
+                    ).fillna(0).max()
+                )
+            else:
+                requires_additional_payment = 0
+
+            ai_input = pd.DataFrame([{
+                "month": month,
+                "weekday": weekday,
+                "is_weekend": is_weekend,
+                "hotel_id": hotel_id,
+                "booked_guests_count": booked_guests_count,
+                "submitted_guests_count": submitted_guests_count,
+                "requires_additional_payment": requires_additional_payment
+            }])
+
+            prediction = congestion_model.predict(ai_input)[0]
+
+            if hasattr(congestion_model, "predict_proba"):
+                probability = congestion_model.predict_proba(ai_input)[0][1] * 100
+            else:
+                probability = 100 if prediction == 1 else 0
+
+            if prediction == 1:
+                data["ai_prediction"] = "High Congestion"
+                data["ai_prediction_label"] = "Busy"
+                data["ai_prediction_probability"] = round(probability, 1)
+                data["ai_prediction_message"] = "Prepare extra staff for check-in."
+            else:
+                data["ai_prediction"] = "Low Congestion"
+                data["ai_prediction_label"] = "Safe"
+                data["ai_prediction_probability"] = round(probability, 1)
+                data["ai_prediction_message"] = "Normal check-in activity expected."
+
+        except Exception as e:
+            print("AI PREDICTION ERROR:", e)
+            data["ai_prediction"] = "Prediction unavailable"
+            data["ai_prediction_label"] = "N/A"
+            data["ai_prediction_probability"] = 0
+            data["ai_prediction_message"] = "AI model could not generate a prediction."
+
+
+
+        # =========================
+        # Long AI Forecast - 30 Days
+        # =========================
+        forecast_labels = []
+        forecast_values = []
+
+        for i in range(30):
+            future_date = datetime.now() + pd.Timedelta(days=i)
+
+            ai_input = pd.DataFrame([{
+                "month": future_date.month,
+                "weekday": future_date.weekday(),
+                "is_weekend": 1 if future_date.weekday() >= 5 else 0,
+                "hotel_id": hotel_id,
+                "booked_guests_count": booked_guests_count,
+                "submitted_guests_count": submitted_guests_count,
+                "requires_additional_payment": requires_additional_payment
+            }])
+
+            if hasattr(congestion_model, "predict_proba"):
+                risk = congestion_model.predict_proba(ai_input)[0][1] * 100
+            else:
+                risk = congestion_model.predict(ai_input)[0] * 100
+
+            forecast_labels.append(future_date.strftime("%d %b"))
+            forecast_values.append(round(risk, 1))
+
+        data["ai_forecast_labels"] = forecast_labels
+        data["ai_forecast_values"] = forecast_values
+
+        # =========================
         # 13. Send data to dashboard HTML
         # =========================
         return templates.TemplateResponse(
@@ -406,7 +491,6 @@ def dashboard(request: Request):
             "index.html",
             {
                 "data": data,
-                "ai": ai,
                 "hotel_name": hotel_name
             }
         )
@@ -701,7 +785,6 @@ def list_checkins():
 def test():
     print("TEST ROUTE OPENED")
     return {"message": "FastAPI is working!"}
-
 
 
 

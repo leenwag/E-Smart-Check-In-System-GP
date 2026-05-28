@@ -671,3 +671,61 @@ canvas {
   margin-left: 250px;
   width: calc(100% - 250px);
 }
+
+
+
+/* =========================
+   AI Banner
+========================= */
+
+.ai-banner{
+    background: white;
+    border-radius: 24px;
+    padding: 30px 35px;
+    margin-bottom: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+}
+
+.ai-label{
+    color: #6b7280;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.ai-left h2{
+    font-size: 42px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.ai-message{
+    font-size: 18px;
+    color: #4b5563;
+    font-weight: 500;
+}
+
+.ai-right{
+    text-align: center;
+    min-width: 180px;
+}
+
+.risk-label{
+    display: block;
+    color: #6b7280;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.ai-right h1{
+    font-size: 56px;
+    color: #4f46e5;
+    font-weight: 800;
+}
