@@ -1,56 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>{{ hotel_name }} Check-ins</title>
-  <link rel="stylesheet" href="{{ url_for('static', path='/style.css') }}">
-<
+
+  <link rel="stylesheet" href="{{ url_for('static', path='/style.css') }}?v=60">
+
   <style>
-    .checkins-card {
+    /* =========================
+       CHECK-INS PAGE DESIGN
+       Same style as dashboard
+    ========================= */
+
+    .checkins-summary {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+
+    .checkin-stat-card {
       background: white;
       border-radius: 22px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+      border: 1px solid #eef2f7;
+    }
+
+    .checkin-stat-card span {
+      color: #64748b;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .checkin-stat-card h2 {
+      margin-top: 8px;
+      font-size: 30px;
+      font-weight: 900;
+      color: #111827;
+    }
+
+    .checkins-card {
+      background: white;
+      border-radius: 24px;
       padding: 28px;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-      margin-top: 30px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+      border: 1px solid #eef2f7;
       overflow-x: auto;
+    }
+
+    .checkins-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    .approve-all-btn {
+      background: #16a34a;
+      color: white;
+      border: none;
+      padding: 13px 22px;
+      border-radius: 14px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .filter-bar {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      text-decoration: none;
+      background: #f1f5f9;
+      color: #374151;
+      padding: 11px 18px;
+      border-radius: 999px;
+      font-weight: 800;
+      transition: 0.25s ease;
+    }
+
+    .filter-btn:hover,
+    .active-filter {
+      background: #4f46e5 !important;
+      color: white !important;
+    }
+
+    .table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      border-radius: 18px;
+      border: 1px solid #eef2f7;
     }
 
     .checkins-table {
       width: 100%;
+      min-width: 1250px;
       border-collapse: collapse;
-      min-width: 1350px;
     }
 
     .checkins-table th {
       background: #111827;
       color: white;
-      padding: 14px;
-      font-size: 15px;
+      padding: 16px 14px;
       text-align: left;
+      font-size: 14px;
+      font-weight: 800;
     }
 
     .checkins-table td {
-      padding: 13px 14px;
-      border-bottom: 1px solid #e5e7eb;
+      padding: 15px 14px;
+      border-bottom: 1px solid #eef2f7;
       color: #1f2937;
       vertical-align: middle;
+      font-size: 14px;
     }
 
     .checkins-table tr:hover {
-      background: #f3f4f6;
+      background: #f8fafc;
     }
 
     .guest-name {
-      font-weight: 700;
+      font-weight: 900;
       color: #111827;
     }
 
+    .guest-email {
+      color: #475569;
+    }
+
     .gender-badge,
-    .count-badge {
-      padding: 6px 12px;
+    .count-badge,
+    .status-approved,
+    .status-rejected,
+    .status-pending {
+      padding: 7px 12px;
       border-radius: 999px;
       font-size: 13px;
-      font-weight: 700;
+      font-weight: 800;
       display: inline-block;
+      white-space: nowrap;
     }
 
     .gender-male {
@@ -68,69 +163,56 @@
       color: #4338ca;
     }
 
-    .submitted-date {
-      color: #6b7280;
-      font-size: 14px;
+    .status-approved {
+      background: #dcfce7;
+      color: #166534;
     }
 
-    .approve-btn,
-    .reject-btn,
+    .status-rejected {
+      background: #fee2e2;
+      color: #991b1b;
+    }
+
+    .status-pending {
+      background: #fef3c7;
+      color: #92400e;
+    }
+
+    .submitted-date {
+      color: #64748b;
+      font-size: 13px;
+      line-height: 1.4;
+    }
+
     .docs-btn,
-    .approve-all-btn {
+    .approve-btn,
+    .reject-btn {
       border: none;
       cursor: pointer;
-      font-weight: 700;
+      font-weight: 800;
+      border-radius: 12px;
+      padding: 9px 13px;
+    }
+
+    .docs-btn {
+      background: #4f46e5;
+      color: white;
     }
 
     .approve-btn {
       background: #16a34a;
       color: white;
-      padding: 8px 14px;
-      border-radius: 10px;
       margin-right: 6px;
     }
 
     .reject-btn {
       background: #dc2626;
       color: white;
-      padding: 8px 14px;
-      border-radius: 10px;
-    }
-
-    .approve-all-btn {
-      background: #16a34a;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 14px;
-      margin-bottom: 20px;
-    }
-
-    .docs-btn {
-      background: #2563eb;
-      color: white;
-      padding: 8px 14px;
-      border-radius: 10px;
     }
 
     .no-docs {
-      color: #6b7280;
-      font-size: 14px;
-    }
-
-    .status-approved {
-      background: #dcfce7;
-      color: #166534;
-      padding: 7px 12px;
-      border-radius: 999px;
-      font-weight: 700;
-    }
-
-    .status-rejected {
-      background: #fee2e2;
-      color: #991b1b;
-      padding: 7px 12px;
-      border-radius: 999px;
-      font-weight: 700;
+      color: #64748b;
+      font-size: 13px;
     }
 
     /* Document popup modal */
@@ -138,10 +220,7 @@
       display: none;
       position: fixed;
       z-index: 9999;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
+      inset: 0;
       background: rgba(0,0,0,0.75);
       justify-content: center;
       align-items: center;
@@ -152,8 +231,8 @@
       width: 70%;
       max-width: 850px;
       height: 80%;
-      border-radius: 20px;
-      padding: 20px;
+      border-radius: 24px;
+      padding: 24px;
       position: relative;
       text-align: center;
     }
@@ -161,299 +240,322 @@
     .modal-content img {
       max-width: 100%;
       max-height: 85%;
-      border-radius: 12px;
+      border-radius: 14px;
     }
 
     .close-btn {
       position: absolute;
-      right: 20px;
-      top: 15px;
-      font-size: 28px;
+      right: 22px;
+      top: 16px;
+      font-size: 30px;
       cursor: pointer;
-      font-weight: bold;
+      font-weight: 900;
     }
 
     .doc-nav {
-      margin-top: 15px;
+      margin-top: 16px;
     }
 
     .doc-nav button {
       padding: 10px 16px;
       margin: 0 8px;
       border: none;
-      border-radius: 10px;
+      border-radius: 12px;
       background: #111827;
       color: white;
       cursor: pointer;
-      font-weight: 700;
+      font-weight: 800;
     }
 
+    @media (max-width: 1200px) {
+      .checkins-summary {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
 
-    .filter-bar {
-  display: flex;
-  gap: 12px;
-  margin: 20px 0 25px 0;
-  flex-wrap: wrap;
-}
+    @media (max-width: 768px) {
+      .checkins-summary {
+        grid-template-columns: 1fr;
+      }
 
-.filter-bar a.filter-btn {
-  display: inline-block;
-  padding: 10px 18px;
-  border-radius: 12px;
-  background: #e5e7eb;
-  text-decoration: none !important;
-  color: #111827 !important;
-  font-weight: 700;
-}
-
-.filter-bar a.filter-btn:hover {
-  background: #cbd5e1;
-}
-
-.filter-bar a.active-filter {
-  background: #111827 !important;
-  color: white !important;
-}
-  </style> -->
+      .checkins-actions {
+        align-items: flex-start;
+      }
+    }
+  </style>
 </head>
 
 <body>
+  <div class="dashboard">
 
-<div class="dashboard">
-
-  <aside class="sidebar">
-    <div class="logo">
-      <h2>E-Smart</h2>
-      <p>Manager Panel</p>
-    </div>
-
-    <div class="hotel-info">
-      <h3>{{ hotel_name }}</h3><br>
-    </div>
-
-    <nav class="nav-links">
-      <a href="/dashboard">Dashboard</a>
-      <a href="/checkins" class="active">Check-ins</a>
-      <a href="/rooms">Rooms</a>
-      <a href="/settings">Settings</a>
-      <a href="/logout">Logout</a>
-    </nav>
-  </aside>
-
-  <main class="main-content">
-
-    <header class="topbar">
-      <div>
-        <h1>{{ hotel_name }} - Pre Check-ins</h1>
-        <p>Review guest submissions, documents, and approval status</p>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="logo">
+        <h2>E-Smart</h2>
+        <p>Manager Panel</p>
       </div>
-    </header>
 
-    <div class="checkins-card">
+      <div class="hotel-info">
+        <h3>{{ hotel_name }}</h3>
+      </div>
 
-      <!-- Approve all pending guests -->
-      <form method="post" action="/approve-all-guests">
-        <button type="submit" class="approve-all-btn">
-          Approve All Pending Guests
-        </button>
-      </form>
+      <nav class="nav-links">
+        <a href="/dashboard">Dashboard</a>
+        <a href="/checkins" class="active">Check-ins</a>
+        <a href="/rooms">Rooms</a>
+        <a href="/settings">Settings</a>
+      </nav>
+    </aside>
 
-      <div class="filter-bar">
-  <a href="/checkins?status=all"
-     class="filter-btn {% if status_filter == 'all' %}active-filter{% endif %}">
-    All
-  </a>
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
 
-  <a href="/checkins?status=approved"
-     class="filter-btn {% if status_filter == 'approved' %}active-filter{% endif %}">
-    Approved
-  </a>
+      <!-- TOPBAR -->
+      <header class="topbar">
+        <div>
+          <span class="eyebrow">Guest Management</span>
+          <h1>{{ hotel_name }} - Pre Check-ins</h1>
+          <p>Review guest submissions, documents, and approval status.</p>
+        </div>
 
-  <a href="/checkins?status=pending"
-     class="filter-btn {% if status_filter == 'pending' %}active-filter{% endif %}">
-    Pending
-  </a>
+        <div class="topbar-right">
+          <div class="manager-profile">
+            <span class="profile-circle">M</span>
+            <div>
+              <h4>Manager</h4>
+              <p>Hotel Admin</p>
+            </div>
+          </div>
 
-  <a href="/checkins?status=rejected"
-     class="filter-btn {% if status_filter == 'rejected' %}active-filter{% endif %}">
-    Rejected
-  </a>
-</div>
-      
+          <a href="/logout" class="logout-btn">Logout</a>
+        </div>
+      </header>
 
-      
+      <!-- SUMMARY CARDS -->
+      <section class="checkins-summary">
+        <div class="checkin-stat-card">
+          <span>Total Submissions</span>
+          <h2>{{ total_count }}</h2>
+        </div>
 
-      <table class="checkins-table">
-        <thead>
-          <tr>
-            <th>Guest Name</th>
-            <th>Email</th>
-            <th>Gender</th>
-            <th>Nationality</th>
-            <th>ID / Passport No.</th>
-            <th>Documents</th>
-            <th>Booked Guests</th>
-            <th>Submitted Guests</th>
-            <th>Submitted At</th>
-            <th>Validation</th>
-          </tr>
-        </thead>
+        <div class="checkin-stat-card">
+          <span>Approved</span>
+          <h2>{{ approved_count | default(0) }}</h2>
+        </div>
 
-        <tbody>
-          {% for guest in checkins %}
-          <tr>
-            <td class="guest-name">{{ guest.guest_full_name }}</td>
-            <td>{{ guest.guest_email }}</td>
+        <div class="checkin-stat-card">
+          <span>Pending</span>
+          <h2>{{ pending_count | default(0) }}</h2>
+        </div>
 
-            <td>
-              <span class="gender-badge {% if guest.guest_gender == 'male' %}gender-male{% else %}gender-female{% endif %}">
-                {{ guest.guest_gender }}
-              </span>
-            </td>
+        <div class="checkin-stat-card">
+          <span>Rejected</span>
+          <h2>{{ rejected_count | default(0) }}</h2>
+        </div>
+      </section>
 
-            <td>{{ guest.nationality }}</td>
+      <!-- TABLE CARD -->
+      <section class="checkins-card">
 
-            <!-- ID / passport number column -->
-            <td>
-              <span class="count-badge">
-                {{ guest.id_passport_number or "Not provided" }}
-              </span>
-            </td>
+        <div class="checkins-actions">
+          <form method="post" action="/approve-all-guests">
+            <button type="submit" class="approve-all-btn">
+              Approve All Pending Guests
+            </button>
+          </form>
 
-            <!-- Guest uploaded documents column -->
-            <td>
-              {% if guest.identity_document_uploads %}
-                <button
-                  type="button"
-                  class="docs-btn"
-                  data-docs='{{ guest.identity_document_uploads | tojson | safe }}'
-                  onclick="openDocs(this)">
-                  View Documents
-                </button>
-              {% else %}
-                <span class="no-docs">No documents</span>
-              {% endif %}
-            </td>
+          <div class="filter-bar">
+            <a href="/checkins?status=all"
+               class="filter-btn {% if status_filter == 'all' %}active-filter{% endif %}">
+              All
+            </a>
 
-            <td>
-              <span class="count-badge">{{ guest.booked_guests_count }}</span>
-            </td>
+            <a href="/checkins?status=approved"
+               class="filter-btn {% if status_filter == 'approved' %}active-filter{% endif %}">
+              Approved
+            </a>
 
-            <td>
-              <span class="count-badge">{{ guest.submitted_guests_count }}</span>
-            </td>
+            <a href="/checkins?status=pending"
+               class="filter-btn {% if status_filter == 'pending' %}active-filter{% endif %}">
+              Pending
+            </a>
 
-            <td class="submitted-date">
-              {{ guest.submitted_at }}
-            </td>
+            <a href="/checkins?status=rejected"
+               class="filter-btn {% if status_filter == 'rejected' %}active-filter{% endif %}">
+              Rejected
+            </a>
+          </div>
+        </div>
 
-            <!-- Admin validation column -->
-            <td>
-              {% if guest.verification_status == "approved" %}
-                <span class="status-approved">Approved</span>
+        <div class="table-wrapper">
+          <table class="checkins-table">
+            <thead>
+              <tr>
+                <th>Guest Name</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>Nationality</th>
+                <th>ID / Passport No.</th>
+                <th>Documents</th>
+                <th>Booked Guests</th>
+                <th>Submitted Guests</th>
+                <th>Submitted At</th>
+                <th>Validation</th>
+              </tr>
+            </thead>
 
-              {% elif guest.verification_status == "rejected" %}
-                <span class="status-rejected">Rejected</span>
+            <tbody>
+              {% for guest in checkins %}
+              <tr>
+                <td class="guest-name">{{ guest.guest_full_name }}</td>
 
-              {% else %}
-                <form method="post" action="/approve-guest" style="display:inline;">
-                  <input type="hidden" name="guest_id" value="{{ guest.id }}">
-                  <button type="submit" class="approve-btn">Approve</button>
-                </form>
+                <td class="guest-email">{{ guest.guest_email }}</td>
 
-                <form method="post" action="/reject-guest" style="display:inline;">
-                  <input type="hidden" name="guest_id" value="{{ guest.id }}">
-                  <button type="submit" class="reject-btn">Reject</button>
-                </form>
-              {% endif %}
-            </td>
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
+                <td>
+                  <span class="gender-badge {% if guest.guest_gender == 'male' %}gender-male{% else %}gender-female{% endif %}">
+                    {{ guest.guest_gender }}
+                  </span>
+                </td>
 
-    </div>
+                <td>{{ guest.nationality }}</td>
 
-  </main>
-</div>
+                <td>
+                  <span class="count-badge">
+                    {{ guest.id_passport_number or "Not provided" }}
+                  </span>
+                </td>
 
-<!-- Document viewer popup -->
-<div id="docsModal" class="modal">
-  <div class="modal-content">
-    <span class="close-btn" onclick="closeDocs()">&times;</span>
+                <td>
+                  {% if guest.identity_document_uploads %}
+                    <button
+                      type="button"
+                      class="docs-btn"
+                      data-docs='{{ guest.identity_document_uploads | tojson | safe }}'
+                      onclick="openDocs(this)">
+                      View Documents
+                    </button>
+                  {% else %}
+                    <span class="no-docs">No documents</span>
+                  {% endif %}
+                </td>
 
-    <img id="docImage" src="" alt="Guest Document">
+                <td>
+                  <span class="count-badge">{{ guest.booked_guests_count }}</span>
+                </td>
 
-    <div class="doc-nav">
-      <button type="button" onclick="prevDoc()">Previous</button>
-      <span id="docCounter"></span>
-      <button type="button" onclick="nextDoc()">Next</button>
+                <td>
+                  <span class="count-badge">{{ guest.submitted_guests_count }}</span>
+                </td>
+
+                <td class="submitted-date">
+                  {{ guest.submitted_at }}
+                </td>
+
+                <td>
+                  {% if guest.verification_status == "approved" %}
+                    <span class="status-approved">Approved</span>
+
+                  {% elif guest.verification_status == "rejected" %}
+                    <span class="status-rejected">Rejected</span>
+
+                  {% else %}
+                    <form method="post" action="/approve-guest" style="display:inline;">
+                      <input type="hidden" name="guest_id" value="{{ guest.id }}">
+                      <button type="submit" class="approve-btn">Approve</button>
+                    </form>
+
+                    <form method="post" action="/reject-guest" style="display:inline;">
+                      <input type="hidden" name="guest_id" value="{{ guest.id }}">
+                      <button type="submit" class="reject-btn">Reject</button>
+                    </form>
+                  {% endif %}
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+
+      </section>
+    </main>
+  </div>
+
+  <!-- DOCUMENT MODAL -->
+  <div id="docsModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeDocs()">&times;</span>
+
+      <img id="docImage" src="" alt="Guest Document">
+
+      <div class="doc-nav">
+        <button type="button" onclick="prevDoc()">Previous</button>
+        <span id="docCounter"></span>
+        <button type="button" onclick="nextDoc()">Next</button>
+      </div>
     </div>
   </div>
-</div>
-<script>
-let docs = [];
-let currentDocIndex = 0;
 
-const SUPABASE_URL = "https://uawxrfxbzczpadvhirjd.supabase.co";
+  <script>
+    let docs = [];
+    let currentDocIndex = 0;
 
-function openDocs(button) {
-  let documentData = button.getAttribute("data-docs");
+    const SUPABASE_URL = "https://uawxrfxbzczpadvhirjd.supabase.co";
 
-  if (!documentData) return;
+    function openDocs(button) {
+      let documentData = button.getAttribute("data-docs");
 
-  let parsed = JSON.parse(documentData);
+      if (!documentData) return;
 
-  docs = [];
+      let parsed = JSON.parse(documentData);
 
-  // Extract files from your database JSON structure
-  if (parsed.guests) {
-    parsed.guests.forEach(guest => {
-      guest.files.forEach(file => {
-        const publicUrl =
-          `${SUPABASE_URL}/storage/v1/object/public/${file.bucket}/${file.object_path}`;
+      docs = [];
 
-        docs.push(publicUrl);
-      });
-    });
-  }
+      if (parsed.guests) {
+        parsed.guests.forEach(guest => {
+          guest.files.forEach(file => {
+            const publicUrl =
+              `${SUPABASE_URL}/storage/v1/object/public/${file.bucket}/${file.object_path}`;
 
-  currentDocIndex = 0;
-  showDoc();
+            docs.push(publicUrl);
+          });
+        });
+      }
 
-  document.getElementById("docsModal").style.display = "flex";
-}
+      currentDocIndex = 0;
+      showDoc();
 
-function showDoc() {
-  const img = document.getElementById("docImage");
-  const counter = document.getElementById("docCounter");
+      document.getElementById("docsModal").style.display = "flex";
+    }
 
-  if (docs.length === 0) {
-    img.alt = "No document found";
-    counter.innerText = "0 / 0";
-    return;
-  }
+    function showDoc() {
+      const img = document.getElementById("docImage");
+      const counter = document.getElementById("docCounter");
 
-  img.src = docs[currentDocIndex];
-  counter.innerText = `${currentDocIndex + 1} / ${docs.length}`;
-}
+      if (docs.length === 0) {
+        img.alt = "No document found";
+        counter.innerText = "0 / 0";
+        return;
+      }
 
-function nextDoc() {
-  if (docs.length === 0) return;
-  currentDocIndex = (currentDocIndex + 1) % docs.length;
-  showDoc();
-}
+      img.src = docs[currentDocIndex];
+      counter.innerText = `${currentDocIndex + 1} / ${docs.length}`;
+    }
 
-function prevDoc() {
-  if (docs.length === 0) return;
-  currentDocIndex = (currentDocIndex - 1 + docs.length) % docs.length;
-  showDoc();
-}
+    function nextDoc() {
+      if (docs.length === 0) return;
+      currentDocIndex = (currentDocIndex + 1) % docs.length;
+      showDoc();
+    }
 
-function closeDocs() {
-  document.getElementById("docsModal").style.display = "none";
-}
-</script>
+    function prevDoc() {
+      if (docs.length === 0) return;
+      currentDocIndex = (currentDocIndex - 1 + docs.length) % docs.length;
+      showDoc();
+    }
 
+    function closeDocs() {
+      document.getElementById("docsModal").style.display = "none";
+    }
+  </script>
 </body>
 </html>
