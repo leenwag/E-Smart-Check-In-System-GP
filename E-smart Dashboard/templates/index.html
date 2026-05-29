@@ -4,24 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ hotel_name }} Dashboard</title>
-
   <link rel="stylesheet" href="{{ url_for('static', path='/style.css') }}" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-
 <body>
   <div class="dashboard">
-
+    <!-- Sidebar navigation: fixed on desktop, top section on mobile -->
     <aside class="sidebar">
       <div class="logo">
         <h2>E-Smart</h2>
         <p>Manager Panel</p>
       </div>
-
-      <div class="hotel-info">
-        <h3>{{ hotel_name }}</h3><br>
-      </div>
-
+      <div class="hotel-info"><h3>{{ hotel_name }}</h3></div>
       <nav class="nav-links">
         <a href="/dashboard" class="active">Dashboard</a>
         <a href="/checkins">Check-ins</a>
@@ -31,93 +25,98 @@
     </aside>
 
     <main class="main-content">
+      <!-- Header: page title + manager actions -->
       <header class="topbar">
         <div>
+          <span class="eyebrow">Hotel Analytics</span>
           <h1>{{ hotel_name }} Dashboard</h1>
+          <p>Live check-in analytics, room status, and AI congestion insights.</p>
         </div>
-
         <div class="topbar-right">
-         
           <div class="manager-profile">
             <span class="profile-circle">M</span>
-            <div>
-              <h4>Manager</h4>
-              <p>Hotel Admin</p>
-            </div>
+            <div><h4>Manager</h4><p>Hotel Admin</p></div>
           </div>
-
           <a href="{{ url_for('logout') }}" class="logout-btn">Logout</a>
         </div>
       </header>
 
+      <!-- KPI row: important numbers first, like Power BI cards -->
       <section class="cards">
-        <div class="card">
-          <h3>Total Check-Ins</h3>
-          <p>{{ data.total_checkins }}</p>
-        </div>
-
-        <div class="card">
-          <h3>Available Rooms</h3>
-          <p>{{ data.available_rooms }}</p>
-        </div>
-
-        <div class="card">
-          <h3>Occupied Rooms</h3>
-          <p>{{ data.occupied_rooms }}</p>
-        </div>
-
-        <div class="card">
-        <h3>Total Revenue</h3>
-        <h2>${{ data.revenue }}</h2>
-    </div>
-
-      <div class="card ai-card">
-      <h3>AI Congestion Prediction</h3>
-      <h2>{{ data.ai_prediction }}</h2>
-      <p>{{ data.ai_prediction_probability }}% risk</p>
-      <small>{{ data.ai_prediction_message }}</small>
-    </div>
+        <div class="card stats-card"><span>Total Check-Ins</span><h2>{{ data.total_checkins }}</h2></div>
+        <div class="card stats-card"><span>Available Rooms</span><h2>{{ data.available_rooms }}</h2></div>
+        <div class="card stats-card"><span>Occupied Rooms</span><h2>{{ data.occupied_rooms }}</h2></div>
+        <!-- Venue/revenue is kept as a card only; no venue/revenue chart below -->
+        <div class="card stats-card revenue-card"><span>Total Revenue</span><h2>${{ data.revenue }}</h2></div>
       </section>
 
+      <!-- AI card made wider because it is a main project feature -->
+      <section class="ai-banner">
+        <div>
+          <span>AI Congestion Prediction</span>
+          <h2>{{ data.ai_prediction }}</h2>
+          <p>{{ data.ai_prediction_message }}</p>
+        </div>
+        <div class="risk-box"><strong>{{ data.ai_prediction_probability }}%</strong><small>Risk</small></div>
+      </section>
+
+     
+      <!-- MAIN DASHBOARD GRID -->
       <section class="content-grid">
 
+        <!-- AI FORECAST -->
         <div class="panel large-panel">
-        <h3>30-Day AI Congestion Forecast</h3>
-        <div style="height: 320px;">
-          <canvas id="aiForecastChart"></canvas>
-        </div>
-      </div>
-
-        <div class="panel large-panel">
-          <h3>Check-In Time Overview</h3>
-          <canvas id="checkinChart"></canvas>
-        </div>
-
-        <div class="panel">
-          <h3>Age Groups Chart</h3>
-          <div style="height: 260px;">
-            <canvas id="ageChart"></canvas>
+          <h3>30-Day AI Congestion Forecast</h3>
+          <div style="height: 320px;">
+            <canvas id="aiForecastChart"></canvas>
           </div>
         </div>
 
+        <!-- ROOM STATUS -->
         <div class="panel">
           <h3>Room Status</h3>
+
           <ul class="status-list">
-            <li><span>Clean</span><strong>{{ data.room_status.get('Clean', 0) }}</strong></li>
-            <li><span>Occupied</span><strong>{{ data.room_status.get('Occupied', 0) }}</strong></li>
-            <li><span>Needs Service</span><strong>{{ data.room_status.get('Needs Service', 0) }}</strong></li>
-            <li><span>Available</span><strong>{{ data.room_status.get('Available', 0) }}</strong></li>
+            <li>
+              <span>Clean</span>
+              <strong>{{ data.room_status.get('Clean', 0) }}</strong>
+            </li>
+
+            <li>
+              <span>Occupied</span>
+              <strong>{{ data.room_status.get('Occupied', 0) }}</strong>
+            </li>
+
+            <li>
+              <span>Needs Service</span>
+              <strong>{{ data.room_status.get('Needs Service', 0) }}</strong>
+            </li>
+
+            <li>
+              <span>Available</span>
+              <strong>{{ data.room_status.get('Available', 0) }}</strong>
+            </li>
           </ul>
         </div>
 
+        <!-- CHECK-IN CHART -->
+        <div class="panel large-panel">
+          <h3>Check-In Time Overview</h3>
+          <div style="height: 300px;">
+            <canvas id="checkinChart"></canvas>
+          </div>
+        </div>
+
+        <!-- RECENT GUESTS -->
         <div class="panel">
           <h3>Recent Guests</h3>
+
           <ul class="guest-list">
             {% if data.recent_guests %}
               {% for guest in data.recent_guests %}
                 <li>
                   {{ guest.guest_name }}
-                  <span>Hotel ID {{ guest.room }}</span>
+                  <span>Room {{ guest.room }}</span>
                 </li>
               {% endfor %}
             {% else %}
@@ -126,8 +125,15 @@
           </ul>
         </div>
 
-        
+        <!-- AGE GROUPS -->
+        <div class="panel">
+          <h3>Age Groups Chart</h3>
+          <div style="height: 260px;">
+            <canvas id="ageChart"></canvas>
+          </div>
+        </div>
 
+        <!-- PEAK MONTH -->
         <div class="panel">
           <h3>Peak Month</h3>
           <div style="height: 260px;">
@@ -135,6 +141,7 @@
           </div>
         </div>
 
+        <!-- GENDER MIX -->
         <div class="panel">
           <h3>Gender Mix Chart</h3>
           <div style="height: 260px;">
@@ -146,157 +153,144 @@
     </main>
   </div>
 
+  <!-- DATA FROM BACKEND -->
+  <script>
+    const checkinLabels = {{ data.get("checkin_labels", []) | tojson | safe }};
+    const checkinValues = {{ data.get("checkin_values", []) | tojson | safe }};
 
-  
- <script>
-  const checkinLabels = {{ data.get("checkin_labels", []) | tojson | safe }};
-  const checkinValues = {{ data.get("checkin_values", []) | tojson | safe }};
+    const genderLabels = {{ data.get("gender_labels", []) | tojson | safe }};
+    const genderValues = {{ data.get("gender_values", []) | tojson | safe }};
 
-  const genderLabels = {{ data.get("gender_labels", []) | tojson | safe }};
-  const genderValues = {{ data.get("gender_values", []) | tojson | safe }};
+    const peakMonthLabels = {{ data.get("month_labels", []) | tojson | safe }};
+    const peakMonthValues = {{ data.get("month_values", []) | tojson | safe }};
 
-  const peakMonthLabels = {{ data.get("month_labels", []) | tojson | safe }};
-  const peakMonthValues = {{ data.get("month_values", []) | tojson | safe }};
+    const ageLabels = {{ data.get("age_labels", []) | tojson | safe }};
+    const ageValues = {{ data.get("age_values", []) | tojson | safe }};
 
-  const ageLabels = {{ data.get("age_labels", []) | tojson | safe }};
-  const ageValues = {{ data.get("age_values", []) | tojson | safe }};
+    const aiForecastLabels = {{ data.get("ai_forecast_labels", []) | tojson | safe }};
+    const aiForecastValues = {{ data.get("ai_forecast_values", []) | tojson | safe }};
+  </script>
 
-  if (checkinValues.length > 0) {
-    new Chart(document.getElementById("checkinChart"), {
-      type: "bar",
-      data: {
-        labels: checkinLabels,
-        datasets: [{
-          label: "Check-ins",
-          data: checkinValues,
-          backgroundColor: "#2563eb"
-        }]
-      },
-      options: {
-        responsive: true,
-        plugins: {
-          legend: { display: false }
-        }
-      }
-    });
-  }
-
-  if (ageValues.length > 0) {
-    new Chart(document.getElementById("ageChart"), {
-      type: "bar",
-      data: {
-        labels: ageLabels,
-        datasets: [{
-          label: "Guests by Age Group",
-          data: ageValues,
-          backgroundColor: "#f59e0b"
-        }]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: { display: false }
-        }
-      }
-    });
-  }
-
-  if (peakMonthValues.length > 0) {
-    new Chart(document.getElementById("peakMonthChart"), {
-      type: "bar",
-      data: {
-        labels: peakMonthLabels,
-        datasets: [{
-          label: "Check-ins",
-          data: peakMonthValues,
-          backgroundColor: "#10b981"
-        }]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: { display: false }
-        }
-      }
-    });
-  }
-
-  if (genderValues.length > 0) {
-    new Chart(document.getElementById("genderChart"), {
-      type: "pie",
-      data: {
-        labels: genderLabels,
-        datasets: [{
-          data: genderValues,
-          backgroundColor: ["#6366f1", "#ec4899", "#94a3b8"]
-        }]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false
-      }
-    });
-  }
-</script>
-
-<script>
-const revenueLabels = {{ data.revenue_labels | tojson | safe }};
-const revenueValues = {{ data.revenue_values | tojson | safe }};
-
-new Chart(document.getElementById("revenueChart"), {
-  type: "bar",
-  data: {
-    labels: revenueLabels,
-    datasets: [{
-      label: "Revenue ($)",
-      data: revenueValues,
-      backgroundColor: "#22c55e"
-    }]
-  },
-  options: {
-    responsive: true,
-    maintainAspectRatio: false
-  }
-});
-
-
-const aiForecastLabels = {{ data.ai_forecast_labels | tojson | safe }};
-const aiForecastValues = {{ data.ai_forecast_values | tojson | safe }};
-
-if (aiForecastValues.length > 0) {
-  new Chart(document.getElementById("aiForecastChart"), {
-    type: "line",
-    data: {
-      labels: aiForecastLabels,
-      datasets: [{
-        label: "Predicted Congestion Risk (%)",
-        data: aiForecastValues,
-        borderWidth: 3,
-        tension: 0.35,
-        fill: true,
-        pointRadius: 3
-      }]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      scales: {
-        y: {
-          min: 0,
-          max: 100,
-          ticks: {
-            callback: value => value + "%"
+  <!-- CHARTS -->
+  <script>
+    if (checkinValues.length > 0) {
+      new Chart(document.getElementById("checkinChart"), {
+        type: "bar",
+        data: {
+          labels: checkinLabels,
+          datasets: [{
+            label: "Check-ins",
+            data: checkinValues,
+            backgroundColor: "#2563eb",
+            borderRadius: 8
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false }
           }
         }
-      }
+      });
     }
-  });
-}
 
+    if (ageValues.length > 0) {
+      new Chart(document.getElementById("ageChart"), {
+        type: "bar",
+        data: {
+          labels: ageLabels,
+          datasets: [{
+            label: "Guests by Age Group",
+            data: ageValues,
+            backgroundColor: "#f59e0b",
+            borderRadius: 8
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false }
+          }
+        }
+      });
+    }
 
-</script>
+    if (peakMonthValues.length > 0) {
+      new Chart(document.getElementById("peakMonthChart"), {
+        type: "bar",
+        data: {
+          labels: peakMonthLabels,
+          datasets: [{
+            label: "Check-ins",
+            data: peakMonthValues,
+            backgroundColor: "#10b981",
+            borderRadius: 8
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false }
+          }
+        }
+      });
+    }
+
+    if (genderValues.length > 0) {
+      new Chart(document.getElementById("genderChart"), {
+        type: "doughnut",
+        data: {
+          labels: genderLabels,
+          datasets: [{
+            data: genderValues,
+            backgroundColor: ["#6366f1", "#ec4899", "#94a3b8"],
+            borderWidth: 0
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          cutout: "65%"
+        }
+      });
+    }
+
+    if (aiForecastValues.length > 0) {
+      new Chart(document.getElementById("aiForecastChart"), {
+        type: "line",
+        data: {
+          labels: aiForecastLabels,
+          datasets: [{
+            label: "Predicted Congestion Risk (%)",
+            data: aiForecastValues,
+            borderColor: "#4f46e5",
+            backgroundColor: "rgba(79, 70, 229, 0.15)",
+            borderWidth: 3,
+            tension: 0.35,
+            fill: true,
+            pointRadius: 3,
+            pointBackgroundColor: "#4f46e5"
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            y: {
+              min: 0,
+              max: 100,
+              ticks: {
+                callback: value => value + "%"
+              }
+            }
+          }
+        }
+      });
+    }
+  </script>
 
 </body>
 </html>
