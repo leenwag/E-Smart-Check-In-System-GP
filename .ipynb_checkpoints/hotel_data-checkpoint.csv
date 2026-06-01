@@ -1,0 +1,9 @@
+guest_name,gender,age,room,status,revenue,check_in_time,nights,meal_plan,extra_bedding
+Ahmad Khaled,Male,32,204,Occupied,120,14,2,Breakfast,Yes
+Sara Nabil,Female,28,118,Available,200,15,3,Full Board,No
+Omar Yasin,Male,45,312,Occupied,150,13,1,Breakfast,No
+Lina Samer,Female,36,105,Clean,180,16,2,Half Board,Yes
+Noor Ali,Female,24,220,Occupied,210,14,4,Full Board,No
+Yousef Adel,Male,40,301,Needs Service,130,17,1,Breakfast,Yes
+Mariam Tareq,Female,30,110,Occupied,190,15,2,Half Board,No
+Khaled Nasser,Male,50,410,Available,250,12,5,Full Board,Yes

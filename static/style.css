@@ -1,0 +1,746 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #111827;
+}
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f7fb;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100vh;
+  background: #111827;
+  color: white;
+  padding: 34px 22px;
+  z-index: 1000;
+}
+
+.logo h2 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.logo p {
+  color: #9ca3af;
+  font-size: 14px;
+  margin-bottom: 36px;
+}
+
+.hotel-info h3 {
+  font-size: 20px;
+  line-height: 1.3;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nav-links a {
+  display: block;
+  text-decoration: none;
+  color: #d1d5db;
+  padding: 14px 16px;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background: #1f2937;
+  color: white;
+}
+
+.nav-links a.active {
+  box-shadow: inset 4px 0 #6366f1;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.main-content {
+  margin-left: 260px;
+  width: calc(100% - 260px);
+  padding: 34px 38px;
+  background: #f4f7fb;
+}
+
+/* =========================
+   TOPBAR
+========================= */
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  font-size: 14px;
+  font-weight: 800;
+  color: #4f46e5;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.topbar h1 {
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: -0.7px;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.topbar p {
+  font-size: 15px;
+  color: #64748b;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.manager-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  padding: 10px 14px;
+  border-radius: 16px;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+}
+
+.profile-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #4f46e5;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+
+.manager-profile h4 {
+  font-size: 14px;
+}
+
+.manager-profile p {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.logout-btn {
+  text-decoration: none;
+  background: #dc554c;
+  color: white;
+  padding: 13px 20px;
+  border-radius: 12px;
+  font-weight: 800;
+  transition: 0.25s ease;
+}
+
+.logout-btn:hover {
+  background: #c2413a;
+}
+
+/* =========================
+   FILTERS
+========================= */
+
+.dashboard-filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+}
+
+.filter-pill {
+  border: none;
+  background: white;
+  color: #374151;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06);
+}
+
+.filter-pill.active,
+.filter-pill:hover {
+  background: #4f46e5;
+  color: white;
+}
+
+/* =========================
+   KPI CARDS
+========================= */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.card {
+  background: white;
+  border-radius: 22px;
+  padding: 24px;
+  min-height: 112px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+  border: 1px solid #eef2f7;
+  transition: 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 38px rgba(15, 23, 42, 0.08);
+}
+
+.stats-card span {
+  display: block;
+  font-size: 15px;
+  color: #64748b;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.stats-card h2 {
+  font-size: 30px;
+  font-weight: 900;
+  color: #111827;
+}
+
+.revenue-card {
+  background: linear-gradient(135deg, #ecfdf5, #ffffff);
+  border: 1px solid #bbf7d0;
+}
+
+/* =========================
+   AI HERO
+========================= */
+
+.ai-hero-card {
+  background: linear-gradient(135deg, #4f46e5, #312e81);
+  border-radius: 28px;
+  padding: 30px 34px;
+  margin-bottom: 26px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 18px 45px rgba(79, 70, 229, 0.25);
+}
+
+.ai-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.16);
+  color: #bbf7d0;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+
+.ai-label {
+  color: rgba(255,255,255,0.78);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.ai-hero-left h2 {
+  font-size: 34px;
+  margin: 8px 0;
+}
+
+.ai-message {
+  color: rgba(255,255,255,0.85);
+  font-size: 16px;
+}
+
+.ai-risk-circle {
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.14);
+  border: 9px solid rgba(255,255,255,0.35);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ai-risk-circle h1 {
+  font-size: 38px;
+  line-height: 1;
+}
+
+.ai-risk-circle span {
+  margin-top: 6px;
+  color: rgba(255,255,255,0.8);
+  font-weight: 800;
+}
+
+/* =========================
+   DASHBOARD GRID
+========================= */
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 22px;
+  align-items: stretch;
+}
+
+.panel {
+  background: white;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+  border: 1px solid #eef2f7;
+  overflow: hidden;
+  transition: 0.25s ease;
+}
+
+.panel:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 38px rgba(15, 23, 42, 0.08);
+}
+
+.panel h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 18px;
+}
+
+.wide-panel {
+  min-height: 360px;
+}
+
+.side-panel {
+  min-height: 360px;
+}
+
+/* =========================
+   CHARTS
+========================= */
+
+.chart-box {
+  position: relative;
+  width: 100%;
+}
+
+.chart-large {
+  height: 315px;
+}
+
+.chart-medium {
+  height: 275px;
+}
+
+.chart-small {
+  height: 245px;
+}
+
+.panel canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* =========================
+   ROOM STATUS
+========================= */
+
+.status-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 8px;
+}
+
+.status-item > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.status-item span {
+  font-weight: 700;
+  color: #374151;
+}
+
+.status-item strong {
+  color: #111827;
+}
+
+.progress-track {
+  width: 100%;
+  height: 9px;
+  background: #eef2f7;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 999px;
+}
+
+.progress-fill.clean {
+  background: #10b981;
+}
+
+.progress-fill.occupied {
+  background: #4f46e5;
+}
+
+.progress-fill.service {
+  background: #f59e0b;
+}
+
+.progress-fill.available {
+  background: #22c55e;
+}
+
+/* =========================
+   RECENT GUESTS
+========================= */
+
+.guest-list {
+  list-style: none;
+}
+
+.guest-list li {
+  display: grid;
+  grid-template-columns: 42px 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid #eef2f7;
+}
+
+.guest-list li:last-child {
+  border-bottom: none;
+}
+
+.guest-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #eef2ff;
+  color: #4f46e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+}
+
+.guest-info strong {
+  display: block;
+  color: #111827;
+  font-size: 15px;
+}
+
+.guest-info span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.room-badge {
+  background: #f1f5f9;
+  color: #334155;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1200px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+    padding: 22px;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .topbar-right {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-hero-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+  }
+
+  .ai-risk-circle {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+.dashboard-filters {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 28px;
+}
+
+.filter-btn {
+    text-decoration: none;
+    background: white;
+    color: #2d3748;
+    padding: 12px 22px;
+    border-radius: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+
+.filter-btn:hover {
+    transform: translateY(-2px);
+}
+
+.filter-btn.active {
+    background: linear-gradient(135deg, #5b4ce2, #4338ca);
+    color: white;
+}
+
+/* =========================
+   LOGIN PAGE DESIGN
+========================= */
+
+.login-body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #111827 0%, #1f2937 45%, #4f46e5 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 460px;
+  padding: 24px;
+}
+
+.login-card {
+  background: white;
+  border-radius: 28px;
+  padding: 38px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+}
+
+.login-card h2 {
+  font-size: 30px;
+  font-weight: 900;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.login-card p {
+  color: #64748b;
+  margin-bottom: 28px;
+  line-height: 1.5;
+}
+
+.input-group {
+  margin-bottom: 18px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 800;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid #d1d5db;
+  font-size: 15px;
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.14);
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  padding-right: 60px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #4f46e5;
+  font-weight: 800;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.login-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 15px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background: #4338ca;
+}
+
+.error-message {
+  color: #dc2626 !important;
+  background: #fee2e2;
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-weight: 700;
+  margin-bottom: 14px !important;
+}
+
+.search-filter-form {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr auto auto;
+  gap: 14px;
+  align-items: end;
+  margin-bottom: 24px;
+  background: #f8fafc;
+  padding: 18px;
+  border-radius: 18px;
+  border: 1px solid #eef2f7;
+}
+
+.filter-input-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 800;
+  color: #64748b;
+  margin-bottom: 7px;
+}
+
+.filter-input-group input,
+.filter-input-group select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  font-weight: 700;
+}
+
+.filter-submit-btn,
+.clear-filter-btn {
+  padding: 12px 18px;
+  border-radius: 14px;
+  border: none;
+  font-weight: 900;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.filter-submit-btn {
+  background: #4f46e5;
+  color: white;
+}
+
+.clear-filter-btn {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+@media (max-width: 1000px) {
+  .search-filter-form {
+    grid-template-columns: 1fr;
+  }
+}

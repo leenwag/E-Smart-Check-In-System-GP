@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>{{ hotel_name }} Dashboard</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', path='/style.css') }}?v=50" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="logo">
+        <h2>E-Smart</h2>
+        <p>Manager Panel</p>
+      </div>
+
+      <div class="hotel-info">
+        <h3>{{ hotel_name }}</h3>
+      </div>
+
+      <nav class="nav-links">
+        <a href="/dashboard" class="active">Dashboard</a>
+        <a href="/checkins">Check-ins</a>
+        <a href="/rooms">Rooms</a>
+        <a href="/settings">Settings</a>
+      </nav>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+      <!-- TOP BAR -->
+      <header class="topbar">
+        <div>
+          <span class="eyebrow">Hotel Analytics</span>
+          <h1>{{ hotel_name }} Dashboard</h1>
+          <p>Live check-in analytics, room status, and AI congestion insights.</p>
+        </div>
+
+        <div class="topbar-right">
+          <div class="manager-profile">
+            <span class="profile-circle">M</span>
+            <div>
+              <h4>Manager</h4>
+              <p>Hotel Admin</p>
+            </div>
+          </div>
+
+          <a href="{{ url_for('logout') }}" class="logout-btn">Logout</a>
+        </div>
+      </header>
+
+
+      <!-- KPI CARDS -->
+      <section class="cards">
+        <div class="card stats-card">
+          <span>Total Check-Ins</span>
+          <h2>{{ data.total_checkins }}</h2>
+        </div>
+
+        <div class="card stats-card">
+          <span>Available Rooms</span>
+          <h2>{{ data.available_rooms }}</h2>
+        </div>
+
+        <div class="card stats-card">
+          <span>Occupied Rooms</span>
+          <h2>{{ data.occupied_rooms }}</h2>
+        </div>
+
+        <div class="card stats-card revenue-card">
+          <span>Total Revenue</span>
+          <h2>${{ data.revenue }}</h2>
+        </div>
+      </section>
+
+      <!-- AI HERO -->
+      <section class="ai-hero-card">
+        <div class="ai-hero-left">
+          <span class="ai-badge">● AI Active</span>
+          <p class="ai-label">AI Congestion Prediction</p>
+          <h2>{{ data.ai_prediction }}</h2>
+          <p class="ai-message">{{ data.ai_prediction_message }}</p>
+        </div>
+
+        <div class="ai-risk-circle">
+          <h1>{{ data.ai_prediction_probability }}%</h1>
+          <span>Risk</span>
+        </div>
+      </section>
+
+      <!-- DASHBOARD GRID -->
+      <section class="content-grid">
+
+        <!-- AI FORECAST -->
+        <div class="panel wide-panel">
+          <h3>30-Day AI Congestion Forecast</h3>
+          <div class="chart-box chart-large">
+            <canvas id="aiForecastChart"></canvas>
+          </div>
+        </div>
+
+        <!-- ROOM STATUS -->
+        <div class="panel side-panel">
+          <h3>Room Status</h3>
+
+          <div class="status-list">
+            <div class="status-item">
+              <div>
+                <span>Clean</span>
+                <strong>{{ data.room_status.get('Clean', 0) }}</strong>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill clean" style="width: 10%;"></div>
+              </div>
+            </div>
+
+            <div class="status-item">
+              <div>
+                <span>Occupied</span>
+                <strong>{{ data.room_status.get('Occupied', 0) }}</strong>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill occupied" style="width: 50%;"></div>
+              </div>
+            </div>
+
+            <div class="status-item">
+              <div>
+                <span>Needs Service</span>
+                <strong>{{ data.room_status.get('Needs Service', 0) }}</strong>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill service" style="width: 10%;"></div>
+              </div>
+            </div>
+
+            <div class="status-item">
+              <div>
+                <span>Available</span>
+                <strong>{{ data.room_status.get('Available', 0) }}</strong>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill available" style="width: 50%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CHECK-IN CHART -->
+        <div class="panel wide-panel">
+          <h3>Check-In Time Overview</h3>
+          <div class="chart-box chart-medium">
+            <canvas id="checkinChart"></canvas>
+          </div>
+        </div>
+
+        <!-- RECENT GUESTS -->
+        <div class="panel side-panel">
+          <h3>Recent Guests</h3>
+
+          <ul class="guest-list">
+            {% if data.recent_guests %}
+              {% for guest in data.recent_guests %}
+                <li>
+                  <div class="guest-avatar">{{ guest.guest_name[0] }}</div>
+                  <div class="guest-info">
+                    <strong>{{ guest.guest_name }}</strong>
+                    <span>Checked in recently</span>
+                  </div>
+                  <span class="room-badge">Room {{ guest.room }}</span>
+                </li>
+              {% endfor %}
+            {% else %}
+              <li>No recent guests yet.</li>
+            {% endif %}
+          </ul>
+        </div>
+
+        <!-- AGE GROUPS -->
+        <div class="panel">
+          <h3>Age Groups</h3>
+          <div class="chart-box chart-small">
+            <canvas id="ageChart"></canvas>
+          </div>
+        </div>
+
+        <!-- PEAK MONTH -->
+        <div class="panel">
+          <h3>Peak Months</h3>
+          <div class="chart-box chart-small">
+            <canvas id="peakMonthChart"></canvas>
+          </div>
+        </div>
+
+        <!-- GENDER MIX -->
+        <div class="panel">
+          <h3>Gender Mix</h3>
+          <div class="chart-box chart-small">
+            <canvas id="genderChart"></canvas>
+          </div>
+        </div>
+
+      </section>
+    </main>
+  </div>
+
+  <!-- BACKEND DATA -->
+  <script>
+    const checkinLabels = {{ data.get("checkin_labels", []) | tojson | safe }};
+    const checkinValues = {{ data.get("checkin_values", []) | tojson | safe }};
+
+    const genderLabels = {{ data.get("gender_labels", []) | tojson | safe }};
+    const genderValues = {{ data.get("gender_values", []) | tojson | safe }};
+
+    const peakMonthLabels = {{ data.get("month_labels", []) | tojson | safe }};
+    const peakMonthValues = {{ data.get("month_values", []) | tojson | safe }};
+
+    const ageLabels = {{ data.get("age_labels", []) | tojson | safe }};
+    const ageValues = {{ data.get("age_values", []) | tojson | safe }};
+
+    const aiForecastLabels = {{ data.get("ai_forecast_labels", []) | tojson | safe }};
+    const aiForecastValues = {{ data.get("ai_forecast_values", []) | tojson | safe }};
+  </script>
+
+  <!-- CHARTS -->
+  <script>
+    const gridColor = "rgba(148, 163, 184, 0.18)";
+
+    if (checkinValues.length > 0) {
+      new Chart(document.getElementById("checkinChart"), {
+        type: "bar",
+        data: {
+          labels: checkinLabels,
+          datasets: [{
+            label: "Check-ins",
+            data: checkinValues,
+            backgroundColor: "#4f46e5",
+            borderRadius: 10,
+            barThickness: 32
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { grid: { display: false } },
+            y: { grid: { color: gridColor }, beginAtZero: true }
+          }
+        }
+      });
+    }
+
+    if (ageValues.length > 0) {
+      new Chart(document.getElementById("ageChart"), {
+        type: "bar",
+        data: {
+          labels: ageLabels,
+          datasets: [{
+            label: "Guests",
+            data: ageValues,
+            backgroundColor: "#f59e0b",
+            borderRadius: 10,
+            barThickness: 36
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { grid: { display: false } },
+            y: { grid: { color: gridColor }, beginAtZero: true }
+          }
+        }
+      });
+    }
+
+    if (peakMonthValues.length > 0) {
+      new Chart(document.getElementById("peakMonthChart"), {
+        type: "bar",
+        data: {
+          labels: peakMonthLabels,
+          datasets: [{
+            label: "Check-ins",
+            data: peakMonthValues,
+            backgroundColor: "#10b981",
+            borderRadius: 10,
+            barThickness: 16
+          }]
+        },
+        options: {
+          indexAxis: "y",
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { grid: { display: false }, beginAtZero: true },
+            y: { grid: { display: false } }
+          }
+        }
+      });
+    }
+
+    if (genderValues.length > 0) {
+      new Chart(document.getElementById("genderChart"), {
+        type: "doughnut",
+        data: {
+          labels: genderLabels,
+          datasets: [{
+            data: genderValues,
+            backgroundColor: ["#6366f1", "#ec4899", "#94a3b8"],
+            borderWidth: 0
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          cutout: "68%",
+          plugins: {
+            legend: {
+              position: "bottom",
+              labels: { usePointStyle: true, boxWidth: 8 }
+            }
+          }
+        }
+      });
+    }
+
+    if (aiForecastValues.length > 0) {
+      new Chart(document.getElementById("aiForecastChart"), {
+        type: "line",
+        data: {
+          labels: aiForecastLabels,
+          datasets: [{
+            label: "Predicted Congestion Risk (%)",
+            data: aiForecastValues,
+            borderColor: "#4f46e5",
+            backgroundColor: "rgba(79, 70, 229, 0.13)",
+            borderWidth: 3,
+            tension: 0.38,
+            fill: true,
+            pointRadius: 3,
+            pointBackgroundColor: "#4f46e5"
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              labels: { usePointStyle: true, boxWidth: 8 }
+            }
+          },
+          scales: {
+            x: { grid: { color: gridColor } },
+            y: {
+              min: 0,
+              max: 100,
+              grid: { color: gridColor },
+              ticks: { callback: value => value + "%" }
+            }
+          }
+        }
+      });
+    }
+  </script>
+</body>
+</html>

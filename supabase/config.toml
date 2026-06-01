@@ -1,0 +1,3 @@
+# Guests scan the QR with a phone browser — no auth header is sent.
+[functions.checkin-pass]
+verify_jwt = false

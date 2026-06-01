@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Login</title>
+<link rel="stylesheet" href="{{ url_for('static', path='style.css') }}?v=100"></head>
+<body class="login-body">
+
+<div class="login-container">
+  <div class="login-card">
+
+    <h2>E-Smart Hotel Login</h2>
+    <p>Sign in with your hotel account to access your private dashboard.</p>
+
+    <form method="post" action="/login">
+      <div class="input-group">
+        <label>Hotel Email</label>
+        <input type="email" name="email" placeholder="hotel@esmart.com" required>
+      </div>
+
+      <div class="input-group">
+        <label>Password</label>
+        <div class="password-wrapper">
+          <input id="password" type="password" name="password" placeholder="Enter password" required>
+          <span class="toggle-password" onclick="togglePassword()">Show</span>
+        </div>
+      </div>
+
+      {% if error %}
+        <p class="error-message">{{ error }}</p>
+      {% endif %}
+
+      <button type="submit" class="login-btn">Login</button>
+    </form>
+
+  </div>
+</div>
+
+<script>
+function togglePassword() {
+  const passwordInput = document.getElementById("password");
+  const toggleText = document.querySelector(".toggle-password");
+
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+    toggleText.textContent = "Hide";
+  } else {
+    passwordInput.type = "password";
+    toggleText.textContent = "Show";
+  }
+}
+</script>
+
+</body>
+</html>

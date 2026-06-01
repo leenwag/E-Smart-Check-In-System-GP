@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>{{ hotel_name }} Settings</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', path='/style.css') }}?v=80">
+
+  <style>
+    .settings-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 24px;
+    }
+
+    .settings-card {
+      background: white;
+      border-radius: 24px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+      border: 1px solid #eef2f7;
+    }
+
+    .settings-card h2 {
+      font-size: 22px;
+      font-weight: 900;
+      color: #111827;
+      margin-bottom: 22px;
+    }
+
+    .setting-row {
+      margin-bottom: 18px;
+    }
+
+    .setting-row label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 800;
+      color: #374151;
+      font-size: 14px;
+    }
+
+    .setting-row input,
+    .setting-row select {
+      width: 100%;
+      padding: 13px 14px;
+      border-radius: 14px;
+      border: 1px solid #d1d5db;
+      font-size: 15px;
+      outline: none;
+      background: white;
+    }
+
+    .setting-row input:focus,
+    .setting-row select:focus {
+      border-color: #4f46e5;
+      box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.12);
+    }
+
+    .toggle-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      padding: 15px 0;
+      border-bottom: 1px solid #eef2f7;
+      font-weight: 800;
+      color: #374151;
+    }
+
+    .toggle-row:last-child {
+      border-bottom: none;
+    }
+
+    .toggle-row input {
+      width: 18px;
+      height: 18px;
+      accent-color: #4f46e5;
+      cursor: pointer;
+    }
+
+    .save-settings-wrapper {
+      margin-top: 28px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .save-btn {
+      background: #4f46e5;
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 14px;
+      font-size: 15px;
+      font-weight: 900;
+      cursor: pointer;
+      transition: 0.25s ease;
+    }
+
+    .save-btn:hover {
+      background: #4338ca;
+    }
+
+    @media (max-width: 1000px) {
+      .settings-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="logo">
+        <h2>E-Smart</h2>
+        <p>Manager Panel</p>
+      </div>
+
+      <div class="hotel-info">
+        <h3>{{ hotel_name }}</h3>
+      </div>
+
+      <nav class="nav-links">
+        <a href="/dashboard">Dashboard</a>
+        <a href="/checkins">Check-ins</a>
+        <a href="/rooms">Rooms</a>
+        <a href="/settings" class="active">Settings</a>
+      </nav>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+      <!-- TOPBAR -->
+      <header class="topbar">
+        <div>
+          <span class="eyebrow">System Preferences</span>
+          <h1>{{ hotel_name }} - Settings</h1>
+          <p>Manage hotel profile, account details, dashboard preferences, and alerts.</p>
+        </div>
+
+        <div class="topbar-right">
+          <div class="manager-profile">
+            <span class="profile-circle">M</span>
+            <div>
+              <h4>Manager</h4>
+              <p>Hotel Admin</p>
+            </div>
+          </div>
+
+          <a href="/logout" class="logout-btn">Logout</a>
+        </div>
+      </header>
+
+      <!-- SETTINGS CARDS -->
+      <section class="settings-grid">
+
+        <div class="settings-card">
+          <h2>Hotel Profile</h2>
+
+          <div class="setting-row">
+            <label>Hotel Name</label>
+            <input type="text" value="{{ hotel_name }}">
+          </div>
+
+          
+
+          <div class="setting-row">
+            <label>Location</label>
+            <input type="text" value="Aqaba, Jordan">
+          </div>
+
+          <div class="setting-row">
+            <label>Hotel Email</label>
+            <input type="email" value="manager@hotel.com">
+          </div>
+        </div>
+
+        <div class="settings-card">
+          <h2>Account Settings</h2>
+
+          <div class="setting-row">
+            <label>Manager Name</label>
+            <input type="text" value="Manager">
+          </div>
+
+          <div class="setting-row">
+            <label>Manager Email</label>
+            <input type="email" value="admin@hotel.com">
+          </div>
+
+          <div class="setting-row">
+            <label>Password</label>
+            <input type="password" value="123456">
+          </div>
+        </div>
+
+        <div class="settings-card">
+          <h2>Dashboard Preferences</h2>
+
+          <div class="toggle-row">
+            <span>Show Age Groups Chart</span>
+            <input type="checkbox" checked>
+          </div>
+
+          <div class="toggle-row">
+            <span>Show Gender Mix Chart</span>
+            <input type="checkbox" checked>
+          </div>
+
+          <div class="toggle-row">
+            <span>Show Peak Month Chart</span>
+            <input type="checkbox" checked>
+          </div>
+
+          <div class="toggle-row">
+            <span>Show AI Insights</span>
+            <input type="checkbox" checked>
+          </div>
+        </div>
+
+        <div class="settings-card">
+          <h2>AI Settings</h2>
+
+          <div class="toggle-row">
+            <span>Enable AI Insights</span>
+            <input type="checkbox" checked>
+          </div>
+
+          <div class="setting-row">
+            <label>Peak Congestion Alert Level</label>
+            <select>
+              <option>Low</option>
+              <option selected>Medium</option>
+              <option>High</option>
+            </select>
+          </div>
+
+          <div class="toggle-row">
+            <span>Enable Peak Alerts</span>
+            <input type="checkbox" checked>
+          </div>
+        </div>
+
+        <div class="settings-card">
+          <h2>Room Status Options</h2>
+
+          <div class="toggle-row">
+            <span>Available</span>
+            <input type="checkbox" checked>
+          </div>
+
+          <div class="toggle-row">
+            <span>Occupied</span>
+            <input type="checkbox" checked>
+          </div>
+
+          <div class="toggle-row">
+            <span>Clean</span>
+            <input type="checkbox" checked>
+          </div>
+
+          <div class="toggle-row">
+            <span>Maintenance</span>
+            <input type="checkbox" checked>
+          </div>
+        </div>
+
+        <div class="settings-card">
+          <h2>Notifications</h2>
+
+          <div class="toggle-row">
+            <span>Confirmation Emails</span>
+            <input type="checkbox" checked>
+          </div>
+
+          <div class="toggle-row">
+            <span>Room Status Alerts</span>
+            <input type="checkbox" checked>
+          </div>
+
+          <div class="toggle-row">
+            <span>AI Congestion Alerts</span>
+            <input type="checkbox" checked>
+          </div>
+        </div>
+
+      </section>
+
+      <div class="save-settings-wrapper">
+        <button class="save-btn">Save Settings</button>
+      </div>
+
+    </main>
+  </div>
+</body>
+</html>

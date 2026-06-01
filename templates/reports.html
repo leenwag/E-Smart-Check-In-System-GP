@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Reports</title>
+  <link rel="stylesheet" href="{{ url_for('static', path='/style.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="dashboard">
+
+  <!-- Sidebar -->
+
+  <aside class="sidebar">
+    <div class="logo">
+      <h2>E-Smart</h2>
+      <p>{{ hotel_name }}</p>
+    </div>
+
+```
+<nav class="nav-links">
+  <a href="/dashboard">Dashboard</a>
+  <a href="/checkins">Check-ins</a>
+  <a href="/rooms">Rooms</a>
+  <a href="/reports" class="active">Reports</a>
+  <a href="/logout">Logout</a>
+</nav>
+```
+
+  </aside>
+
+  <!-- Main Content -->
+
+  <main class="main-content">
+
+```
+<header class="topbar">
+  <h1>Reports Overview</h1>
+  <p>Insights for {{ hotel_name }}</p>
+</header>
+
+<!-- Metrics -->
+<div class="cards">
+
+  <div class="card">
+    <h3>Total Check-ins</h3>
+    <p>{{ total_checkins }}</p>
+  </div>
+
+  <div class="card">
+    <h3>Total Bookings</h3>
+    <p>{{ total_bookings }}</p>
+  </div>
+
+  <div class="card">
+    <h3>Total Revenue</h3>
+    <p>${{ total_revenue }}</p>
+  </div>
+
+  <div class="card">
+    <h3>Available Rooms</h3>
+    <p>{{ available_rooms }}</p>
+  </div>
+
+  <div class="card">
+    <h3>Occupied Rooms</h3>
+    <p>{{ occupied_rooms }}</p>
+  </div>
+
+</div>
+
+<!-- Charts -->
+<div class="charts">
+
+  <div class="chart-box">
+    <h3>Check-ins Per Day</h3>
+    <canvas id="checkinsChart"></canvas>
+  </div>
+
+  <div class="chart-box">
+    <h3>Gender Distribution</h3>
+    <canvas id="genderChart"></canvas>
+  </div>
+
+  <div class="chart-box">
+    <h3>Top Nationalities</h3>
+    <canvas id="nationalityChart"></canvas>
+  </div>
+
+</div>
+```
+
+  </main>
+</div>
+
+<script>
+
+// Check-ins Chart
+new Chart(document.getElementById("checkinsChart"), {
+  type: "bar",
+  data: {
+    labels: {{ checkin_labels | tojson }},
+    datasets: [{
+      label: "Check-ins",
+      data: {{ checkin_values | tojson }}
+    }]
+  }
+});
+
+// Gender Chart
+new Chart(document.getElementById("genderChart"), {
+  type: "pie",
+  data: {
+    labels: {{ gender_labels | tojson }},
+    datasets: [{
+      data: {{ gender_values | tojson }}
+    }]
+  }
+});
+
+// Nationality Chart
+new Chart(document.getElementById("nationalityChart"), {
+  type: "doughnut",
+  data: {
+    labels: {{ nationality_labels | tojson }},
+    datasets: [{
+      data: {{ nationality_values | tojson }}
+    }]
+  }
+});
+
+</script>
+
+</body>
+</html>

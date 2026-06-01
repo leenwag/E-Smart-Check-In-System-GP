@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>{{ hotel_name }} Check-ins</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', path='/style.css') }}?v=60">
+
+  <style>
+    /* =========================
+       CHECK-INS PAGE DESIGN
+       Same style as dashboard
+    ========================= */
+
+    .checkins-summary {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+
+    .checkin-stat-card {
+      background: white;
+      border-radius: 22px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+      border: 1px solid #eef2f7;
+    }
+
+    .checkin-stat-card span {
+      color: #64748b;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .checkin-stat-card h2 {
+      margin-top: 8px;
+      font-size: 30px;
+      font-weight: 900;
+      color: #111827;
+    }
+
+    .checkins-card {
+      background: white;
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+      border: 1px solid #eef2f7;
+      overflow-x: auto;
+    }
+
+    .checkins-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    .approve-all-btn {
+      background: #16a34a;
+      color: white;
+      border: none;
+      padding: 13px 22px;
+      border-radius: 14px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .filter-bar {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      text-decoration: none;
+      background: #f1f5f9;
+      color: #374151;
+      padding: 11px 18px;
+      border-radius: 999px;
+      font-weight: 800;
+      transition: 0.25s ease;
+    }
+
+    .filter-btn:hover,
+    .active-filter {
+      background: #4f46e5 !important;
+      color: white !important;
+    }
+
+    .table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      border-radius: 18px;
+      border: 1px solid #eef2f7;
+    }
+
+    .checkins-table {
+      width: 100%;
+      min-width: 1250px;
+      border-collapse: collapse;
+    }
+
+    .checkins-table th {
+      background: #111827;
+      color: white;
+      padding: 16px 14px;
+      text-align: left;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .checkins-table td {
+      padding: 15px 14px;
+      border-bottom: 1px solid #eef2f7;
+      color: #1f2937;
+      vertical-align: middle;
+      font-size: 14px;
+    }
+
+    .checkins-table tr:hover {
+      background: #f8fafc;
+    }
+
+    .guest-name {
+      font-weight: 900;
+      color: #111827;
+    }
+
+    .guest-email {
+      color: #475569;
+    }
+
+    .gender-badge,
+    .count-badge,
+    .status-approved,
+    .status-rejected,
+    .status-pending {
+      padding: 7px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 800;
+      display: inline-block;
+      white-space: nowrap;
+    }
+
+    .gender-male {
+      background: #dbeafe;
+      color: #1d4ed8;
+    }
+
+    .gender-female {
+      background: #fce7f3;
+      color: #be185d;
+    }
+
+    .count-badge {
+      background: #eef2ff;
+      color: #4338ca;
+    }
+
+    .status-approved {
+      background: #dcfce7;
+      color: #166534;
+    }
+
+    .status-rejected {
+      background: #fee2e2;
+      color: #991b1b;
+    }
+
+    .status-pending {
+      background: #fef3c7;
+      color: #92400e;
+    }
+
+    .submitted-date {
+      color: #64748b;
+      font-size: 13px;
+      line-height: 1.4;
+    }
+
+    .docs-btn,
+    .approve-btn,
+    .reject-btn {
+      border: none;
+      cursor: pointer;
+      font-weight: 800;
+      border-radius: 12px;
+      padding: 9px 13px;
+    }
+
+    .docs-btn {
+      background: #4f46e5;
+      color: white;
+    }
+
+    .approve-btn {
+      background: #16a34a;
+      color: white;
+      margin-right: 6px;
+    }
+
+    .reject-btn {
+      background: #dc2626;
+      color: white;
+    }
+
+    .no-docs {
+      color: #64748b;
+      font-size: 13px;
+    }
+
+    /* Document popup modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      inset: 0;
+      background: rgba(0,0,0,0.75);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background: white;
+      width: 70%;
+      max-width: 850px;
+      height: 80%;
+      border-radius: 24px;
+      padding: 24px;
+      position: relative;
+      text-align: center;
+    }
+
+    .modal-content img {
+      max-width: 100%;
+      max-height: 85%;
+      border-radius: 14px;
+    }
+
+    .close-btn {
+      position: absolute;
+      right: 22px;
+      top: 16px;
+      font-size: 30px;
+      cursor: pointer;
+      font-weight: 900;
+    }
+
+    .doc-nav {
+      margin-top: 16px;
+    }
+
+    .doc-nav button {
+      padding: 10px 16px;
+      margin: 0 8px;
+      border: none;
+      border-radius: 12px;
+      background: #111827;
+      color: white;
+      cursor: pointer;
+      font-weight: 800;
+    }
+
+    @media (max-width: 1200px) {
+      .checkins-summary {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .checkins-summary {
+        grid-template-columns: 1fr;
+      }
+
+      .checkins-actions {
+        align-items: flex-start;
+      }
+    }
+
+    .search-filter-form {
+  display: flex;
+  align-items: end;
+  gap: 14px;
+  flex-wrap: wrap;
+  background: #f8fafc;
+  padding: 18px;
+  border-radius: 18px;
+  border: 1px solid #eef2f7;
+  margin-bottom: 24px;
+}
+
+.search-filter-form label {
+  display: block;
+  font-size: 13px;
+  font-weight: 800;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.search-filter-form input,
+.search-filter-form select {
+  height: 44px;
+  min-width: 190px;
+  padding: 0 14px;
+  border-radius: 14px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  font-weight: 700;
+  background: white;
+}
+
+.filter-submit-btn,
+.clear-filter-btn {
+  height: 44px;
+  padding: 0 20px;
+  border-radius: 14px;
+  border: none;
+  font-weight: 900;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-submit-btn {
+  background: #4f46e5;
+  color: white;
+}
+
+.clear-filter-btn {
+  background: #e5e7eb;
+  color: #111827;
+}
+  </style>
+</head>
+
+<body>
+  <div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="logo">
+        <h2>E-Smart</h2>
+        <p>Manager Panel</p>
+      </div>
+
+      <div class="hotel-info">
+        <h3>{{ hotel_name }}</h3>
+      </div>
+
+      <nav class="nav-links">
+        <a href="/dashboard">Dashboard</a>
+        <a href="/checkins" class="active">Check-ins</a>
+        <a href="/rooms">Rooms</a>
+        <a href="/settings">Settings</a>
+      </nav>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+      <!-- TOPBAR -->
+      <header class="topbar">
+        <div>
+          <span class="eyebrow">Guest Management</span>
+          <h1>{{ hotel_name }} - Pre Check-ins</h1>
+          <p>Review guest submissions, documents, and approval status.</p>
+        </div>
+
+        <div class="topbar-right">
+          <div class="manager-profile">
+            <span class="profile-circle">M</span>
+            <div>
+              <h4>Manager</h4>
+              <p>Hotel Admin</p>
+            </div>
+          </div>
+
+          <a href="/logout" class="logout-btn">Logout</a>
+        </div>
+      </header>
+
+      <!-- SUMMARY CARDS -->
+      <section class="checkins-summary">
+        <div class="checkin-stat-card">
+          <span>Total Submissions</span>
+         <h2>{{ total_count }}</h2>
+        </div>
+
+        <div class="checkin-stat-card">
+          <span>Approved</span>
+          <h2>{{ approved_count | default(0) }}</h2>
+        </div>
+
+        <div class="checkin-stat-card">
+          <span>Pending</span>
+          <h2>{{ pending_count | default(0) }}</h2>
+        </div>
+
+        <div class="checkin-stat-card">
+          <span>Rejected</span>
+          <h2>{{ rejected_count | default(0) }}</h2>
+        </div>
+      </section>
+
+      <!-- TABLE CARD -->
+      <section class="checkins-card">
+
+        <div class="checkins-actions">
+          <form method="post" action="/approve-all-guests">
+            <button type="submit" class="approve-all-btn">
+              Approve All Pending Guests
+            </button>
+          </form>
+
+          <div class="filter-bar">
+            <a href="/checkins?status=all"
+               class="filter-btn {% if status_filter == 'all' %}active-filter{% endif %}">
+              All
+            </a>
+
+            <a href="/checkins?status=approved"
+               class="filter-btn {% if status_filter == 'approved' %}active-filter{% endif %}">
+              Approved
+            </a>
+
+            <a href="/checkins?status=pending"
+               class="filter-btn {% if status_filter == 'pending' %}active-filter{% endif %}">
+              Pending
+            </a>
+
+            <a href="/checkins?status=rejected"
+               class="filter-btn {% if status_filter == 'rejected' %}active-filter{% endif %}">
+              Rejected
+            </a>
+          </div>
+        </div>
+
+
+        <form method="get" action="/checkins" class="search-filter-form">
+
+  <input type="hidden" name="status" value="{{ status_filter }}">
+
+  <div class="filter-input-group">
+    <label>Search Guest Name</label>
+    <input
+      type="text"
+      name="search"
+      placeholder="Search by guest name..."
+      value="{{ search_name }}"
+    >
+  </div>
+
+  <div class="filter-input-group">
+    <label>Reservation Filter</label>
+    <select name="date_filter" id="dateFilter" onchange="changeDateInput()">
+      <option value="all" {% if date_filter == "all" %}selected{% endif %}>All</option>
+      <option value="day" {% if date_filter == "day" %}selected{% endif %}>Day</option>
+      <option value="month" {% if date_filter == "month" %}selected{% endif %}>Month</option>
+      <option value="year" {% if date_filter == "year" %}selected{% endif %}>Year</option>
+    </select>
+  </div>
+
+  <div class="filter-input-group">
+    <label>Select Date</label>
+    <input
+      id="selectedDate"
+      type="date"
+      name="selected_date"
+      value="{{ selected_date }}"
+    >
+  </div>
+
+  <button type="submit" class="filter-submit-btn">Apply Filter</button>
+
+  <a href="/checkins" class="clear-filter-btn">Clear</a>
+
+</form>
+
+        <div class="table-wrapper">
+          <table class="checkins-table">
+            <thead>
+              <tr>
+                <th>Guest Name</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>Nationality</th>
+                <th>ID / Passport No.</th>
+                <th>Documents</th>
+                <th>Booked Guests</th>
+                <th>Submitted Guests</th>
+                <th>Arrival Time</th>
+                <th>Validation</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              {% for guest in checkins %}
+              <tr>
+                <td class="guest-name">{{ guest.guest_full_name }}</td>
+
+                <td class="guest-email">{{ guest.guest_email }}</td>
+
+                <td>
+                  <span class="gender-badge {% if guest.guest_gender == 'male' %}gender-male{% else %}gender-female{% endif %}">
+                    {{ guest.guest_gender }}
+                  </span>
+                </td>
+
+                <td>{{ guest.nationality }}</td>
+
+                <td>
+                  <span class="count-badge">
+                    {{ guest.id_passport_number or "Not provided" }}
+                  </span>
+                </td>
+
+                <td>
+                  {% if guest.identity_document_uploads %}
+                    <button
+                      type="button"
+                      class="docs-btn"
+                      data-docs='{{ guest.identity_document_uploads | tojson | safe }}'
+                      onclick="openDocs(this)">
+                      View Documents
+                    </button>
+                  {% else %}
+                    <span class="no-docs">No documents</span>
+                  {% endif %}
+                </td>
+
+                <td>
+                  <span class="count-badge">{{ guest.booked_guests_count }}</span>
+                </td>
+
+                <td>
+                  <span class="count-badge">{{ guest.submitted_guests_count }}</span>
+                </td>
+
+                <td class="submitted-date">
+                  {{ guest.arrival_time }}
+                </td>
+
+                <td>
+                  {% if guest.verification_status == "approved" %}
+                    <span class="status-approved">Approved</span>
+
+                  {% elif guest.verification_status == "rejected" %}
+                    <span class="status-rejected">Rejected</span>
+
+                  {% else %}
+                    <form method="post" action="/approve-guest" style="display:inline;">
+                      <input type="hidden" name="guest_id" value="{{ guest.id }}">
+                      <button type="submit" class="approve-btn">Approve</button>
+                    </form>
+
+                    <form method="post" action="/reject-guest" style="display:inline;">
+                      <input type="hidden" name="guest_id" value="{{ guest.id }}">
+                      <button type="submit" class="reject-btn">Reject</button>
+                    </form>
+                  {% endif %}
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+
+      </section>
+    </main>
+  </div>
+
+  <!-- DOCUMENT MODAL -->
+  <div id="docsModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeDocs()">&times;</span>
+
+      <img id="docImage" src="" alt="Guest Document">
+
+      <div class="doc-nav">
+        <button type="button" onclick="prevDoc()">Previous</button>
+        <span id="docCounter"></span>
+        <button type="button" onclick="nextDoc()">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let docs = [];
+    let currentDocIndex = 0;
+
+    const SUPABASE_URL = "https://uawxrfxbzczpadvhirjd.supabase.co";
+
+    function openDocs(button) {
+      let documentData = button.getAttribute("data-docs");
+
+      if (!documentData) return;
+
+      let parsed = JSON.parse(documentData);
+
+      docs = [];
+
+      if (parsed.guests) {
+        parsed.guests.forEach(guest => {
+          guest.files.forEach(file => {
+            const publicUrl =
+              `${SUPABASE_URL}/storage/v1/object/public/${file.bucket}/${file.object_path}`;
+
+            docs.push(publicUrl);
+          });
+        });
+      }
+
+      currentDocIndex = 0;
+      showDoc();
+
+      document.getElementById("docsModal").style.display = "flex";
+    }
+
+    function showDoc() {
+      const img = document.getElementById("docImage");
+      const counter = document.getElementById("docCounter");
+
+      if (docs.length === 0) {
+        img.alt = "No document found";
+        counter.innerText = "0 / 0";
+        return;
+      }
+
+      img.src = docs[currentDocIndex];
+      counter.innerText = `${currentDocIndex + 1} / ${docs.length}`;
+    }
+
+    function nextDoc() {
+      if (docs.length === 0) return;
+      currentDocIndex = (currentDocIndex + 1) % docs.length;
+      showDoc();
+    }
+
+    function prevDoc() {
+      if (docs.length === 0) return;
+      currentDocIndex = (currentDocIndex - 1 + docs.length) % docs.length;
+      showDoc();
+    }
+
+    function closeDocs() {
+      document.getElementById("docsModal").style.display = "none";
+    }
+
+    function changeDateInput() {
+  const filter = document.getElementById("dateFilter").value;
+  const dateInput = document.getElementById("selectedDate");
+
+  if (filter === "day") {
+    dateInput.type = "date";
+  } else if (filter === "month") {
+    dateInput.type = "month";
+  } else if (filter === "year") {
+    dateInput.type = "number";
+    dateInput.placeholder = "2026";
+    dateInput.min = "2000";
+    dateInput.max = "2100";
+  } else {
+    dateInput.type = "date";
+    dateInput.value = "";
+  }
+}
+
+changeDateInput();
+  </script>
+</body>
+</html>

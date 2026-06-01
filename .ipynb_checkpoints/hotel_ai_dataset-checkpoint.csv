@@ -1,0 +1,1001 @@
+booking_id,guest_name,gender,age,nationality,booking_date,checkin_date,checkin_time,lead_time_days,stay_length_nights,room_number,room_type,booking_source,purpose_of_stay,adults,children,companion_count,meal_plan,requires_parking,airport_pickup,id_verified,digital_checkin_used,extra_bedding_requested,upgrade_offer_shown,upgrade_accepted,nightly_rate_jod,revenue_jod,room_status,housekeeping_requests,special_request,guest_satisfaction_score,peak_day_flag
+BKG0001,Yousef Droubi,Male,35,Egyptian,2025-11-24,2025-11-25,17,1,1,317,Suite,Travel Agency,Couple Getaway,1,0,0,Breakfast,Yes,Yes,Yes,Yes,No,Yes,No,149.04,149.04,Occupied,0,None,3.6,No
+BKG0002,Sara Alsmadi,Female,68,Saudi,2025-06-24,2025-07-03,14,9,3,217,Single,Website,Couple Getaway,1,0,0,Half Board,No,No,Yes,No,No,Yes,No,75.28,225.84,Available,0,High Floor,4.6,Yes
+BKG0003,Dana Qaisi,Female,26,American,2026-01-31,2026-02-05,18,5,3,494,Double,Corporate,Business,2,0,1,Half Board,No,No,Yes,Yes,No,Yes,No,98.6,295.8,Occupied,0,Quiet Room,4.9,No
+BKG0004,Khaled Yasin,Female,40,American,2026-02-02,2026-02-16,17,14,1,361,Single,Corporate,Family,1,1,1,Breakfast,No,No,Yes,Yes,Yes,Yes,No,59.4,59.4,Clean,2,Baby Crib,3.8,No
+BKG0005,Zaid Gubari,Male,29,German,2025-09-10,2025-09-13,18,3,1,192,Double,Mobile App,Family,2,0,1,Breakfast,No,No,Yes,No,No,Yes,No,99.14,99.14,Occupied,1,Extra Towels,4.2,Yes
+BKG0006,Omar Gubari,Male,60,Egyptian,2025-09-17,2025-10-27,14,40,1,373,Double,Website,Couple Getaway,4,0,3,Full Board,No,No,Yes,Yes,No,Yes,No,106.25,106.25,Occupied,1,Smoking Area,4.2,No
+BKG0007,Hiba Haddad,Male,55,American,2026-01-28,2026-02-05,16,8,2,218,Double,Travel Agency,Couple Getaway,4,0,3,Half Board,No,No,Yes,Yes,No,No,No,90.71,181.42,Occupied,1,None,4.3,No
+BKG0008,Shatha Tareq,Male,60,UAE,2025-10-29,2025-10-29,12,0,2,340,Single,Website,Leisure,1,0,0,Breakfast,No,No,Yes,No,No,Yes,No,59.4,118.8,Occupied,2,Baby Crib,4.7,No
+BKG0009,Omar Malkawi,Male,61,Jordanian,2026-03-19,2026-03-22,16,3,6,486,Double,Mobile App,Couple Getaway,2,0,1,Breakfast,No,No,Yes,Yes,No,Yes,No,91.8,550.8,Available,2,None,5.0,No
+BKG0010,Sara Khaled,Male,50,German,2026-03-11,2026-03-21,15,10,2,400,Family,Website,Business,2,3,4,Breakfast,No,No,Yes,Yes,Yes,Yes,No,139.97,279.94,Occupied,2,Baby Crib,4.3,Yes
+BKG0011,Khaled Ali,Male,52,Egyptian,2025-09-02,2025-10-05,13,33,5,303,Single,Website,Couple Getaway,1,0,0,Breakfast,No,No,Yes,Yes,Yes,Yes,No,59.4,297.0,Occupied,2,Baby Crib,4.3,No
+BKG0012,Razan Ali,Male,40,Jordanian,2025-03-09,2025-04-19,14,41,6,440,Double,Corporate,Couple Getaway,1,0,0,Breakfast,Yes,No,Yes,No,No,Yes,No,99.14,594.84,Clean,0,None,3.2,Yes
+BKG0013,Razan Droubi,Male,26,American,2025-02-23,2025-03-11,13,16,2,319,Double,Website,Leisure,3,2,4,Breakfast,Yes,No,Yes,Yes,No,Yes,No,91.8,183.6,Occupied,2,Smoking Area,4.6,No
+BKG0014,Khaled Qaisi,Male,64,Jordanian,2025-10-15,2025-10-22,12,7,1,184,Family,Travel Agency,Business,2,2,3,Breakfast,No,No,Yes,Yes,No,Yes,No,119.23,119.23,Available,0,Late Check-In,5.0,No
+BKG0015,Ahmad Alsmadi,Male,21,British,2026-02-14,2026-02-25,18,11,7,199,Suite,Mobile App,Family,3,0,2,Room Only,No,No,Yes,Yes,Yes,No,No,150.0,1050.0,Occupied,0,Quiet Room,4.7,No
+BKG0016,Rana Khaled,Female,37,German,2025-07-24,2025-08-10,18,17,3,463,Suite,Corporate,Leisure,1,2,2,Breakfast,No,No,Yes,Yes,Yes,Yes,No,191.16,573.48,Needs Service,3,Quiet Room,4.8,Yes
+BKG0017,Nour Qadoumi,Male,54,British,2025-08-12,2025-09-14,19,33,1,255,Double,Corporate,Couple Getaway,2,0,1,Half Board,Yes,No,Yes,Yes,No,Yes,No,98.6,98.6,Occupied,0,Late Check-In,4.1,No
+BKG0018,Noor Khaled,Female,33,British,2025-07-27,2025-07-27,14,0,5,124,Double,Mobile App,Business,2,0,1,Full Board,No,Yes,Yes,Yes,No,Yes,No,125.38,626.9,Clean,0,Quiet Room,4.2,Yes
+BKG0019,Lina Nasser,Female,24,German,2025-05-06,2025-06-14,18,39,4,169,Family,Travel Agency,Conference,2,3,4,Breakfast,No,Yes,Yes,No,Yes,Yes,No,150.23,600.92,Needs Service,2,Quiet Room,3.9,Yes
+BKG0020,Khaled Ali,Female,55,French,2026-02-15,2026-03-29,15,42,4,272,Double,Walk-in,Family,3,0,2,Full Board,No,No,Yes,Yes,No,Yes,No,106.25,425.0,Available,1,Extra Towels,4.3,No
+BKG0021,Razan Droubi,Female,34,Egyptian,2025-06-13,2025-06-18,13,5,5,477,Suite,Website,Leisure,2,0,1,Breakfast,No,No,Yes,Yes,No,Yes,No,191.16,955.8,Occupied,2,Sea View,3.9,Yes
+BKG0022,Rana Tareq,Male,51,American,2025-10-07,2025-11-14,18,38,7,268,Double,Website,Leisure,3,0,2,Room Only,No,Yes,Yes,Yes,No,Yes,Yes,112.0,784.0,Available,2,None,4.6,Yes
+BKG0023,Alaa Alsmadi,Female,44,German,2025-04-19,2025-05-09,14,20,4,159,Double,Website,Business,2,0,1,Full Board,Yes,No,Yes,Yes,No,No,No,114.75,459.0,Occupied,1,Late Check-In,4.6,Yes
+BKG0024,Hiba Gubari,Male,43,Saudi,2025-10-16,2025-11-14,17,29,2,122,Suite,Website,Leisure,2,2,3,Breakfast,No,No,Yes,Yes,No,Yes,No,174.96,349.92,Available,3,High Floor,4.1,Yes
+BKG0025,Omar Ali,Female,24,Jordanian,2025-06-27,2025-07-24,16,27,5,331,Family,Corporate,Business,4,3,6,Half Board,No,No,No,Yes,No,Yes,No,164.26,821.3,Occupied,1,Quiet Room,4.3,Yes
+BKG0026,Alaa Alsmadi,Female,62,British,2025-05-05,2025-06-03,16,29,7,465,Single,Corporate,Business,1,0,0,Breakfast,No,No,Yes,Yes,No,Yes,No,70.09,490.63,Occupied,0,Quiet Room,4.2,Yes
+BKG0027,Alaa Ali,Female,34,UAE,2025-09-09,2025-09-10,13,1,4,471,Double,Travel Agency,Leisure,2,0,1,Half Board,Yes,No,Yes,Yes,Yes,Yes,No,90.71,362.84,Occupied,0,Quiet Room,4.3,No
+BKG0028,Alaa Nasser,Male,26,American,2025-10-29,2025-12-01,16,33,7,275,Single,Website,Business,1,0,0,Breakfast,Yes,No,Yes,Yes,Yes,No,No,70.09,490.63,Occupied,0,Smoking Area,4.7,Yes
+BKG0029,Tareq Qadoumi,Male,50,Saudi,2025-04-05,2025-04-21,19,16,1,418,Double,Website,Family,1,0,0,Breakfast,Yes,No,Yes,No,No,Yes,No,91.8,91.8,Occupied,1,Sea View,3.7,No
+BKG0030,Shatha Nabil,Male,33,American,2025-01-31,2025-02-06,19,6,5,379,Suite,Website,Business,1,0,0,Room Only,No,No,Yes,Yes,No,Yes,No,150.0,750.0,Available,0,Quiet Room,5.0,No
+BKG0031,Nour Ali,Male,29,Jordanian,2025-04-26,2025-05-05,18,9,6,114,Single,Mobile App,Conference,1,0,0,Breakfast,Yes,Yes,Yes,Yes,No,Yes,No,59.4,356.4,Occupied,1,Baby Crib,4.8,No
+BKG0032,Alaa Ali,Male,56,American,2025-02-16,2025-03-31,18,43,2,440,Double,Walk-in,Business,2,0,1,Breakfast,Yes,No,Yes,No,No,Yes,No,91.8,183.6,Occupied,1,Sea View,4.4,No
+BKG0033,Alaa Nabil,Female,25,American,2025-07-25,2025-08-29,12,35,7,115,Double,Corporate,Leisure,2,3,4,Half Board,No,No,Yes,Yes,No,Yes,No,124.24,869.68,Occupied,1,Smoking Area,3.3,Yes
+BKG0034,Mariam Malkawi,Male,39,German,2025-11-19,2025-12-04,17,15,5,407,Single,Corporate,Couple Getaway,1,0,0,Breakfast,Yes,No,Yes,Yes,No,Yes,No,70.09,350.45,Needs Service,2,Sea View,4.1,Yes
+BKG0035,Hiba Tareq,Female,37,British,2025-09-18,2025-09-26,18,8,6,220,Family,Travel Agency,Couple Getaway,2,2,3,Half Board,No,No,Yes,Yes,Yes,Yes,No,138.31,829.86,Occupied,1,Quiet Room,5.0,Yes
+BKG0036,Omar Nasser,Female,67,German,2026-03-15,2026-04-10,12,26,7,501,Double,Travel Agency,Couple Getaway,4,0,3,Breakfast,Yes,No,Yes,No,No,Yes,No,91.21,638.47,Clean,2,Late Check-In,3.6,Yes
+BKG0037,Yousef Droubi,Male,61,British,2025-05-16,2025-06-24,16,39,3,254,Family,Corporate,Leisure,2,3,4,Full Board,Yes,Yes,Yes,No,No,Yes,No,177.0,531.0,Occupied,1,Smoking Area,3.6,Yes
+BKG0038,Tareq Alsmadi,Female,38,British,2025-01-15,2025-02-04,17,20,1,380,Double,Website,Leisure,3,0,2,Room Only,No,No,Yes,Yes,No,Yes,No,85.0,85.0,Occupied,0,Smoking Area,3.8,No
+BKG0039,Nour Droubi,Female,57,German,2025-03-22,2025-04-19,19,28,1,355,Suite,Mobile App,Leisure,4,2,5,Room Only,No,No,Yes,Yes,Yes,Yes,No,162.0,162.0,Occupied,1,None,4.8,Yes
+BKG0040,Mariam Yasin,Male,42,UAE,2026-03-03,2026-03-17,16,14,3,503,Double,Travel Agency,Conference,3,0,2,Half Board,No,No,Yes,Yes,No,Yes,No,90.71,272.13,Occupied,2,Late Check-In,4.1,No
+BKG0041,Ahmad Ali,Male,37,American,2025-10-04,2025-11-06,15,33,3,375,Family,Corporate,Couple Getaway,2,2,3,Half Board,No,Yes,Yes,Yes,No,Yes,No,139.2,417.6,Clean,2,Sea View,4.1,No
+BKG0042,Tareq Nasser,Female,63,German,2025-03-05,2025-03-28,16,23,4,160,Family,Corporate,Business,2,1,2,Half Board,No,No,Yes,Yes,No,Yes,No,150.34,601.36,Available,2,None,4.4,Yes
+BKG0043,Sara Tareq,Female,49,German,2025-02-19,2025-03-25,13,34,2,242,Double,Walk-in,Couple Getaway,3,0,2,Half Board,No,No,Yes,Yes,No,Yes,No,98.6,197.2,Occupied,1,Baby Crib,4.7,No
+BKG0044,Razan Ali,Male,33,Jordanian,2025-04-08,2025-05-07,13,29,1,509,Suite,Website,Business,2,0,1,Room Only,No,Yes,Yes,No,No,Yes,No,150.0,150.0,Occupied,1,Late Check-In,4.4,No
+BKG0045,Abdullah Alsmadi,Male,28,British,2025-03-31,2025-05-12,18,42,1,116,Suite,Website,Leisure,2,0,1,Half Board,No,No,Yes,No,No,Yes,No,174.0,174.0,Needs Service,1,Extra Towels,4.8,No
+BKG0046,Shatha Nasser,Female,26,French,2025-02-01,2025-02-26,15,25,4,217,Single,Website,Family,1,0,0,Breakfast,No,No,Yes,No,No,Yes,No,59.4,237.6,Occupied,0,Quiet Room,3.9,No
+BKG0047,Shatha Qaisi,Male,66,British,2025-07-31,2025-08-29,15,29,3,470,Double,Travel Agency,Leisure,2,2,3,Room Only,No,Yes,Yes,No,No,Yes,No,98.53,295.59,Available,2,Baby Crib,4.1,Yes
+BKG0048,Ahmad Yasin,Male,26,Egyptian,2025-01-27,2025-03-06,14,38,3,240,Suite,Website,Business,3,0,2,Breakfast,No,No,Yes,No,No,Yes,No,162.0,486.0,Available,1,Extra Towels,5.0,No
+BKG0049,Omar Ali,Male,42,Egyptian,2025-12-26,2026-01-14,19,19,7,327,Family,Travel Agency,Leisure,2,1,2,Room Only,No,No,Yes,Yes,Yes,Yes,No,110.4,772.8,Available,2,None,4.5,No
+BKG0050,Alaa Droubi,Female,46,UAE,2025-12-05,2026-01-05,16,31,4,321,Suite,Website,Leisure,2,1,2,Breakfast,No,Yes,Yes,Yes,Yes,Yes,No,162.0,648.0,Occupied,3,None,4.3,No
+BKG0051,Omar Tareq,Female,34,Saudi,2025-03-31,2025-04-24,15,24,2,155,Double,Walk-in,Leisure,2,0,1,Breakfast,No,No,Yes,Yes,No,No,No,91.8,183.6,Occupied,1,Baby Crib,4.8,No
+BKG0052,Omar Yasin,Female,25,American,2025-05-05,2025-06-11,15,37,4,496,Suite,Website,Conference,1,0,0,Half Board,No,Yes,Yes,Yes,No,Yes,No,205.32,821.28,Occupied,1,Late Check-In,4.3,Yes
+BKG0053,Nour Qadoumi,Female,68,British,2025-11-18,2025-12-17,17,29,4,360,Family,Travel Agency,Business,2,3,4,Half Board,No,No,Yes,Yes,Yes,Yes,No,151.12,604.48,Occupied,0,High Floor,3.6,Yes
+BKG0054,Hassan Adel,Male,67,French,2025-07-16,2025-08-22,16,37,4,245,Family,Travel Agency,Business,2,2,3,Full Board,No,No,Yes,No,Yes,Yes,Yes,212.13,848.52,Clean,2,Late Check-In,4.7,Yes
+BKG0055,Tareq Haddad,Female,23,Saudi,2025-07-18,2025-08-08,16,21,4,293,Double,Travel Agency,Leisure,2,2,3,Full Board,No,Yes,Yes,Yes,No,Yes,No,123.16,492.64,Available,3,High Floor,4.8,Yes
+BKG0056,Nour Tareq,Male,62,German,2025-11-26,2025-12-17,17,21,7,179,Double,Website,Leisure,4,0,3,Half Board,Yes,No,Yes,Yes,No,Yes,No,116.35,814.45,Clean,1,Late Check-In,3.7,Yes
+BKG0057,Leen Haddad,Female,30,Jordanian,2025-03-25,2025-05-08,17,44,2,371,Double,Travel Agency,Leisure,2,0,1,Half Board,No,No,Yes,No,No,Yes,No,90.71,181.42,Needs Service,1,Extra Towels,4.5,No
+BKG0058,Shatha Khaled,Female,28,Jordanian,2025-08-03,2025-08-15,17,12,2,303,Double,Corporate,Family,2,2,3,Full Board,Yes,No,Yes,No,Yes,Yes,No,133.88,267.76,Occupied,2,None,3.8,Yes
+BKG0059,Mariam Qaisi,Female,25,UAE,2025-09-15,2025-09-30,15,15,3,177,Single,Corporate,Couple Getaway,1,0,0,Half Board,No,Yes,Yes,No,No,Yes,No,63.8,191.4,Occupied,1,Extra Towels,4.4,No
+BKG0060,Zaid Adel,Female,27,UAE,2025-10-08,2025-11-15,15,38,6,135,Double,Website,Leisure,3,0,2,Room Only,No,No,Yes,Yes,Yes,Yes,No,91.8,550.8,Available,2,High Floor,4.3,Yes
+BKG0061,Alaa Alsmadi,Male,52,German,2025-09-27,2025-10-29,17,32,5,194,Family,Website,Leisure,2,2,3,Half Board,Yes,No,Yes,No,No,Yes,Yes,169.82,849.1,Occupied,1,Smoking Area,4.3,No
+BKG0062,Lina Gubari,Male,49,American,2026-02-20,2026-02-24,17,4,2,289,Single,Corporate,Couple Getaway,1,0,0,Breakfast,Yes,No,Yes,Yes,Yes,Yes,No,59.4,118.8,Clean,1,Extra Towels,4.9,No
+BKG0063,Yousef Droubi,Female,44,Egyptian,2025-08-12,2025-09-09,18,28,4,328,Double,Mobile App,Couple Getaway,2,0,1,Half Board,No,Yes,Yes,No,No,Yes,Yes,120.29,481.16,Available,2,Sea View,4.0,No
+BKG0064,Leen Qadoumi,Female,42,American,2025-06-29,2025-07-01,17,2,4,117,Double,Corporate,Business,3,0,2,Breakfast,No,No,Yes,Yes,No,Yes,No,108.32,433.28,Occupied,2,Baby Crib,4.4,Yes
+BKG0065,Mariam Nabil,Female,43,French,2025-11-06,2025-12-19,15,43,2,170,Suite,Travel Agency,Family,2,1,2,Breakfast,Yes,No,Yes,Yes,No,Yes,No,187.79,375.58,Occupied,2,Smoking Area,4.7,Yes
+BKG0066,Ahmad Adel,Female,65,Saudi,2026-03-13,2026-04-10,13,28,1,384,Family,Corporate,Couple Getaway,3,1,3,Breakfast,Yes,No,Yes,Yes,No,Yes,No,139.97,139.97,Clean,1,Smoking Area,4.4,Yes
+BKG0067,Noor Tareq,Male,55,Saudi,2025-10-21,2025-11-19,17,29,3,358,Single,Mobile App,Conference,1,0,0,Breakfast,No,No,Yes,Yes,No,Yes,No,59.4,178.2,Occupied,2,Late Check-In,4.9,No
+BKG0068,Hiba Khaled,Male,39,Egyptian,2026-03-21,2026-03-28,15,7,1,115,Double,Walk-in,Leisure,4,2,5,Half Board,Yes,No,Yes,Yes,Yes,Yes,No,106.49,106.49,Occupied,2,Baby Crib,4.6,Yes
+BKG0069,Dana Qaisi,Male,36,German,2025-02-11,2025-03-24,17,41,1,468,Double,Website,Couple Getaway,2,0,1,Half Board,Yes,No,Yes,Yes,No,Yes,No,98.6,98.6,Occupied,1,Late Check-In,3.9,No
+BKG0070,Alaa Malkawi,Female,28,Saudi,2025-06-13,2025-07-05,20,22,6,258,Double,Mobile App,Leisure,2,0,1,Breakfast,No,No,Yes,No,Yes,Yes,No,115.67,694.02,Occupied,0,Smoking Area,4.2,Yes
+BKG0071,Sara Qadoumi,Female,52,UAE,2025-09-12,2025-09-17,19,5,1,388,Single,Mobile App,Business,1,0,0,Breakfast,No,No,Yes,Yes,No,Yes,No,59.4,59.4,Clean,0,Sea View,4.4,No
+BKG0072,Noor Qadoumi,Female,44,American,2025-04-10,2025-05-15,14,35,3,364,Family,Travel Agency,Family,2,2,3,Half Board,Yes,No,Yes,Yes,Yes,Yes,Yes,156.24,468.72,Occupied,3,Smoking Area,4.1,No
+BKG0073,Sara Qadoumi,Female,45,British,2025-03-13,2025-04-21,14,39,3,346,Double,Travel Agency,Leisure,2,0,1,Room Only,Yes,Yes,Yes,Yes,No,No,No,78.2,234.6,Available,0,Quiet Room,4.0,No
+BKG0074,Zaid Samer,Male,44,UAE,2025-03-29,2025-05-08,17,40,5,388,Single,Corporate,Business,1,0,0,Room Only,Yes,Yes,Yes,Yes,No,No,No,55.0,275.0,Clean,1,Late Check-In,4.3,No
+BKG0075,Razan Malkawi,Male,40,French,2025-06-16,2025-07-16,15,30,6,508,Family,Mobile App,Leisure,3,2,4,Half Board,Yes,No,Yes,Yes,No,Yes,No,164.26,985.56,Occupied,1,Baby Crib,4.2,Yes
+BKG0076,Khaled Khaled,Female,63,German,2026-01-05,2026-01-23,13,18,3,443,Family,Corporate,Couple Getaway,2,2,3,Full Board,Yes,No,Yes,No,Yes,Yes,No,162.0,486.0,Available,2,Quiet Room,4.2,Yes
+BKG0077,Hiba Samer,Female,26,British,2025-09-29,2025-11-08,14,40,2,374,Suite,Website,Conference,1,0,0,Breakfast,No,No,Yes,No,No,Yes,No,174.96,349.92,Occupied,0,High Floor,3.6,Yes
+BKG0078,Noor Qaisi,Female,31,Egyptian,2026-01-14,2026-01-16,19,2,6,359,Family,Website,Couple Getaway,3,2,4,Full Board,No,No,Yes,Yes,No,Yes,No,162.0,972.0,Occupied,2,Smoking Area,4.9,Yes
+BKG0079,Dana Malkawi,Male,41,French,2025-08-28,2025-09-09,17,12,3,228,Double,Walk-in,Business,2,0,1,Breakfast,No,Yes,Yes,Yes,No,Yes,No,91.8,275.4,Occupied,2,Smoking Area,5.0,No
+BKG0080,Hassan Qadoumi,Female,68,British,2025-01-04,2025-01-28,14,24,3,214,Double,Walk-in,Business,3,0,2,Half Board,Yes,Yes,Yes,Yes,No,No,No,98.6,295.8,Clean,1,Extra Towels,4.2,No
+BKG0081,Hiba Haddad,Female,67,German,2025-04-23,2025-05-23,13,30,2,177,Suite,Corporate,Conference,3,0,2,Half Board,No,No,Yes,No,No,Yes,No,187.92,375.84,Needs Service,2,Quiet Room,4.6,Yes
+BKG0082,Shatha Adel,Male,63,French,2025-03-26,2025-04-28,15,33,3,459,Single,Travel Agency,Couple Getaway,1,0,0,Breakfast,No,No,Yes,Yes,No,Yes,No,54.65,163.95,Clean,0,None,4.3,No
+BKG0083,Lina Yasin,Female,24,Jordanian,2025-02-02,2025-02-05,19,3,5,376,Double,Website,Business,2,0,1,Half Board,No,No,Yes,Yes,No,Yes,Yes,120.29,601.45,Needs Service,1,Baby Crib,4.3,No
+BKG0084,Khaled Samer,Male,34,Jordanian,2025-07-21,2025-07-29,17,8,5,135,Family,Mobile App,Conference,2,3,4,Half Board,Yes,No,Yes,No,No,Yes,No,164.26,821.3,Occupied,0,None,4.3,Yes
+BKG0085,Shatha Ali,Male,63,UAE,2025-02-21,2025-02-23,15,2,5,241,Suite,Mobile App,Leisure,2,2,3,Room Only,No,No,Yes,No,Yes,Yes,No,150.0,750.0,Occupied,2,Quiet Room,4.1,No
+BKG0086,Razan Tareq,Female,31,French,2025-02-01,2025-03-10,18,37,5,314,Single,Mobile App,Family,1,0,0,Breakfast,No,No,Yes,Yes,No,Yes,No,59.4,297.0,Clean,2,None,4.6,No
+BKG0087,Tareq Malkawi,Male,36,British,2025-10-13,2025-10-21,15,8,5,108,Double,Corporate,Couple Getaway,1,0,0,Half Board,Yes,No,Yes,Yes,No,Yes,No,98.6,493.0,Clean,1,Baby Crib,3.8,No
+BKG0088,Hassan Adel,Female,68,UAE,2025-04-19,2025-04-26,17,7,2,312,Suite,Walk-in,Leisure,2,0,1,Breakfast,No,No,Yes,Yes,No,Yes,No,174.96,349.92,Clean,0,Quiet Room,4.3,Yes
+BKG0089,Yousef Malkawi,Female,21,German,2025-01-24,2025-02-07,17,14,5,378,Double,Website,Leisure,2,0,1,Breakfast,No,No,Yes,Yes,No,Yes,No,99.14,495.7,Clean,1,Smoking Area,4.2,Yes
+BKG0090,Razan Ali,Male,24,Jordanian,2025-11-25,2025-12-28,12,33,1,109,Double,Corporate,Leisure,3,0,2,Breakfast,Yes,No,Yes,Yes,No,Yes,Yes,132.16,132.16,Available,1,Extra Towels,4.9,Yes
+BKG0091,Omar Tareq,Male,31,Saudi,2025-09-15,2025-10-29,16,44,7,295,Double,Website,Family,2,0,1,Half Board,Yes,No,Yes,Yes,No,Yes,No,98.6,690.2,Occupied,1,None,5.0,No
+BKG0092,Razan Qadoumi,Male,20,Saudi,2025-07-13,2025-08-12,12,30,5,437,Double,Mobile App,Conference,2,0,1,Full Board,Yes,No,Yes,Yes,No,No,No,125.38,626.9,Occupied,1,Extra Towels,4.5,Yes
+BKG0093,Dana Khaled,Male,33,German,2025-01-17,2025-02-06,11,20,2,425,Family,Website,Family,2,2,3,Breakfast,No,No,Yes,Yes,No,Yes,No,129.6,259.2,Occupied,2,Sea View,4.9,No
+BKG0094,Hassan Gubari,Female,42,German,2025-05-20,2025-06-17,15,28,7,239,Single,Travel Agency,Leisure,1,2,2,Breakfast,Yes,Yes,Yes,Yes,No,Yes,No,64.48,451.36,Occupied,3,Smoking Area,5.0,Yes
+BKG0095,Leen Yasin,Female,48,Saudi,2025-02-22,2025-02-27,13,5,2,172,Single,Mobile App,Business,1,0,0,Breakfast,Yes,No,Yes,Yes,No,No,No,59.4,118.8,Needs Service,1,Late Check-In,4.7,No
+BKG0096,Dana Tareq,Male,24,German,2025-05-18,2025-06-04,15,17,3,518,Double,Website,Conference,2,0,1,Full Board,No,No,Yes,Yes,Yes,Yes,No,125.38,376.14,Clean,2,Smoking Area,3.7,Yes
+BKG0097,Razan Khaled,Female,28,British,2026-02-26,2026-04-08,20,41,7,473,Double,Walk-in,Leisure,2,0,1,Breakfast,No,No,No,No,No,Yes,No,91.8,642.6,Clean,4,Late Check-In,4.7,No
+BKG0098,Razan Qadoumi,Male,38,German,2025-08-25,2025-09-07,15,13,6,427,Suite,Website,Leisure,2,0,1,Breakfast,Yes,No,Yes,Yes,No,No,No,162.0,972.0,Clean,1,Baby Crib,4.2,No
+BKG0099,Hassan Khaled,Male,42,Jordanian,2025-02-13,2025-02-28,16,15,1,348,Double,Travel Agency,Family,4,0,3,Half Board,Yes,Yes,Yes,No,No,Yes,No,97.97,97.97,Occupied,1,Late Check-In,3.5,Yes
+BKG0100,Zaid Yasin,Male,25,Egyptian,2025-02-23,2025-03-21,19,26,3,383,Double,Mobile App,Conference,2,0,1,Breakfast,Yes,No,Yes,Yes,Yes,Yes,Yes,120.96,362.88,Occupied,2,Quiet Room,4.9,Yes
+BKG0101,Dana Samer,Male,49,German,2025-03-23,2025-04-27,15,35,3,335,Double,Website,Family,2,1,2,Full Board,No,No,Yes,Yes,Yes,Yes,No,106.25,318.75,Available,1,Baby Crib,4.5,No
+BKG0102,Nour Yasin,Female,53,German,2025-02-28,2025-04-11,18,42,3,395,Double,Travel Agency,Leisure,3,1,3,Half Board,No,No,Yes,Yes,Yes,Yes,No,97.97,293.91,Occupied,1,Sea View,4.1,Yes
+BKG0103,Hiba Khaled,Male,54,Egyptian,2025-07-16,2025-07-27,15,11,4,508,Double,Website,Leisure,2,0,1,Breakfast,Yes,Yes,Yes,No,No,Yes,No,108.32,433.28,Occupied,0,High Floor,4.5,Yes
+BKG0104,Tareq Qaisi,Female,34,Egyptian,2026-01-25,2026-02-12,12,18,2,117,Suite,Travel Agency,Conference,2,0,1,Breakfast,No,No,Yes,No,No,Yes,No,149.04,298.08,Occupied,2,Quiet Room,4.3,No
+BKG0105,Tareq Ali,Female,25,Saudi,2025-08-19,2025-09-10,18,22,3,394,Suite,Website,Couple Getaway,2,0,1,Breakfast,No,No,Yes,Yes,No,Yes,Yes,197.64,592.92,Occupied,2,Baby Crib,4.2,No
+BKG0106,Omar Tareq,Male,63,Egyptian,2025-05-17,2025-06-18,20,32,7,364,Family,Corporate,Couple Getaway,4,2,5,Half Board,Yes,Yes,Yes,Yes,No,Yes,No,164.26,1149.82,Available,1,High Floor,4.0,Yes
+BKG0107,Razan Qadoumi,Female,43,French,2026-01-19,2026-03-04,19,44,3,167,Double,Website,Conference,3,0,2,Half Board,No,No,Yes,Yes,No,Yes,No,98.6,295.8,Occupied,3,Baby Crib,4.2,No
+BKG0108,Rana Nabil,Male,63,Jordanian,2025-10-17,2025-11-17,17,31,7,291,Single,Corporate,Leisure,1,0,0,Full Board,No,Yes,No,Yes,No,Yes,No,68.75,481.25,Occupied,1,Baby Crib,4.6,No
+BKG0109,Lina Nabil,Female,60,UAE,2025-12-07,2025-12-17,12,10,6,261,Double,Website,Business,2,0,1,Room Only,No,No,Yes,Yes,No,Yes,No,100.3,601.8,Available,1,High Floor,4.0,Yes
+BKG0110,Shatha Adel,Male,68,Egyptian,2025-07-08,2025-07-16,15,8,3,506,Single,Travel Agency,Family,1,0,0,Breakfast,Yes,No,Yes,Yes,No,Yes,No,64.48,193.44,Occupied,2,Baby Crib,4.8,Yes
+BKG0111,Noor Tareq,Female,35,Jordanian,2025-03-13,2025-03-30,16,17,2,392,Family,Travel Agency,Leisure,2,3,4,Breakfast,Yes,No,No,Yes,Yes,Yes,No,119.23,238.46,Occupied,2,Baby Crib,5.0,No
+BKG0112,Omar Haddad,Female,68,Saudi,2025-08-04,2025-09-07,16,34,3,205,Single,Website,Leisure,1,0,0,Room Only,No,No,Yes,Yes,No,Yes,Yes,67.1,201.3,Occupied,0,Extra Towels,4.0,No
+BKG0113,Zaid Haddad,Male,57,American,2026-02-18,2026-03-24,14,34,2,501,Suite,Walk-in,Couple Getaway,1,0,0,Room Only,No,No,Yes,Yes,No,Yes,No,150.0,300.0,Clean,0,Baby Crib,4.2,No
+BKG0114,Khaled Droubi,Female,28,Saudi,2026-02-26,2026-03-14,13,16,6,361,Suite,Website,Couple Getaway,2,0,1,Room Only,No,No,Yes,Yes,No,Yes,No,162.0,972.0,Occupied,1,High Floor,4.3,Yes
+BKG0115,Leen Nabil,Female,50,German,2025-01-02,2025-01-02,14,0,1,339,Family,Website,Couple Getaway,2,3,4,Breakfast,Yes,No,Yes,No,No,Yes,No,129.6,129.6,Occupied,3,None,4.3,No
+BKG0116,Dana Khaled,Female,55,Jordanian,2026-03-20,2026-04-08,14,19,3,489,Double,Website,Conference,3,0,2,Breakfast,Yes,No,No,No,No,Yes,No,91.8,275.4,Clean,1,None,4.8,No
+BKG0117,Omar Qadoumi,Male,53,German,2025-12-03,2025-12-22,13,19,4,391,Double,Website,Couple Getaway,3,0,2,Room Only,No,No,Yes,Yes,No,No,No,100.3,401.2,Occupied,1,Sea View,4.5,Yes
+BKG0118,Abdullah Ali,Female,35,American,2025-02-01,2025-03-15,20,42,4,338,Family,Corporate,Leisure,3,3,5,Breakfast,Yes,Yes,Yes,Yes,Yes,Yes,No,139.97,559.88,Occupied,1,Quiet Room,3.2,Yes
+BKG0119,Abdullah Nabil,Female,63,Jordanian,2025-05-16,2025-05-23,13,7,7,512,Single,Corporate,Business,1,0,0,Half Board,No,No,Yes,Yes,No,Yes,No,68.9,482.3,Clean,1,High Floor,3.8,Yes
+BKG0120,Yousef Malkawi,Male,34,UAE,2026-02-11,2026-02-18,11,7,2,394,Family,Mobile App,Family,2,2,3,Full Board,Yes,No,Yes,Yes,No,Yes,No,150.0,300.0,Clean,3,None,5.0,No
+BKG0121,Razan Gubari,Female,44,Egyptian,2025-08-10,2025-09-04,15,25,7,110,Double,Corporate,Leisure,2,0,1,Half Board,No,No,Yes,No,No,Yes,No,98.6,690.2,Occupied,0,Quiet Room,3.7,No
+BKG0122,Khaled Qadoumi,Female,54,British,2025-07-15,2025-08-29,14,45,7,509,Family,Travel Agency,Leisure,2,2,3,Room Only,No,No,Yes,Yes,Yes,Yes,No,139.1,973.7,Occupied,3,None,4.3,Yes
+BKG0123,Dana Malkawi,Female,57,British,2025-07-18,2025-07-29,13,11,3,415,Family,Website,Conference,4,2,5,Breakfast,Yes,No,Yes,Yes,Yes,Yes,No,152.93,458.79,Occupied,3,None,4.4,Yes
+BKG0124,Alaa Alsmadi,Female,31,Jordanian,2025-04-14,2025-04-22,14,8,7,263,Single,Travel Agency,Couple Getaway,1,0,0,Half Board,No,No,No,Yes,No,Yes,No,58.7,410.9,Occupied,1,Sea View,4.5,No
+BKG0125,Alaa Yasin,Female,59,UAE,2025-03-31,2025-05-05,16,35,6,270,Suite,Corporate,Leisure,3,0,2,Room Only,Yes,No,Yes,No,No,Yes,No,150.0,900.0,Occupied,0,High Floor,4.4,No
+BKG0126,Hassan Haddad,Male,40,Saudi,2026-01-17,2026-02-01,14,15,1,293,Family,Travel Agency,Conference,2,1,2,Breakfast,Yes,Yes,Yes,Yes,Yes,Yes,No,119.23,119.23,Needs Service,1,Sea View,4.5,No
+BKG0127,Ahmad Tareq,Male,56,Egyptian,2025-02-21,2025-03-23,17,30,7,435,Double,Corporate,Business,1,0,0,Breakfast,Yes,No,Yes,Yes,Yes,No,No,91.8,642.6,Needs Service,3,Smoking Area,3.4,No
+BKG0128,Ahmad Samer,Female,26,UAE,2025-03-26,2025-04-22,13,27,5,188,Family,Mobile App,Family,4,2,5,Breakfast,Yes,No,Yes,Yes,Yes,Yes,No,129.6,648.0,Clean,1,High Floor,4.0,No
+BKG0129,Razan Tareq,Female,27,German,2025-11-23,2025-11-28,15,5,3,488,Double,Corporate,Leisure,2,0,1,Breakfast,No,Yes,Yes,Yes,No,Yes,No,99.14,297.42,Occupied,1,Baby Crib,4.3,Yes
+BKG0130,Mariam Yasin,Female,44,French,2025-10-29,2025-12-03,12,35,2,122,Double,Website,Leisure,2,2,3,Room Only,No,No,Yes,No,Yes,No,No,100.3,200.6,Occupied,2,Quiet Room,4.5,Yes
+BKG0131,Lina Qadoumi,Male,60,American,2025-08-05,2025-09-17,15,43,1,500,Double,Walk-in,Couple Getaway,1,0,0,Breakfast,No,No,Yes,No,Yes,Yes,No,91.8,91.8,Clean,1,High Floor,4.4,No
+BKG0132,Tareq Ali,Female,42,American,2025-02-21,2025-03-11,18,18,7,352,Double,Mobile App,Family,1,0,0,Room Only,No,No,Yes,No,Yes,Yes,No,85.0,595.0,Needs Service,1,Extra Towels,4.1,No
+BKG0133,Noor Gubari,Male,34,American,2026-03-16,2026-04-28,13,43,6,369,Family,Mobile App,Couple Getaway,2,3,4,Half Board,Yes,No,Yes,Yes,Yes,Yes,No,139.2,835.2,Clean,2,Sea View,5.0,No
+BKG0134,Yousef Qaisi,Male,32,UAE,2026-03-27,2026-03-28,13,1,5,233,Single,Website,Leisure,1,0,0,Breakfast,No,No,Yes,Yes,No,Yes,No,64.15,320.75,Needs Service,1,Baby Crib,3.6,Yes
+BKG0135,Khaled Ali,Female,21,Jordanian,2026-01-19,2026-03-04,13,44,7,412,Single,Travel Agency,Couple Getaway,1,0,0,Full Board,No,No,Yes,Yes,Yes,Yes,No,63.25,442.75,Occupied,0,None,4.9,No
+BKG0136,Dana Qaisi,Female,61,German,2026-02-17,2026-04-03,20,45,3,242,Family,Corporate,Leisure,2,3,4,Breakfast,Yes,No,No,No,No,Yes,No,139.97,419.91,Available,2,Extra Towels,3.8,Yes
+BKG0137,Hiba Droubi,Female,61,UAE,2025-05-14,2025-06-28,19,45,6,393,Single,Walk-in,Couple Getaway,1,0,0,Half Board,No,No,Yes,Yes,No,Yes,No,80.39,482.34,Occupied,1,None,3.9,Yes
+BKG0138,Shatha Gubari,Female,34,British,2026-02-22,2026-03-15,17,21,2,270,Double,Corporate,Couple Getaway,4,0,3,Breakfast,Yes,Yes,Yes,No,No,Yes,No,91.8,183.6,Occupied,1,Extra Towels,4.6,No
+BKG0139,Noor Adel,Female,27,Jordanian,2025-07-10,2025-08-16,14,37,3,467,Family,Travel Agency,Couple Getaway,2,2,3,Breakfast,No,No,Yes,Yes,No,Yes,No,150.23,450.69,Occupied,1,Smoking Area,3.4,Yes
+BKG0140,Ahmad Malkawi,Male,60,British,2025-04-03,2025-04-08,15,5,7,265,Double,Website,Leisure,3,0,2,Half Board,No,No,Yes,Yes,No,Yes,No,98.6,690.2,Occupied,1,Baby Crib,4.6,No
+BKG0141,Hassan Gubari,Male,63,UAE,2026-01-23,2026-02-25,13,33,7,197,Single,Corporate,Leisure,1,0,0,Breakfast,Yes,Yes,Yes,No,No,Yes,No,59.4,415.8,Occupied,0,Smoking Area,4.1,No
+BKG0142,Shatha Nasser,Male,34,UAE,2025-03-26,2025-04-20,11,25,7,295,Suite,Travel Agency,Business,2,0,1,Half Board,Yes,No,Yes,Yes,Yes,No,No,160.08,1120.56,Available,1,High Floor,4.3,No
+BKG0143,Hassan Droubi,Male,29,Jordanian,2025-03-05,2025-03-21,15,16,5,310,Double,Travel Agency,Family,2,1,2,Room Only,No,Yes,Yes,Yes,Yes,Yes,No,84.46,422.3,Occupied,3,Quiet Room,4.3,Yes
+BKG0144,Abdullah Khaled,Female,33,British,2025-06-01,2025-06-03,16,2,2,152,Single,Website,Business,1,0,0,Room Only,No,No,Yes,No,Yes,Yes,No,64.9,129.8,Available,2,Extra Towels,3.0,Yes
+BKG0145,Leen Nasser,Female,43,German,2026-02-21,2026-02-23,18,2,2,240,Suite,Website,Conference,1,0,0,Full Board,No,Yes,Yes,Yes,No,No,No,187.5,375.0,Occupied,0,Sea View,4.4,No
+BKG0146,Alaa Malkawi,Male,46,Saudi,2026-03-04,2026-04-17,18,44,4,350,Single,Walk-in,Couple Getaway,1,0,0,Half Board,Yes,No,Yes,Yes,No,Yes,No,68.9,275.6,Clean,0,Late Check-In,4.8,Yes
+BKG0147,Noor Qaisi,Female,36,Jordanian,2025-02-27,2025-03-27,12,28,4,386,Suite,Travel Agency,Conference,2,0,1,Breakfast,No,No,Yes,Yes,No,Yes,No,149.04,596.16,Occupied,2,Sea View,3.9,No
+BKG0148,Lina Tareq,Female,30,French,2025-11-10,2025-11-10,16,0,1,312,Family,Website,Leisure,2,3,4,Breakfast,No,No,Yes,Yes,Yes,Yes,Yes,158.11,158.11,Occupied,4,None,3.8,No
+BKG0149,Razan Haddad,Female,25,UAE,2025-01-19,2025-02-23,11,35,5,292,Suite,Mobile App,Leisure,3,2,4,Half Board,Yes,No,Yes,Yes,Yes,Yes,No,174.0,870.0,Available,2,Extra Towels,4.7,No
+BKG0150,Abdullah Alsmadi,Male,51,German,2025-12-26,2025-12-28,18,2,1,402,Single,Travel Agency,Business,1,0,0,Full Board,No,No,Yes,Yes,No,Yes,No,74.63,74.63,Clean,0,Smoking Area,3.7,Yes
+BKG0151,Tareq Nasser,Male,67,German,2025-09-16,2025-10-17,11,31,2,513,Family,Mobile App,Family,4,2,5,Half Board,Yes,No,Yes,No,Yes,Yes,No,150.34,300.68,Needs Service,1,Baby Crib,4.0,Yes
+BKG0152,Hiba Qadoumi,Female,67,British,2025-03-10,2025-04-05,16,26,2,442,Suite,Corporate,Family,2,1,2,Breakfast,Yes,No,No,Yes,No,Yes,No,174.96,349.92,Occupied,2,Smoking Area,4.6,Yes
+BKG0153,Nour Qaisi,Female,54,German,2025-12-30,2026-02-11,17,43,4,446,Family,Travel Agency,Business,2,1,2,Breakfast,No,Yes,Yes,Yes,No,Yes,No,119.23,476.92,Clean,2,High Floor,5.0,No
+BKG0154,Khaled Malkawi,Female,55,UAE,2026-01-14,2026-01-28,17,14,5,425,Double,Corporate,Conference,3,0,2,Room Only,No,No,Yes,Yes,No,Yes,No,85.0,425.0,Occupied,0,Smoking Area,4.9,No
+BKG0155,Dana Qadoumi,Male,57,UAE,2025-12-27,2026-02-06,15,41,6,127,Double,Website,Conference,2,0,1,Room Only,No,No,Yes,Yes,Yes,Yes,No,91.8,550.8,Occupied,0,Late Check-In,4.3,Yes
+BKG0156,Razan Qaisi,Female,39,British,2026-02-01,2026-03-12,18,39,6,486,Single,Walk-in,Family,1,3,3,Breakfast,No,Yes,Yes,Yes,Yes,No,No,59.4,356.4,Available,3,Smoking Area,4.1,No
+BKG0157,Lina Yasin,Male,48,UAE,2025-11-29,2025-12-06,16,7,1,496,Family,Walk-in,Leisure,4,3,6,Breakfast,No,Yes,Yes,No,No,Yes,No,163.3,163.3,Occupied,1,High Floor,4.0,Yes
+BKG0158,Rana Tareq,Male,33,German,2025-10-03,2025-10-03,16,0,5,299,Family,Website,Couple Getaway,4,3,6,Half Board,No,No,Yes,Yes,Yes,Yes,Yes,183.41,917.05,Clean,1,Quiet Room,3.8,Yes
+BKG0159,Yousef Haddad,Female,21,Saudi,2025-08-19,2025-09-13,15,25,6,213,Double,Travel Agency,Family,3,1,3,Half Board,Yes,No,Yes,No,Yes,Yes,No,97.97,587.82,Occupied,3,Smoking Area,3.7,Yes
+BKG0160,Mariam Tareq,Female,54,Egyptian,2025-03-11,2025-04-05,17,25,6,431,Double,Corporate,Couple Getaway,4,0,3,Half Board,No,Yes,Yes,Yes,Yes,Yes,No,106.49,638.94,Occupied,1,Baby Crib,4.6,Yes
+BKG0161,Lina Ali,Female,34,UAE,2026-03-12,2026-03-21,13,9,5,418,Single,Travel Agency,Family,1,0,0,Half Board,No,No,Yes,Yes,No,Yes,No,63.39,316.95,Available,1,Quiet Room,4.7,Yes
+BKG0162,Yousef Alsmadi,Female,41,Egyptian,2025-02-05,2025-02-25,15,20,2,411,Double,Mobile App,Leisure,2,0,1,Breakfast,Yes,No,Yes,No,Yes,Yes,No,91.8,183.6,Occupied,1,High Floor,4.0,No
+BKG0163,Hassan Tareq,Male,28,American,2025-02-11,2025-02-28,18,17,7,215,Suite,Travel Agency,Conference,4,0,3,Half Board,No,No,Yes,No,No,Yes,No,172.89,1210.23,Clean,1,Late Check-In,3.6,Yes
+BKG0164,Khaled Gubari,Male,52,German,2026-01-31,2026-02-18,13,18,5,350,Double,Website,Leisure,4,3,6,Half Board,No,Yes,Yes,Yes,No,No,No,98.6,493.0,Occupied,0,None,4.2,No
+BKG0165,Zaid Ali,Male,22,British,2025-04-29,2025-05-15,15,16,1,293,Double,Corporate,Couple Getaway,1,0,0,Half Board,Yes,No,Yes,Yes,No,Yes,No,98.6,98.6,Occupied,2,High Floor,3.9,No
+BKG0166,Alaa Samer,Female,42,French,2025-04-25,2025-05-20,14,25,5,403,Family,Website,Couple Getaway,2,2,3,Room Only,No,Yes,Yes,Yes,No,Yes,No,120.0,600.0,Clean,1,Smoking Area,4.2,No
+BKG0167,Abdullah Qadoumi,Male,22,Egyptian,2025-03-24,2025-04-19,11,26,6,342,Single,Travel Agency,Couple Getaway,1,0,0,Room Only,Yes,No,Yes,Yes,No,Yes,No,54.65,327.9,Clean,0,Quiet Room,4.8,Yes
+BKG0168,Alaa Malkawi,Male,46,Egyptian,2026-03-21,2026-03-31,14,10,4,415,Double,Travel Agency,Business,3,0,2,Full Board,No,Yes,Yes,Yes,Yes,Yes,No,97.75,391.0,Available,0,Late Check-In,4.6,No
+BKG0169,Shatha Yasin,Male,27,French,2025-11-04,2025-12-08,15,34,1,231,Suite,Corporate,Family,1,2,2,Half Board,No,No,Yes,Yes,Yes,No,No,205.32,205.32,Occupied,1,High Floor,4.4,Yes
+BKG0170,Nour Ali,Female,25,German,2025-09-02,2025-09-16,18,14,7,449,Double,Website,Conference,1,0,0,Breakfast,No,No,Yes,No,No,Yes,No,91.8,642.6,Available,2,Baby Crib,4.2,No
+BKG0171,Yousef Tareq,Female,55,Egyptian,2025-07-23,2025-08-05,15,13,7,426,Double,Travel Agency,Leisure,2,0,1,Half Board,No,No,Yes,No,No,Yes,No,107.04,749.28,Occupied,1,None,3.9,Yes
+BKG0172,Zaid Ali,Female,50,Saudi,2025-01-03,2025-01-08,18,5,7,200,Single,Website,Business,1,0,0,Room Only,No,No,Yes,Yes,No,Yes,No,55.0,385.0,Clean,0,Quiet Room,4.0,No
+BKG0173,Hassan Qaisi,Male,64,Egyptian,2025-01-18,2025-02-25,15,38,7,242,Suite,Mobile App,Family,4,0,3,Breakfast,No,No,Yes,Yes,Yes,Yes,No,162.0,1134.0,Occupied,0,Baby Crib,4.2,No
+BKG0174,Abdullah Alsmadi,Male,45,American,2025-04-26,2025-05-08,15,12,5,336,Single,Travel Agency,Family,1,0,0,Breakfast,Yes,No,Yes,Yes,No,Yes,No,54.65,273.25,Occupied,1,Baby Crib,4.0,No
+BKG0175,Mariam Malkawi,Male,36,German,2025-10-28,2025-10-29,15,1,7,394,Double,Corporate,Family,2,0,1,Full Board,No,Yes,Yes,Yes,Yes,Yes,No,106.25,743.75,Occupied,0,Baby Crib,4.8,No
+BKG0176,Alaa Adel,Female,32,UAE,2025-05-18,2025-06-30,19,43,2,418,Single,Website,Leisure,1,0,0,Half Board,No,No,Yes,Yes,Yes,No,No,75.28,150.56,Occupied,1,None,5.0,Yes
+BKG0177,Leen Qadoumi,Male,51,American,2025-06-11,2025-07-17,18,36,4,152,Double,Walk-in,Business,2,0,1,Breakfast,No,Yes,Yes,No,No,Yes,No,108.32,433.28,Occupied,1,Quiet Room,4.2,Yes
+BKG0178,Razan Tareq,Female,31,UAE,2025-06-16,2025-07-25,18,39,3,296,Double,Corporate,Leisure,2,0,1,Breakfast,No,No,Yes,Yes,No,No,No,115.67,347.01,Available,0,Quiet Room,4.6,Yes
+BKG0179,Dana Ali,Male,20,German,2025-04-11,2025-04-20,15,9,2,285,Double,Corporate,Couple Getaway,2,0,1,Half Board,No,No,Yes,Yes,No,Yes,Yes,120.29,240.58,Clean,1,Smoking Area,3.7,No
+BKG0180,Yousef Alsmadi,Female,36,Jordanian,2025-07-04,2025-08-08,19,35,5,514,Double,Mobile App,Family,2,1,2,Half Board,No,No,Yes,Yes,Yes,Yes,No,124.24,621.2,Occupied,1,Late Check-In,3.9,Yes
+BKG0181,Rana Droubi,Male,45,Saudi,2025-06-22,2025-08-01,16,40,4,459,Single,Website,Leisure,1,0,0,Breakfast,No,No,Yes,No,No,Yes,No,74.84,299.36,Occupied,1,Quiet Room,4.2,Yes
+BKG0182,Hassan Qaisi,Male,26,Saudi,2026-01-19,2026-02-01,13,13,1,267,Family,Mobile App,Business,3,1,3,Room Only,No,Yes,Yes,Yes,Yes,Yes,No,120.0,120.0,Occupied,2,None,4.0,No
+BKG0183,Rana Yasin,Female,54,French,2026-03-19,2026-04-17,20,29,4,256,Single,Corporate,Family,1,1,1,Breakfast,No,No,Yes,Yes,Yes,No,No,64.15,256.6,Available,2,Sea View,4.6,Yes
+BKG0184,Leen Samer,Female,28,American,2025-01-06,2025-02-08,17,33,1,235,Double,Website,Couple Getaway,4,0,3,Breakfast,Yes,No,Yes,Yes,Yes,Yes,No,99.14,99.14,Available,1,Sea View,4.1,Yes
+BKG0185,Rana Yasin,Female,68,American,2025-02-10,2025-03-22,14,40,4,467,Double,Travel Agency,Leisure,2,0,1,Room Only,Yes,No,Yes,Yes,No,Yes,No,84.46,337.84,Needs Service,1,Extra Towels,5.0,Yes
+BKG0186,Leen Qaisi,Male,29,French,2025-08-13,2025-08-13,14,0,6,107,Single,Mobile App,Conference,1,0,0,Breakfast,Yes,No,Yes,Yes,No,Yes,No,70.09,420.54,Occupied,1,Extra Towels,4.0,Yes
+BKG0187,Mariam Adel,Male,48,Jordanian,2025-03-04,2025-04-18,14,45,7,127,Single,Walk-in,Business,1,0,0,Half Board,Yes,No,No,No,No,Yes,No,68.9,482.3,Occupied,2,Extra Towels,4.6,Yes
+BKG0188,Sara Adel,Female,35,British,2026-03-19,2026-04-01,20,13,6,431,Single,Corporate,Family,1,0,0,Breakfast,No,No,Yes,Yes,Yes,Yes,No,59.4,356.4,Occupied,0,None,4.2,No
+BKG0189,Dana Droubi,Female,28,UAE,2025-03-20,2025-04-23,17,34,6,340,Double,Travel Agency,Family,2,2,3,Half Board,Yes,No,Yes,Yes,Yes,Yes,No,90.71,544.26,Occupied,2,Baby Crib,3.7,No
+BKG0190,Mariam Haddad,Male,55,Saudi,2025-05-21,2025-06-28,19,38,7,450,Double,Mobile App,Couple Getaway,2,0,1,Breakfast,No,No,Yes,No,No,Yes,No,115.67,809.69,Occupied,2,Sea View,5.0,Yes
+BKG0191,Khaled Qadoumi,Female,38,German,2025-09-12,2025-10-17,13,35,7,468,Double,Website,Family,1,2,2,Room Only,No,Yes,Yes,Yes,Yes,Yes,No,91.8,642.6,Occupied,1,Baby Crib,4.2,Yes
+BKG0192,Mariam Samer,Female,25,Jordanian,2025-02-06,2025-02-19,16,13,1,370,Double,Walk-in,Couple Getaway,3,0,2,Half Board,Yes,No,Yes,No,No,Yes,No,98.6,98.6,Occupied,1,Sea View,4.5,No
+BKG0193,Shatha Gubari,Female,31,Saudi,2025-12-03,2026-01-08,16,36,2,425,Suite,Travel Agency,Family,3,0,2,Room Only,No,No,Yes,Yes,No,Yes,No,138.0,276.0,Needs Service,0,Baby Crib,2.7,No
+BKG0194,Razan Haddad,Male,56,German,2025-08-09,2025-08-29,16,20,7,385,Suite,Corporate,Leisure,4,0,3,Breakfast,No,No,Yes,Yes,No,Yes,No,204.12,1428.84,Occupied,1,Extra Towels,4.4,Yes
+BKG0195,Nour Alsmadi,Female,49,Egyptian,2025-10-20,2025-10-29,13,9,5,254,Single,Mobile App,Family,1,0,0,Half Board,Yes,No,Yes,No,No,Yes,No,63.8,319.0,Clean,0,High Floor,4.0,No
+BKG0196,Sara Alsmadi,Female,23,British,2025-01-20,2025-02-25,15,36,6,475,Family,Mobile App,Couple Getaway,2,2,3,Half Board,No,No,Yes,Yes,Yes,Yes,No,139.2,835.2,Available,3,Late Check-In,4.0,No
+BKG0197,Razan Qadoumi,Male,25,German,2025-07-21,2025-08-28,16,38,4,477,Double,Mobile App,Business,1,0,0,Breakfast,Yes,No,Yes,Yes,No,Yes,No,108.32,433.28,Available,1,Quiet Room,3.7,Yes
+BKG0198,Noor Gubari,Female,47,Saudi,2025-09-26,2025-10-11,12,15,2,473,Single,Mobile App,Leisure,1,0,0,Breakfast,No,No,Yes,Yes,No,Yes,No,64.15,128.3,Occupied,1,Baby Crib,4.6,Yes
+BKG0199,Leen Qadoumi,Male,35,American,2026-03-13,2026-03-20,17,7,1,440,Single,Walk-in,Business,1,0,0,Breakfast,Yes,Yes,Yes,Yes,No,Yes,No,64.15,64.15,Clean,2,None,4.8,Yes
+BKG0200,Dana Nasser,Male,38,American,2025-09-27,2025-10-13,13,16,1,406,Single,Travel Agency,Business,1,0,0,Breakfast,Yes,No,Yes,No,Yes,No,No,54.65,54.65,Available,2,High Floor,4.3,No
+BKG0201,Razan Ali,Male,49,Jordanian,2025-09-30,2025-10-11,13,11,1,216,Single,Travel Agency,Leisure,1,0,0,Room Only,Yes,No,Yes,Yes,No,Yes,No,54.65,54.65,Available,0,None,5.0,Yes
+BKG0202,Hiba Malkawi,Female,25,UAE,2025-03-19,2025-04-13,16,25,3,181,Double,Travel Agency,Leisure,2,1,2,Breakfast,Yes,No,Yes,Yes,Yes,Yes,No,84.46,253.38,Clean,1,Late Check-In,4.7,No
+BKG0203,Ahmad Gubari,Male,66,Egyptian,2025-06-12,2025-07-17,15,35,1,414,Double,Corporate,Conference,3,0,2,Full Board,No,No,Yes,No,No,No,No,125.38,125.38,Occupied,0,Late Check-In,4.2,Yes
+BKG0204,Shatha Samer,Male,34,UAE,2025-11-12,2025-12-20,16,38,3,481,Suite,Mobile App,Conference,2,0,1,Breakfast,No,No,Yes,No,No,Yes,No,204.12,612.36,Occupied,1,Extra Towels,4.2,Yes
+BKG0205,Zaid Haddad,Female,48,British,2025-12-10,2025-12-23,12,13,2,303,Family,Corporate,Leisure,3,3,5,Half Board,No,No,Yes,Yes,No,Yes,Yes,200.39,400.78,Occupied,2,Quiet Room,3.4,Yes
+BKG0206,Leen Tareq,Male,68,UAE,2026-01-12,2026-02-16,15,35,1,266,Double,Mobile App,Leisure,3,0,2,Breakfast,No,Yes,Yes,Yes,No,Yes,No,91.8,91.8,Occupied,0,Late Check-In,4.5,No
+BKG0207,Sara Gubari,Male,65,French,2025-08-19,2025-08-30,15,11,1,188,Single,Mobile App,Family,1,1,1,Room Only,No,Yes,Yes,Yes,Yes,Yes,No,69.3,69.3,Needs Service,2,Sea View,3.9,Yes
+BKG0208,Khaled Samer,Male,30,Egyptian,2025-06-21,2025-08-02,18,42,5,402,Suite,Website,Leisure,3,3,5,Breakfast,Yes,No,No,Yes,No,Yes,No,204.12,1020.6,Occupied,1,Smoking Area,4.5,Yes
+BKG0209,Nour Alsmadi,Male,25,UAE,2025-12-04,2026-01-02,15,29,4,455,Family,Website,Family,3,2,4,Room Only,No,Yes,Yes,Yes,No,Yes,No,129.6,518.4,Occupied,2,Extra Towels,4.1,Yes
+BKG0210,Alaa Droubi,Female,31,British,2025-12-25,2026-01-30,17,36,5,453,Family,Website,Leisure,2,1,2,Half Board,No,Yes,Yes,Yes,No,Yes,No,150.34,751.7,Occupied,2,High Floor,4.4,Yes
+BKG0211,Mariam Gubari,Female,58,American,2025-11-06,2025-12-21,14,45,7,416,Double,Corporate,Leisure,2,1,2,Breakfast,No,No,Yes,Yes,No,No,No,108.32,758.24,Occupied,2,High Floor,4.9,Yes
+BKG0212,Alaa Gubari,Male,55,Jordanian,2025-08-01,2025-08-03,14,2,4,119,Double,Walk-in,Leisure,1,0,0,Breakfast,No,Yes,Yes,Yes,No,No,No,108.32,433.28,Clean,3,Smoking Area,4.6,Yes
+BKG0213,Dana Tareq,Female,49,French,2025-11-27,2025-12-27,13,30,2,421,Suite,Mobile App,Conference,3,0,2,Breakfast,No,No,Yes,Yes,No,Yes,No,204.12,408.24,Occupied,1,None,4.7,Yes
+BKG0214,Abdullah Haddad,Male,44,Saudi,2025-10-01,2025-10-11,16,10,7,113,Family,Walk-in,Conference,2,1,2,Breakfast,Yes,No,Yes,No,Yes,Yes,No,139.97,979.79,Occupied,2,High Floor,4.5,Yes
+BKG0215,Dana Nasser,Female,41,American,2026-02-14,2026-03-18,13,32,4,124,Suite,Website,Couple Getaway,3,0,2,Full Board,No,Yes,Yes,Yes,No,Yes,Yes,228.75,915.0,Needs Service,0,High Floor,3.9,No
+BKG0216,Hiba Samer,Female,21,UAE,2025-02-22,2025-04-05,17,42,5,188,Double,Website,Leisure,2,0,1,Room Only,Yes,No,Yes,Yes,No,Yes,No,91.8,459.0,Occupied,2,Extra Towels,4.8,Yes
+BKG0217,Abdullah Qadoumi,Female,54,Jordanian,2025-02-06,2025-03-17,18,39,3,168,Single,Mobile App,Family,1,0,0,Room Only,No,Yes,Yes,Yes,No,Yes,No,55.0,165.0,Occupied,0,High Floor,4.6,No
+BKG0218,Tareq Gubari,Female,49,French,2025-02-17,2025-04-02,15,44,7,279,Double,Corporate,Business,4,0,3,Breakfast,Yes,Yes,Yes,Yes,No,Yes,No,91.8,642.6,Occupied,2,Late Check-In,4.7,No
+BKG0219,Yousef Alsmadi,Male,45,British,2025-11-06,2025-11-14,15,8,5,443,Double,Website,Leisure,2,1,2,Breakfast,Yes,Yes,Yes,Yes,Yes,Yes,No,99.14,495.7,Needs Service,2,Quiet Room,3.7,Yes
+BKG0220,Noor Alsmadi,Male,51,French,2025-02-09,2025-03-26,16,45,6,177,Double,Website,Leisure,2,0,1,Breakfast,No,No,Yes,Yes,No,Yes,No,91.8,550.8,Occupied,0,None,3.7,No
+BKG0221,Hassan Malkawi,Female,56,UAE,2025-08-20,2025-09-07,15,18,5,382,Single,Corporate,Leisure,1,2,2,Half Board,No,No,Yes,No,No,Yes,No,63.8,319.0,Occupied,0,None,4.7,No
+BKG0222,Noor Khaled,Male,42,American,2025-01-28,2025-03-14,16,45,1,137,Family,Website,Conference,2,2,3,Half Board,No,No,Yes,Yes,Yes,Yes,No,150.34,150.34,Occupied,2,Late Check-In,4.0,Yes
+BKG0223,Zaid Ali,Female,51,Egyptian,2025-11-28,2025-12-07,17,9,1,311,Single,Travel Agency,Leisure,1,0,0,Half Board,No,No,Yes,Yes,No,Yes,No,69.26,69.26,Occupied,0,Quiet Room,3.9,Yes
+BKG0224,Razan Gubari,Female,22,British,2025-10-07,2025-10-30,12,23,5,397,Single,Mobile App,Conference,1,0,0,Room Only,No,No,No,No,No,Yes,No,55.0,275.0,Occupied,1,High Floor,3.5,No
+BKG0225,Nour Khaled,Male,54,French,2025-06-09,2025-06-12,18,3,5,247,Double,Corporate,Family,2,0,1,Full Board,Yes,Yes,Yes,Yes,Yes,Yes,No,125.38,626.9,Available,0,Extra Towels,3.8,Yes
+BKG0226,Nour Malkawi,Female,37,Egyptian,2025-09-06,2025-09-14,15,8,1,179,Double,Website,Leisure,3,1,3,Full Board,No,No,Yes,Yes,No,Yes,No,106.25,106.25,Occupied,2,Late Check-In,5.0,No
+BKG0227,Zaid Qaisi,Female,35,Egyptian,2026-03-05,2026-03-31,17,26,4,323,Single,Walk-in,Leisure,1,1,1,Half Board,Yes,Yes,Yes,Yes,No,Yes,No,63.8,255.2,Occupied,1,Late Check-In,4.2,No
+BKG0228,Dana Haddad,Male,40,Saudi,2025-01-07,2025-02-04,15,28,3,106,Family,Travel Agency,Couple Getaway,2,2,3,Breakfast,Yes,Yes,Yes,Yes,No,Yes,No,119.23,357.69,Available,3,Late Check-In,4.5,No
+BKG0229,Lina Droubi,Male,26,French,2025-12-11,2025-12-15,11,4,1,195,Double,Walk-in,Leisure,1,1,1,Room Only,No,No,Yes,Yes,Yes,No,No,100.3,100.3,Occupied,1,Late Check-In,4.0,Yes
+BKG0230,Yousef Alsmadi,Female,24,American,2025-05-10,2025-06-08,16,29,3,352,Suite,Walk-in,Family,3,0,2,Half Board,Yes,Yes,Yes,No,Yes,Yes,No,205.32,615.96,Occupied,1,Sea View,4.5,Yes
+BKG0231,Alaa Tareq,Male,33,French,2025-02-25,2025-03-31,17,34,2,307,Suite,Website,Business,2,0,1,Breakfast,No,No,Yes,Yes,No,Yes,No,162.0,324.0,Clean,0,Smoking Area,4.8,No
+BKG0232,Mariam Yasin,Female,20,French,2026-03-09,2026-03-13,15,4,6,384,Single,Travel Agency,Couple Getaway,1,0,0,Breakfast,Yes,Yes,No,Yes,No,No,No,59.02,354.12,Occupied,0,Extra Towels,4.7,Yes
+BKG0233,Ahmad Khaled,Female,64,Saudi,2025-01-21,2025-03-04,13,42,4,274,Double,Mobile App,Business,2,0,1,Half Board,Yes,Yes,Yes,Yes,No,Yes,No,98.6,394.4,Occupied,1,Smoking Area,3.5,No
+BKG0234,Hiba Nabil,Female,33,Egyptian,2025-01-29,2025-01-31,15,2,3,519,Suite,Website,Business,3,0,2,Breakfast,Yes,No,Yes,Yes,No,Yes,No,174.96,524.88,Needs Service,1,Late Check-In,4.2,Yes
+BKG0235,Yousef Droubi,Male,59,Saudi,2026-02-23,2026-03-02,15,7,1,290,Family,Mobile App,Couple Getaway,4,3,6,Breakfast,No,No,Yes,No,No,Yes,No,129.6,129.6,Occupied,2,Sea View,4.4,No
+BKG0236,Mariam Yasin,Male,57,Egyptian,2025-10-11,2025-11-08,14,28,2,428,Single,Corporate,Family,1,2,2,Room Only,No,Yes,Yes,Yes,No,No,No,59.4,118.8,Occupied,0,Late Check-In,4.6,Yes
+BKG0237,Rana Khaled,Male,31,Egyptian,2025-05-19,2025-06-16,15,28,5,200,Suite,Travel Agency,Business,3,0,2,Breakfast,No,No,Yes,No,No,Yes,No,175.87,879.35,Needs Service,1,Quiet Room,3.5,Yes
+BKG0238,Omar Malkawi,Female,50,Egyptian,2025-02-27,2025-03-08,16,9,7,221,Single,Corporate,Business,1,0,0,Breakfast,Yes,No,Yes,No,No,Yes,Yes,78.27,547.89,Occupied,1,High Floor,4.3,Yes
+BKG0239,Mariam Alsmadi,Male,46,British,2026-01-05,2026-02-11,16,37,4,284,Single,Website,Leisure,1,0,0,Breakfast,Yes,No,Yes,Yes,Yes,Yes,No,59.4,237.6,Available,2,Smoking Area,4.5,No
+BKG0240,Mariam Qadoumi,Male,64,American,2025-05-19,2025-06-09,13,21,2,343,Single,Corporate,Leisure,1,0,0,Breakfast,No,No,Yes,Yes,No,Yes,No,70.09,140.18,Clean,2,Smoking Area,5.0,Yes
+BKG0241,Abdullah Nasser,Male,47,UAE,2026-03-05,2026-03-22,11,17,4,224,Double,Travel Agency,Couple Getaway,2,0,1,Room Only,No,Yes,No,Yes,No,Yes,Yes,95.4,381.6,Occupied,1,High Floor,3.5,No
+BKG0242,Ahmad Qaisi,Male,46,Egyptian,2025-02-12,2025-02-12,16,0,5,422,Double,Website,Couple Getaway,1,0,0,Half Board,Yes,No,Yes,Yes,No,Yes,Yes,120.29,601.45,Clean,3,Smoking Area,4.7,No
+BKG0243,Yousef Alsmadi,Female,22,German,2025-02-06,2025-03-22,14,44,4,387,Suite,Walk-in,Family,2,0,1,Half Board,No,No,Yes,Yes,No,Yes,Yes,229.26,917.04,Occupied,1,Baby Crib,4.2,Yes
+BKG0244,Zaid Haddad,Male,33,British,2025-12-27,2026-01-31,17,35,1,163,Single,Website,Leisure,1,2,2,Breakfast,No,Yes,Yes,Yes,Yes,Yes,No,64.15,64.15,Occupied,2,Smoking Area,4.7,Yes
+BKG0245,Noor Qaisi,Female,54,French,2025-08-29,2025-10-02,16,34,6,205,Double,Corporate,Couple Getaway,3,0,2,Full Board,Yes,No,Yes,Yes,No,Yes,No,106.25,637.5,Occupied,2,Smoking Area,4.2,No
+BKG0246,Abdullah Ali,Male,63,French,2025-09-24,2025-09-25,14,1,6,391,Double,Mobile App,Family,2,0,1,Full Board,Yes,No,Yes,Yes,Yes,Yes,No,106.25,637.5,Available,0,Smoking Area,4.0,No
+BKG0247,Sara Adel,Male,36,French,2025-03-09,2025-03-28,13,19,7,395,Double,Website,Couple Getaway,2,0,1,Breakfast,No,No,Yes,Yes,Yes,Yes,No,99.14,693.98,Needs Service,0,High Floor,4.2,Yes
+BKG0248,Tareq Gubari,Male,33,British,2025-03-06,2025-03-22,15,16,4,394,Family,Website,Leisure,4,1,4,Full Board,No,No,Yes,Yes,Yes,Yes,No,162.0,648.0,Needs Service,3,Smoking Area,3.8,Yes
+BKG0249,Omar Haddad,Female,48,Saudi,2025-12-08,2026-01-13,17,36,2,329,Suite,Corporate,Business,2,0,1,Breakfast,No,No,Yes,Yes,Yes,Yes,No,162.0,324.0,Occupied,1,None,4.7,No
+BKG0250,Shatha Gubari,Male,45,French,2025-12-13,2025-12-18,20,5,6,327,Double,Travel Agency,Couple Getaway,4,0,3,Breakfast,Yes,No,Yes,Yes,No,Yes,No,99.66,597.96,Clean,2,Smoking Area,4.9,Yes
+BKG0251,Mariam Yasin,Male,46,Saudi,2025-05-28,2025-06-24,17,27,2,296,Single,Mobile App,Couple Getaway,1,0,0,Breakfast,Yes,No,Yes,Yes,Yes,Yes,No,70.09,140.18,Occupied,1,Late Check-In,3.8,Yes
+BKG0252,Alaa Nabil,Female,39,French,2025-05-29,2025-06-29,12,31,5,407,Double,Mobile App,Business,1,0,0,Breakfast,No,No,Yes,Yes,No,Yes,No,108.32,541.6,Available,1,Extra Towels,4.3,Yes
+BKG0253,Zaid Samer,Female,47,French,2026-01-17,2026-02-23,15,37,3,493,Family,Corporate,Leisure,3,2,4,Room Only,Yes,No,Yes,Yes,Yes,Yes,No,120.0,360.0,Needs Service,2,High Floor,3.9,No
+BKG0254,Razan Qadoumi,Female,30,British,2025-11-18,2025-11-24,16,6,2,454,Family,Walk-in,Leisure,3,1,3,Breakfast,Yes,Yes,Yes,Yes,No,Yes,No,129.6,259.2,Occupied,3,Quiet Room,4.4,No
+BKG0255,Noor Qaisi,Male,64,German,2026-03-02,2026-04-05,17,34,5,456,Double,Website,Couple Getaway,4,0,3,Breakfast,Yes,No,Yes,No,No,Yes,No,91.8,459.0,Clean,1,Quiet Room,5.0,No
+BKG0256,Lina Malkawi,Male,33,Saudi,2025-03-14,2025-03-28,14,14,6,409,Double,Walk-in,Business,1,0,0,Breakfast,No,Yes,Yes,Yes,No,Yes,No,99.14,594.84,Occupied,1,High Floor,4.3,Yes
+BKG0257,Razan Khaled,Male,42,Saudi,2025-04-16,2025-04-28,13,12,5,472,Single,Walk-in,Leisure,1,1,1,Breakfast,No,No,Yes,Yes,Yes,Yes,No,59.4,297.0,Occupied,0,Late Check-In,4.1,No
+BKG0258,Omar Adel,Female,50,Egyptian,2025-02-20,2025-03-24,18,32,2,353,Double,Corporate,Business,2,0,1,Breakfast,Yes,No,Yes,No,Yes,Yes,No,91.8,183.6,Clean,0,None,4.0,No
+BKG0259,Lina Yasin,Female,67,French,2025-03-01,2025-03-19,15,18,4,303,Single,Mobile App,Couple Getaway,1,0,0,Breakfast,No,No,Yes,No,No,Yes,No,59.4,237.6,Available,2,High Floor,3.8,No
+BKG0260,Alaa Haddad,Male,67,Saudi,2025-07-25,2025-08-31,20,37,6,243,Double,Website,Business,3,0,2,Breakfast,Yes,No,Yes,No,No,Yes,No,108.32,649.92,Clean,1,Sea View,4.6,Yes
+BKG0261,Abdullah Samer,Female,36,French,2025-03-17,2025-04-15,13,29,7,251,Single,Corporate,Business,1,0,0,Half Board,No,No,Yes,Yes,No,Yes,No,63.8,446.6,Available,0,Smoking Area,4.4,No
+BKG0262,Alaa Gubari,Female,54,Jordanian,2025-12-05,2026-01-05,15,31,4,157,Family,Website,Leisure,4,2,5,Full Board,No,Yes,Yes,Yes,No,No,No,150.0,600.0,Occupied,2,Sea View,4.0,No
+BKG0263,Leen Nabil,Female,63,French,2025-10-19,2025-11-19,16,31,6,320,Double,Website,Business,2,0,1,Breakfast,Yes,No,Yes,Yes,Yes,Yes,Yes,112.0,672.0,Occupied,0,Baby Crib,4.5,No
+BKG0264,Hiba Khaled,Male,62,UAE,2025-06-26,2025-07-22,14,26,3,263,Single,Mobile App,Business,1,0,0,Half Board,No,Yes,Yes,Yes,Yes,Yes,No,75.28,225.84,Occupied,1,Smoking Area,4.2,Yes
+BKG0265,Khaled Qadoumi,Female,26,Saudi,2025-07-13,2025-08-06,14,24,5,481,Suite,Website,Leisure,3,1,3,Room Only,Yes,No,Yes,Yes,No,Yes,No,177.0,885.0,Occupied,3,Sea View,4.3,Yes
+BKG0266,Hiba Nasser,Female,41,Saudi,2025-02-17,2025-03-26,13,37,6,210,Double,Travel Agency,Leisure,2,0,1,Half Board,No,No,Yes,Yes,No,Yes,No,90.71,544.26,Available,0,Late Check-In,3.4,No
+BKG0267,Leen Samer,Female,60,Jordanian,2025-12-05,2026-01-03,14,29,7,159,Double,Mobile App,Business,2,0,1,Half Board,Yes,No,Yes,No,Yes,Yes,No,106.49,745.43,Clean,0,Quiet Room,4.0,Yes
+BKG0268,Dana Qadoumi,Female,39,French,2025-03-18,2025-03-19,14,1,2,253,Double,Mobile App,Family,1,0,0,Room Only,Yes,No,Yes,Yes,No,No,No,85.0,170.0,Occupied,1,High Floor,5.0,No
+BKG0269,Shatha Samer,Male,62,German,2026-03-20,2026-04-15,18,26,1,174,Family,Walk-in,Business,2,1,2,Breakfast,No,No,Yes,Yes,No,Yes,No,129.6,129.6,Available,1,Quiet Room,3.9,No
+BKG0270,Khaled Ali,Female,48,American,2025-02-24,2025-03-09,20,13,2,383,Family,Website,Family,3,3,5,Breakfast,Yes,No,Yes,Yes,Yes,Yes,No,129.6,259.2,Available,2,None,4.4,No
+BKG0271,Omar Qaisi,Male,43,UAE,2025-07-16,2025-08-25,19,40,3,500,Family,Mobile App,Couple Getaway,2,2,3,Breakfast,No,No,Yes,No,Yes,Yes,No,152.93,458.79,Clean,1,Extra Towels,3.7,Yes
+BKG0272,Khaled Haddad,Female,41,Saudi,2025-09-09,2025-10-05,19,26,4,466,Family,Walk-in,Family,2,2,3,Breakfast,Yes,Yes,Yes,Yes,No,Yes,No,129.6,518.4,Available,2,Late Check-In,4.2,No
+BKG0273,Omar Nasser,Female,58,British,2026-01-29,2026-03-11,17,41,7,202,Double,Corporate,Business,2,0,1,Breakfast,Yes,No,Yes,Yes,No,Yes,No,91.8,642.6,Available,1,Quiet Room,4.4,No
+BKG0274,Tareq Droubi,Female,59,American,2025-05-15,2025-05-25,12,10,6,354,Single,Corporate,Business,1,0,0,Breakfast,Yes,No,Yes,No,No,Yes,No,59.4,356.4,Occupied,0,Extra Towels,5.0,No
+BKG0275,Mariam Droubi,Male,58,American,2025-07-15,2025-08-11,18,27,2,297,Suite,Website,Business,3,0,2,Room Only,No,No,Yes,Yes,No,Yes,Yes,215.94,431.88,Occupied,0,Sea View,5.0,Yes
+BKG0276,Hiba Yasin,Male,26,Jordanian,2025-12-29,2026-02-05,14,38,4,234,Double,Website,Couple Getaway,4,0,3,Full Board,No,No,Yes,Yes,Yes,Yes,No,106.25,425.0,Occupied,3,None,3.5,No
+BKG0277,Shatha Malkawi,Male,49,Saudi,2025-03-28,2025-04-28,19,31,5,185,Double,Travel Agency,Business,2,0,1,Room Only,Yes,No,Yes,No,No,Yes,No,78.2,391.0,Available,0,Baby Crib,4.2,No
+BKG0278,Lina Adel,Female,29,Jordanian,2025-06-11,2025-07-12,17,31,6,148,Single,Website,Business,1,0,0,Breakfast,Yes,No,Yes,No,No,Yes,No,74.84,449.04,Available,1,Late Check-In,4.0,Yes
+BKG0279,Ahmad Nabil,Female,30,UAE,2025-04-15,2025-05-03,13,18,7,336,Double,Corporate,Family,2,0,1,Room Only,No,No,Yes,Yes,No,Yes,No,91.8,642.6,Available,0,Late Check-In,5.0,Yes
+BKG0280,Yousef Samer,Female,60,Jordanian,2026-03-02,2026-04-13,15,42,6,495,Double,Website,Family,2,2,3,Full Board,No,No,Yes,No,No,Yes,No,106.25,637.5,Available,2,Extra Towels,4.0,No
+BKG0281,Alaa Ali,Male,33,German,2026-03-20,2026-03-25,11,5,4,389,Suite,Website,Conference,3,0,2,Room Only,No,No,Yes,Yes,No,Yes,No,150.0,600.0,Clean,1,Sea View,3.8,No
+BKG0282,Khaled Haddad,Male,43,German,2025-11-04,2025-11-09,17,5,4,319,Double,Website,Family,4,1,4,Half Board,No,No,Yes,Yes,Yes,Yes,Yes,120.29,481.16,Clean,4,Extra Towels,3.9,No
+BKG0283,Hiba Droubi,Male,22,German,2025-06-01,2025-06-04,16,3,5,333,Double,Mobile App,Conference,3,0,2,Breakfast,No,No,Yes,No,No,Yes,No,108.32,541.6,Occupied,2,Baby Crib,3.6,Yes
+BKG0284,Tareq Qadoumi,Female,36,Egyptian,2026-01-23,2026-02-20,16,28,6,517,Single,Website,Couple Getaway,1,0,0,Breakfast,No,No,Yes,Yes,Yes,Yes,No,64.15,384.9,Occupied,0,Smoking Area,3.9,Yes
+BKG0285,Noor Nasser,Female,64,American,2025-11-12,2025-12-26,16,44,3,317,Single,Website,Business,1,0,0,Half Board,No,Yes,Yes,Yes,No,Yes,No,80.39,241.17,Clean,1,Smoking Area,4.1,Yes
+BKG0286,Sara Nasser,Female,67,French,2025-01-12,2025-01-22,18,10,1,305,Double,Corporate,Family,2,1,2,Half Board,Yes,Yes,Yes,Yes,No,No,No,98.6,98.6,Clean,1,Extra Towels,3.8,No
+BKG0287,Zaid Samer,Female,63,UAE,2025-09-06,2025-10-13,17,37,5,401,Suite,Travel Agency,Leisure,2,0,1,Full Board,No,No,Yes,No,No,Yes,Yes,210.45,1052.25,Occupied,2,Quiet Room,4.3,No
+BKG0288,Alaa Ali,Female,65,Egyptian,2025-12-17,2026-01-24,18,38,3,221,Family,Walk-in,Leisure,2,2,3,Half Board,No,No,Yes,Yes,No,Yes,No,150.34,451.02,Occupied,2,Sea View,4.2,Yes
+BKG0289,Noor Qaisi,Female,42,British,2025-04-18,2025-04-21,21,3,5,454,Suite,Website,Couple Getaway,2,0,1,Half Board,Yes,Yes,Yes,Yes,No,No,No,174.0,870.0,Clean,0,Extra Towels,4.4,No
+BKG0290,Lina Yasin,Male,65,French,2026-03-24,2026-05-01,16,38,5,432,Suite,Corporate,Conference,4,0,3,Half Board,No,No,Yes,Yes,No,Yes,No,187.92,939.6,Available,0,Smoking Area,4.2,Yes
+BKG0291,Shatha Malkawi,Female,32,German,2025-07-06,2025-07-14,13,8,3,310,Suite,Website,Couple Getaway,2,0,1,Breakfast,Yes,No,Yes,Yes,No,Yes,No,191.16,573.48,Occupied,0,Sea View,4.4,Yes
+BKG0292,Shatha Tareq,Male,43,French,2025-08-23,2025-09-25,17,33,7,449,Single,Website,Couple Getaway,1,0,0,Full Board,Yes,No,No,Yes,Yes,Yes,No,68.75,481.25,Available,1,Extra Towels,4.4,No
+BKG0293,Noor Haddad,Female,40,Jordanian,2025-12-25,2026-01-13,17,19,5,377,Family,Corporate,Family,2,2,3,Full Board,No,No,Yes,Yes,No,Yes,No,150.0,750.0,Clean,2,Sea View,4.8,No
+BKG0294,Tareq Qadoumi,Female,39,Egyptian,2025-05-26,2025-05-31,15,5,2,478,Single,Corporate,Family,1,0,0,Half Board,Yes,No,Yes,No,No,Yes,No,68.9,137.8,Occupied,0,Smoking Area,4.2,Yes
+BKG0295,Sara Tareq,Male,67,British,2025-01-03,2025-01-24,20,21,4,167,Double,Travel Agency,Couple Getaway,2,0,1,Room Only,Yes,No,Yes,Yes,Yes,Yes,No,84.46,337.84,Occupied,1,High Floor,3.9,Yes
+BKG0296,Alaa Khaled,Female,63,German,2025-09-01,2025-09-29,12,28,2,483,Family,Travel Agency,Family,4,3,6,Half Board,No,Yes,Yes,Yes,Yes,No,No,128.06,256.12,Occupied,2,Smoking Area,3.6,No
+BKG0297,Yousef Qaisi,Female,27,Saudi,2025-03-22,2025-04-14,19,23,5,479,Single,Travel Agency,Business,1,0,0,Room Only,Yes,No,Yes,Yes,No,Yes,No,50.6,253.0,Occupied,0,Quiet Room,5.0,No
+BKG0298,Leen Samer,Male,24,German,2025-09-08,2025-09-15,16,7,1,303,Double,Mobile App,Leisure,2,0,1,Half Board,No,Yes,Yes,Yes,No,Yes,No,98.6,98.6,Clean,2,Sea View,4.9,No
+BKG0299,Ahmad Ali,Female,48,Saudi,2025-06-23,2025-06-25,19,2,5,503,Family,Walk-in,Family,3,1,3,Half Board,Yes,No,Yes,No,No,Yes,No,164.26,821.3,Occupied,2,Late Check-In,4.9,Yes
+BKG0300,Noor Ali,Female,57,Saudi,2025-04-16,2025-05-31,18,45,2,309,Family,Travel Agency,Leisure,2,2,3,Breakfast,Yes,Yes,Yes,Yes,Yes,No,No,128.77,257.54,Occupied,2,High Floor,4.3,Yes
+BKG0301,Sara Adel,Male,40,Jordanian,2025-12-14,2025-12-17,16,3,2,338,Suite,Website,Business,2,0,1,Full Board,Yes,No,Yes,Yes,No,Yes,No,221.25,442.5,Occupied,1,Extra Towels,3.2,Yes
+BKG0302,Razan Nasser,Male,46,Jordanian,2025-10-11,2025-10-15,15,4,4,122,Double,Corporate,Family,2,1,2,Half Board,Yes,No,Yes,Yes,Yes,No,No,98.6,394.4,Occupied,2,Sea View,5.0,No
+BKG0303,Noor Droubi,Female,59,Egyptian,2025-01-01,2025-01-30,19,29,7,385,Single,Corporate,Leisure,1,1,1,Half Board,No,No,Yes,Yes,No,Yes,No,63.8,446.6,Available,3,High Floor,4.2,No
+BKG0304,Leen Haddad,Female,40,American,2025-05-24,2025-06-06,16,13,4,142,Family,Walk-in,Leisure,3,2,4,Breakfast,No,Yes,Yes,Yes,Yes,Yes,No,163.3,653.2,Available,3,Smoking Area,3.5,Yes
+BKG0305,Mariam Nabil,Female,21,Saudi,2026-02-08,2026-03-21,12,41,6,518,Double,Corporate,Couple Getaway,2,0,1,Room Only,No,No,Yes,Yes,No,Yes,No,91.8,550.8,Occupied,3,Baby Crib,4.1,Yes
+BKG0306,Hiba Yasin,Male,34,French,2025-11-11,2025-11-30,17,19,6,482,Family,Website,Leisure,3,1,3,Breakfast,No,No,Yes,Yes,Yes,Yes,No,129.6,777.6,Available,1,High Floor,4.1,No
+BKG0307,Zaid Nasser,Female,34,UAE,2025-02-03,2025-02-19,19,16,2,354,Family,Website,Couple Getaway,3,2,4,Half Board,No,Yes,Yes,Yes,No,No,No,139.2,278.4,Occupied,1,High Floor,4.6,No
+BKG0308,Hiba Gubari,Male,34,American,2025-07-05,2025-07-07,18,2,5,421,Family,Travel Agency,Leisure,2,1,2,Full Board,Yes,No,No,No,Yes,Yes,No,162.84,814.2,Available,2,None,4.7,Yes
+BKG0309,Sara Ali,Male,50,British,2025-06-21,2025-07-07,14,16,7,413,Family,Corporate,Family,2,3,4,Half Board,No,No,Yes,Yes,Yes,Yes,No,164.26,1149.82,Occupied,3,Smoking Area,5.0,Yes
+BKG0310,Nour Droubi,Male,23,American,2025-11-17,2025-11-21,13,4,4,135,Family,Mobile App,Family,2,2,3,Breakfast,No,No,Yes,Yes,Yes,Yes,Yes,170.76,683.04,Occupied,2,None,4.1,Yes
+BKG0311,Tareq Adel,Female,28,British,2025-10-31,2025-11-12,18,12,7,105,Double,Walk-in,Leisure,2,2,3,Room Only,Yes,No,No,No,Yes,No,No,85.0,595.0,Clean,3,Baby Crib,4.4,No
+BKG0312,Lina Nasser,Male,23,Jordanian,2025-09-23,2025-11-04,16,42,5,505,Double,Website,Business,4,0,3,Half Board,Yes,No,Yes,No,No,Yes,No,98.6,493.0,Needs Service,0,Late Check-In,3.7,No
+BKG0313,Sara Khaled,Male,60,UAE,2025-01-22,2025-02-05,19,14,4,202,Double,Website,Leisure,3,2,4,Half Board,Yes,No,Yes,Yes,Yes,Yes,No,98.6,394.4,Occupied,2,Baby Crib,3.7,No
+BKG0314,Zaid Gubari,Male,36,British,2025-04-12,2025-04-23,14,11,3,420,Family,Website,Business,2,2,3,Full Board,Yes,No,Yes,No,Yes,No,No,150.0,450.0,Occupied,4,Late Check-In,4.3,No
+BKG0315,Mariam Droubi,Male,29,UAE,2026-03-28,2026-05-12,12,45,4,142,Single,Mobile App,Leisure,1,1,1,Full Board,Yes,Yes,Yes,Yes,No,Yes,No,68.75,275.0,Clean,1,Smoking Area,4.9,No
+BKG0316,Shatha Malkawi,Female,30,British,2026-02-06,2026-03-20,16,42,4,294,Double,Mobile App,Leisure,2,1,2,Half Board,No,No,Yes,No,No,Yes,No,106.49,425.96,Occupied,1,Extra Towels,4.5,Yes
+BKG0317,Zaid Haddad,Male,25,Saudi,2025-10-20,2025-11-12,14,23,2,380,Double,Travel Agency,Leisure,1,0,0,Breakfast,No,No,Yes,Yes,No,Yes,No,84.46,168.92,Occupied,2,Extra Towels,5.0,No
+BKG0318,Tareq Qaisi,Male,26,Saudi,2025-11-26,2025-12-13,19,17,1,278,Double,Travel Agency,Leisure,3,0,2,Half Board,No,No,Yes,Yes,Yes,No,No,114.3,114.3,Clean,1,Extra Towels,4.0,Yes
+BKG0319,Shatha Samer,Male,68,French,2026-02-05,2026-03-02,17,25,4,325,Suite,Corporate,Couple Getaway,4,0,3,Breakfast,No,Yes,Yes,Yes,No,Yes,No,162.0,648.0,Occupied,2,Sea View,5.0,No
+BKG0320,Hiba Alsmadi,Male,28,American,2025-08-19,2025-09-23,12,35,7,510,Family,Website,Couple Getaway,3,2,4,Breakfast,No,No,Yes,Yes,Yes,Yes,No,129.6,907.2,Occupied,4,Baby Crib,5.0,No
+BKG0321,Tareq Samer,Male,44,German,2025-11-05,2025-12-11,18,36,5,220,Single,Mobile App,Leisure,1,0,0,Full Board,No,No,Yes,Yes,No,Yes,No,81.12,405.6,Occupied,3,Sea View,4.6,Yes
+BKG0322,Hiba Samer,Female,23,Jordanian,2025-05-30,2025-07-02,12,33,6,358,Single,Corporate,Leisure,1,0,0,Room Only,No,No,Yes,No,No,Yes,No,64.9,389.4,Occupied,0,Extra Towels,4.1,Yes
+BKG0323,Leen Qadoumi,Male,20,French,2026-01-02,2026-01-31,14,29,6,515,Single,Mobile App,Couple Getaway,1,0,0,Breakfast,No,No,Yes,Yes,No,Yes,No,64.15,384.9,Occupied,0,Extra Towels,4.1,Yes
+BKG0324,Hassan Nabil,Female,59,French,2026-03-12,2026-04-07,14,26,2,487,Double,Travel Agency,Conference,1,0,0,Half Board,Yes,No,Yes,No,No,Yes,Yes,110.67,221.34,Clean,0,High Floor,4.6,No
+BKG0325,Omar Haddad,Female,30,UAE,2025-02-23,2025-03-15,15,20,5,437,Double,Mobile App,Business,3,0,2,Half Board,No,No,Yes,Yes,Yes,Yes,No,106.49,532.45,Occupied,0,High Floor,4.3,Yes
+BKG0326,Leen Droubi,Male,37,Egyptian,2025-05-05,2025-06-02,13,28,6,258,Family,Travel Agency,Business,2,3,4,Room Only,No,Yes,Yes,Yes,Yes,Yes,No,130.27,781.62,Occupied,2,High Floor,4.2,Yes
+BKG0327,Dana Adel,Male,44,UAE,2025-08-16,2025-09-23,11,38,1,388,Double,Website,Business,2,0,1,Full Board,Yes,Yes,Yes,Yes,No,Yes,No,106.25,106.25,Occupied,2,High Floor,4.6,No
+BKG0328,Lina Droubi,Female,54,German,2025-11-17,2025-12-26,14,39,2,375,Single,Website,Leisure,1,0,0,Breakfast,Yes,No,Yes,Yes,No,Yes,No,74.84,149.68,Occupied,2,Smoking Area,4.4,Yes
+BKG0329,Khaled Khaled,Female,26,German,2026-02-10,2026-03-18,13,36,7,416,Suite,Corporate,Conference,2,0,1,Half Board,No,No,Yes,Yes,No,Yes,No,174.0,1218.0,Occupied,0,None,4.1,No
+BKG0330,Tareq Gubari,Male,47,Saudi,2026-01-24,2026-02-12,14,19,1,113,Single,Mobile App,Leisure,1,0,0,Breakfast,Yes,No,Yes,No,No,Yes,No,59.4,59.4,Available,0,Sea View,4.2,No
+BKG0331,Khaled Haddad,Male,33,UAE,2025-04-28,2025-05-19,14,21,7,141,Family,Walk-in,Leisure,4,2,5,Breakfast,Yes,No,Yes,Yes,No,Yes,No,129.6,907.2,Occupied,1,Quiet Room,3.6,No
+BKG0332,Ahmad Gubari,Male,66,UAE,2025-08-07,2025-09-05,14,29,6,296,Double,Travel Agency,Leisure,2,3,4,Breakfast,No,No,No,Yes,Yes,Yes,No,91.21,547.26,Available,2,Smoking Area,4.1,Yes
+BKG0333,Leen Nasser,Male,39,Egyptian,2025-08-07,2025-08-12,17,5,7,258,Double,Mobile App,Leisure,2,1,2,Room Only,Yes,No,Yes,Yes,Yes,Yes,No,100.3,702.1,Occupied,1,Baby Crib,5.0,Yes
+BKG0334,Noor Ali,Male,22,German,2025-11-25,2025-11-29,15,4,5,410,Family,Website,Conference,4,2,5,Breakfast,No,No,Yes,Yes,No,Yes,No,139.97,699.85,Occupied,1,None,4.6,Yes
+BKG0335,Hiba Ali,Male,58,Jordanian,2025-08-22,2025-08-31,14,9,6,476,Single,Website,Conference,1,0,0,Breakfast,No,No,Yes,No,No,Yes,No,70.09,420.54,Available,1,Sea View,3.6,Yes
+BKG0336,Mariam Nasser,Female,56,Egyptian,2025-07-30,2025-08-04,13,5,7,194,Double,Website,Conference,3,0,2,Room Only,Yes,No,Yes,No,No,Yes,No,100.3,702.1,Occupied,1,Late Check-In,4.3,Yes
+BKG0337,Alaa Nasser,Male,33,UAE,2025-09-15,2025-10-13,16,28,1,445,Single,Website,Conference,1,0,0,Breakfast,No,No,Yes,Yes,No,Yes,No,59.4,59.4,Occupied,2,Quiet Room,4.3,No
+BKG0338,Leen Tareq,Male,68,Jordanian,2026-01-25,2026-01-25,12,0,1,413,Single,Travel Agency,Business,1,0,0,Half Board,No,No,Yes,Yes,No,Yes,No,58.7,58.7,Clean,1,Baby Crib,5.0,No
+BKG0339,Ahmad Alsmadi,Female,20,German,2025-01-30,2025-02-20,17,21,3,285,Suite,Corporate,Business,2,0,1,Full Board,Yes,No,Yes,Yes,No,Yes,No,187.5,562.5,Occupied,3,Baby Crib,4.8,No
+BKG0340,Omar Ali,Female,34,German,2026-03-24,2026-04-13,16,20,1,445,Suite,Corporate,Leisure,4,2,5,Breakfast,No,No,Yes,Yes,No,Yes,No,162.0,162.0,Clean,2,Smoking Area,4.3,No
+BKG0341,Lina Alsmadi,Male,48,French,2025-10-08,2025-11-06,13,29,7,170,Suite,Website,Business,3,0,2,Half Board,Yes,No,Yes,Yes,No,No,No,174.0,1218.0,Clean,2,Smoking Area,4.4,No
+BKG0342,Hiba Adel,Female,64,UAE,2025-10-01,2025-11-01,13,31,6,166,Family,Walk-in,Family,2,3,4,Half Board,No,No,Yes,Yes,Yes,Yes,No,150.34,902.04,Occupied,2,High Floor,4.1,Yes
+BKG0343,Noor Qadoumi,Female,20,Jordanian,2026-03-13,2026-04-06,16,24,3,246,Double,Website,Leisure,2,2,3,Half Board,No,Yes,Yes,Yes,Yes,Yes,No,98.6,295.8,Clean,3,Smoking Area,4.2,No
+BKG0344,Sara Malkawi,Male,64,British,2025-03-16,2025-04-27,18,42,6,498,Double,Corporate,Business,4,0,3,Half Board,No,No,Yes,Yes,No,No,No,98.6,591.6,Occupied,0,Quiet Room,4.5,No
+BKG0345,Abdullah Alsmadi,Male,39,Jordanian,2025-04-02,2025-05-03,17,31,7,184,Double,Mobile App,Family,4,2,5,Breakfast,No,No,Yes,Yes,No,Yes,No,99.14,693.98,Clean,1,Extra Towels,3.6,Yes
+BKG0346,Hassan Nasser,Male,38,UAE,2025-10-23,2025-11-20,16,28,2,192,Single,Walk-in,Conference,1,0,0,Room Only,No,No,Yes,No,No,No,No,55.0,110.0,Occupied,0,High Floor,4.8,No
+BKG0347,Abdullah Adel,Female,57,Egyptian,2025-01-27,2025-02-28,16,32,1,106,Double,Mobile App,Business,2,0,1,Breakfast,No,No,Yes,Yes,No,Yes,No,99.14,99.14,Clean,0,Extra Towels,4.8,Yes
+BKG0348,Leen Haddad,Male,61,Jordanian,2025-03-03,2025-03-08,13,5,1,519,Double,Corporate,Leisure,3,0,2,Breakfast,No,No,Yes,Yes,Yes,Yes,No,99.14,99.14,Clean,1,None,3.9,Yes
+BKG0349,Hassan Haddad,Male,53,UAE,2025-10-02,2025-11-04,15,33,7,188,Family,Corporate,Business,2,2,3,Room Only,No,No,Yes,Yes,No,Yes,No,120.0,840.0,Clean,2,Extra Towels,4.5,No
+BKG0350,Hiba Adel,Female,22,French,2025-08-05,2025-08-05,14,0,6,243,Single,Mobile App,Leisure,1,2,2,Full Board,No,No,Yes,Yes,Yes,Yes,No,81.12,486.72,Clean,2,Quiet Room,4.4,Yes
+BKG0351,Shatha Qaisi,Female,55,American,2025-03-07,2025-04-15,15,39,6,179,Double,Corporate,Leisure,1,0,0,Breakfast,No,No,Yes,No,No,Yes,No,91.8,550.8,Occupied,0,Late Check-In,3.7,No
+BKG0352,Yousef Haddad,Male,58,Saudi,2025-06-11,2025-07-08,15,27,7,473,Double,Travel Agency,Conference,2,0,1,Breakfast,Yes,No,Yes,Yes,No,Yes,Yes,121.58,851.06,Needs Service,3,High Floor,4.3,Yes
+BKG0353,Noor Yasin,Male,51,British,2026-03-25,2026-05-01,17,37,3,294,Suite,Corporate,Family,2,2,3,Room Only,No,No,Yes,No,No,Yes,No,162.0,486.0,Available,2,Late Check-In,4.2,Yes
+BKG0354,Omar Nabil,Female,66,UAE,2025-10-18,2025-11-04,12,17,6,474,Suite,Mobile App,Leisure,2,0,1,Breakfast,Yes,No,Yes,Yes,No,Yes,No,162.0,972.0,Occupied,2,High Floor,4.1,No
+BKG0355,Khaled Droubi,Female,25,French,2025-05-03,2025-05-13,16,10,1,439,Family,Website,Couple Getaway,3,2,4,Breakfast,No,No,Yes,Yes,Yes,Yes,No,129.6,129.6,Clean,1,Baby Crib,4.2,No
+BKG0356,Alaa Ali,Female,58,Egyptian,2026-02-26,2026-04-10,16,43,5,236,Suite,Corporate,Family,2,0,1,Half Board,No,No,Yes,Yes,No,Yes,No,187.92,939.6,Available,0,Extra Towels,4.3,Yes
+BKG0357,Shatha Nabil,Female,33,Jordanian,2025-04-20,2025-05-30,16,40,1,350,Family,Corporate,Couple Getaway,2,1,2,Half Board,Yes,No,Yes,No,Yes,Yes,No,150.34,150.34,Occupied,2,Late Check-In,4.7,Yes
+BKG0358,Shatha Droubi,Female,50,British,2025-01-04,2025-02-15,14,42,2,270,Double,Mobile App,Business,3,0,2,Room Only,No,No,Yes,Yes,No,Yes,No,91.8,183.6,Occupied,1,Sea View,4.4,Yes
+BKG0359,Khaled Khaled,Female,50,Saudi,2025-01-17,2025-02-28,13,42,2,448,Double,Travel Agency,Conference,3,0,2,Breakfast,No,No,Yes,No,No,Yes,Yes,111.28,222.56,Occupied,1,None,4.5,Yes
+BKG0360,Zaid Qadoumi,Male,67,German,2026-03-01,2026-03-28,20,27,3,193,Double,Website,Business,2,0,1,Half Board,No,Yes,Yes,Yes,No,Yes,No,106.49,319.47,Occupied,1,High Floor,3.5,Yes
+BKG0361,Sara Ali,Male,29,Saudi,2025-04-07,2025-05-14,16,37,7,157,Single,Website,Couple Getaway,1,0,0,Full Board,No,No,Yes,Yes,No,Yes,No,68.75,481.25,Occupied,2,Sea View,4.1,No
+BKG0362,Razan Gubari,Female,65,UAE,2025-05-18,2025-06-04,19,17,3,167,Double,Website,Business,1,0,0,Half Board,Yes,No,Yes,Yes,Yes,No,No,116.35,349.05,Occupied,1,None,4.3,Yes
+BKG0363,Mariam Haddad,Female,57,UAE,2025-06-19,2025-07-12,17,23,3,470,Suite,Website,Leisure,4,0,3,Half Board,Yes,No,Yes,Yes,No,Yes,No,219.24,657.72,Occupied,1,Smoking Area,3.9,Yes
+BKG0364,Leen Nasser,Female,55,British,2025-03-20,2025-03-28,13,8,1,451,Family,Mobile App,Conference,4,1,4,Breakfast,No,No,Yes,Yes,Yes,No,No,139.97,139.97,Occupied,2,Quiet Room,4.5,Yes
+BKG0365,Yousef Samer,Female,30,German,2025-09-30,2025-11-01,20,32,7,124,Double,Mobile App,Family,2,0,1,Breakfast,No,Yes,Yes,Yes,No,Yes,No,99.14,693.98,Clean,2,High Floor,4.2,Yes
+BKG0366,Sara Alsmadi,Female,29,Egyptian,2025-10-01,2025-10-19,12,18,2,518,Double,Corporate,Family,2,2,3,Breakfast,Yes,No,Yes,Yes,Yes,Yes,No,91.8,183.6,Clean,3,Baby Crib,3.8,No
+BKG0367,Noor Nasser,Male,37,American,2025-01-06,2025-01-28,14,22,7,219,Family,Travel Agency,Couple Getaway,3,1,3,Half Board,No,No,Yes,Yes,No,Yes,No,128.06,896.42,Occupied,3,Sea View,4.5,No
+BKG0368,Abdullah Malkawi,Male,50,French,2026-01-09,2026-02-05,15,27,6,431,Single,Website,Couple Getaway,1,0,0,Breakfast,No,No,Yes,Yes,No,Yes,No,59.4,356.4,Available,1,Quiet Room,4.5,No
+BKG0369,Omar Samer,Male,68,Saudi,2025-07-26,2025-08-28,13,33,1,172,Double,Website,Couple Getaway,3,0,2,Half Board,Yes,No,Yes,Yes,No,Yes,No,116.35,116.35,Needs Service,2,Baby Crib,4.7,Yes
+BKG0370,Khaled Malkawi,Female,30,British,2025-09-03,2025-10-09,18,36,7,451,Double,Website,Family,2,0,1,Room Only,Yes,No,Yes,No,Yes,Yes,No,85.0,595.0,Occupied,1,Extra Towels,3.9,No
+BKG0371,Nour Qaisi,Female,27,Egyptian,2025-07-16,2025-08-30,18,45,6,247,Family,Website,Couple Getaway,2,1,2,Half Board,Yes,No,Yes,No,No,Yes,No,175.39,1052.34,Available,1,Extra Towels,4.1,Yes
+BKG0372,Noor Yasin,Female,62,American,2025-06-28,2025-07-15,19,17,1,493,Family,Walk-in,Business,2,2,3,Half Board,Yes,Yes,Yes,No,No,Yes,No,164.26,164.26,Occupied,1,Baby Crib,4.2,Yes
+BKG0373,Omar Samer,Female,50,British,2025-07-17,2025-08-06,15,20,3,286,Single,Corporate,Couple Getaway,1,0,0,Breakfast,No,No,Yes,Yes,No,Yes,No,70.09,210.27,Occupied,0,Quiet Room,4.5,Yes
+BKG0374,Lina Droubi,Male,50,Saudi,2025-01-02,2025-01-03,14,1,2,461,Single,Mobile App,Couple Getaway,1,0,0,Full Board,No,No,Yes,No,No,No,No,74.25,148.5,Occupied,1,Late Check-In,4.3,Yes
+BKG0375,Alaa Tareq,Female,47,Jordanian,2025-03-15,2025-03-16,16,1,4,470,Suite,Travel Agency,Business,3,0,2,Full Board,Yes,No,Yes,Yes,No,Yes,No,172.5,690.0,Occupied,0,Extra Towels,4.3,No
+BKG0376,Omar Haddad,Male,38,Egyptian,2025-06-22,2025-08-02,16,41,4,294,Single,Travel Agency,Family,1,0,0,Room Only,No,No,Yes,Yes,No,Yes,No,63.76,255.04,Occupied,3,Extra Towels,4.5,Yes
+BKG0377,Ahmad Samer,Male,23,German,2025-03-06,2025-03-19,15,13,6,245,Single,Walk-in,Family,1,2,2,Half Board,No,No,Yes,No,Yes,Yes,No,63.8,382.8,Occupied,2,Baby Crib,4.3,No
+BKG0378,Zaid Samer,Male,58,American,2025-03-25,2025-03-31,12,6,5,262,Single,Website,Couple Getaway,1,0,0,Breakfast,Yes,No,Yes,No,No,Yes,No,59.4,297.0,Occupied,1,Sea View,4.9,No
+BKG0379,Noor Gubari,Male,64,British,2026-01-20,2026-02-11,20,22,4,468,Double,Walk-in,Business,3,0,2,Room Only,No,No,Yes,No,No,Yes,No,85.0,340.0,Clean,2,Quiet Room,4.8,No
+BKG0380,Razan Qaisi,Female,58,French,2025-03-24,2025-04-26,21,33,5,509,Suite,Mobile App,Leisure,4,0,3,Full Board,No,No,Yes,Yes,Yes,Yes,No,202.5,1012.5,Occupied,0,Extra Towels,4.4,Yes
+BKG0381,Leen Tareq,Male,40,American,2026-02-05,2026-03-08,13,31,1,418,Single,Website,Leisure,1,0,0,Room Only,No,No,Yes,Yes,No,Yes,No,55.0,55.0,Occupied,1,Extra Towels,4.2,No
+BKG0382,Khaled Tareq,Female,59,British,2025-12-15,2026-01-12,14,28,2,337,Single,Mobile App,Leisure,1,2,2,Full Board,Yes,No,Yes,No,No,Yes,No,68.75,137.5,Occupied,3,High Floor,3.8,No
+BKG0383,Alaa Yasin,Female,61,Saudi,2025-12-09,2025-12-31,15,22,1,428,Single,Walk-in,Couple Getaway,1,0,0,Full Board,No,Yes,Yes,Yes,No,Yes,No,81.12,81.12,Occupied,1,Late Check-In,4.3,Yes
+BKG0384,Yousef Qaisi,Female,58,Jordanian,2025-04-20,2025-05-26,12,36,3,128,Family,Mobile App,Leisure,2,1,2,Full Board,No,No,Yes,Yes,Yes,Yes,No,150.0,450.0,Clean,1,Extra Towels,4.7,No
+BKG0385,Ahmad Yasin,Male,39,UAE,2025-02-17,2025-03-10,20,21,4,335,Double,Mobile App,Leisure,3,0,2,Half Board,Yes,No,Yes,Yes,No,Yes,Yes,120.29,481.16,Available,0,Baby Crib,4.0,No
+BKG0386,Hassan Qaisi,Female,63,American,2025-03-17,2025-04-06,13,20,4,287,Double,Website,Leisure,3,0,2,Breakfast,No,Yes,Yes,No,No,Yes,No,91.8,367.2,Occupied,3,None,3.6,No
+BKG0387,Nour Malkawi,Female,27,French,2025-01-09,2025-01-28,15,19,3,151,Double,Mobile App,Couple Getaway,2,0,1,Full Board,Yes,No,Yes,Yes,No,Yes,No,106.25,318.75,Occupied,0,Extra Towels,4.0,No
+BKG0388,Shatha Malkawi,Female,21,Saudi,2025-02-14,2025-02-20,13,6,7,431,Double,Walk-in,Couple Getaway,1,0,0,Breakfast,No,Yes,Yes,Yes,Yes,Yes,No,91.8,642.6,Occupied,1,Smoking Area,4.1,No
+BKG0389,Hiba Tareq,Male,43,American,2025-12-27,2026-01-21,11,25,7,224,Double,Travel Agency,Leisure,4,2,5,Half Board,Yes,No,Yes,Yes,No,No,No,90.71,634.97,Occupied,1,Late Check-In,4.3,No
+BKG0390,Razan Yasin,Male,45,German,2025-10-12,2025-10-24,16,12,4,266,Single,Travel Agency,Couple Getaway,1,0,0,Room Only,No,No,Yes,Yes,No,Yes,No,54.65,218.6,Clean,0,Extra Towels,4.7,Yes
+BKG0391,Rana Alsmadi,Male,20,Jordanian,2025-04-15,2025-04-20,12,5,1,127,Double,Travel Agency,Couple Getaway,2,0,1,Room Only,No,No,Yes,No,Yes,Yes,No,78.2,78.2,Occupied,0,Sea View,4.6,No
+BKG0392,Leen Malkawi,Male,60,Saudi,2025-05-21,2025-05-30,16,9,1,261,Double,Travel Agency,Business,2,0,1,Full Board,Yes,No,Yes,No,No,Yes,Yes,128.8,128.8,Occupied,1,Sea View,4.4,Yes
+BKG0393,Ahmad Adel,Male,20,Jordanian,2025-11-21,2025-12-01,13,10,4,171,Single,Mobile App,Leisure,1,3,3,Breakfast,Yes,No,Yes,Yes,No,Yes,No,70.09,280.36,Clean,3,Quiet Room,4.4,Yes
+BKG0394,Hiba Gubari,Female,37,French,2025-04-23,2025-06-06,19,44,1,493,Single,Website,Conference,1,0,0,Half Board,No,No,Yes,No,No,Yes,No,80.39,80.39,Clean,0,High Floor,4.0,Yes
+BKG0395,Leen Khaled,Female,66,German,2025-10-28,2025-11-07,17,10,3,159,Family,Mobile App,Conference,3,1,3,Half Board,No,No,Yes,Yes,Yes,Yes,Yes,183.41,550.23,Occupied,2,Baby Crib,4.0,Yes
+BKG0396,Lina Haddad,Female,31,UAE,2025-04-03,2025-04-23,15,20,7,243,Single,Travel Agency,Leisure,1,2,2,Room Only,Yes,Yes,Yes,Yes,No,No,No,50.6,354.2,Available,3,Quiet Room,3.9,No
+BKG0397,Abdullah Ali,Female,61,German,2026-01-02,2026-02-13,12,42,5,168,Double,Mobile App,Business,3,0,2,Breakfast,No,No,Yes,Yes,No,Yes,No,99.14,495.7,Occupied,0,None,3.8,Yes
+BKG0398,Hassan Qadoumi,Male,53,British,2026-03-07,2026-03-09,18,2,4,153,Double,Website,Business,3,0,2,Half Board,Yes,No,Yes,Yes,No,Yes,No,98.6,394.4,Available,1,High Floor,3.5,No
+BKG0399,Rana Droubi,Male,28,British,2025-01-15,2025-01-18,18,3,2,188,Family,Walk-in,Leisure,2,2,3,Half Board,No,Yes,Yes,Yes,No,Yes,Yes,183.41,366.82,Occupied,3,Sea View,4.3,Yes
+BKG0400,Omar Nabil,Male,40,German,2025-03-12,2025-04-10,13,29,5,354,Double,Travel Agency,Family,2,0,1,Breakfast,Yes,No,Yes,Yes,No,Yes,No,84.46,422.3,Clean,2,Quiet Room,4.4,No
+BKG0401,Leen Samer,Female,49,UAE,2025-01-31,2025-01-31,16,0,2,136,Double,Mobile App,Couple Getaway,3,0,2,Breakfast,Yes,No,Yes,Yes,No,Yes,No,99.14,198.28,Needs Service,2,Quiet Room,3.7,Yes
+BKG0402,Sara Nasser,Male,56,Egyptian,2025-05-23,2025-06-02,16,10,4,240,Double,Website,Business,1,0,0,Breakfast,Yes,No,Yes,Yes,Yes,Yes,No,108.32,433.28,Occupied,1,Baby Crib,3.9,Yes
+BKG0403,Leen Tareq,Female,66,UAE,2025-07-09,2025-07-12,16,3,1,152,Double,Mobile App,Family,2,0,1,Breakfast,No,No,No,Yes,Yes,Yes,No,115.67,115.67,Occupied,1,Sea View,4.6,Yes
+BKG0404,Alaa Tareq,Male,33,UAE,2025-04-23,2025-06-06,14,44,6,272,Double,Website,Family,3,0,2,Breakfast,No,No,Yes,No,Yes,Yes,Yes,141.11,846.66,Occupied,1,None,4.4,Yes
+BKG0405,Alaa Ali,Male,30,British,2025-01-11,2025-01-27,18,16,2,287,Family,Travel Agency,Leisure,2,1,2,Breakfast,No,No,Yes,Yes,Yes,Yes,No,119.23,238.46,Clean,2,Extra Towels,3.6,No
+BKG0406,Rana Malkawi,Female,41,Saudi,2025-08-23,2025-09-14,14,22,1,421,Double,Travel Agency,Family,2,0,1,Breakfast,No,No,Yes,Yes,No,Yes,No,84.46,84.46,Occupied,0,High Floor,4.7,No
+BKG0407,Noor Nasser,Male,53,American,2025-12-14,2026-01-11,20,28,5,449,Family,Mobile App,Leisure,2,2,3,Breakfast,Yes,No,Yes,Yes,Yes,Yes,No,129.6,648.0,Clean,4,Smoking Area,4.0,No
+BKG0408,Omar Droubi,Male,62,American,2025-03-18,2025-04-05,16,18,5,239,Double,Website,Leisure,2,0,1,Half Board,Yes,No,Yes,Yes,No,Yes,Yes,129.92,649.6,Clean,0,Late Check-In,4.4,Yes
+BKG0409,Rana Yasin,Female,25,UAE,2025-03-15,2025-03-27,15,12,6,314,Single,Corporate,Leisure,1,1,1,Breakfast,No,No,Yes,No,No,Yes,No,59.4,356.4,Clean,1,Quiet Room,4.3,No
+BKG0410,Nour Malkawi,Female,39,Egyptian,2025-10-11,2025-10-30,14,19,2,255,Double,Corporate,Leisure,2,0,1,Breakfast,No,No,Yes,Yes,No,Yes,Yes,112.0,224.0,Available,1,Late Check-In,4.8,No
+BKG0411,Lina Droubi,Female,28,Jordanian,2026-02-07,2026-03-16,15,37,2,400,Suite,Mobile App,Leisure,1,2,2,Full Board,No,Yes,Yes,No,No,Yes,No,187.5,375.0,Occupied,2,None,3.8,No
+BKG0412,Alaa Khaled,Male,33,French,2025-12-12,2026-01-26,12,45,5,359,Single,Corporate,Family,1,0,0,Half Board,No,No,Yes,Yes,Yes,Yes,No,63.8,319.0,Clean,1,High Floor,4.0,No
+BKG0413,Tareq Alsmadi,Female,39,French,2025-08-16,2025-08-19,19,3,4,152,Family,Corporate,Couple Getaway,2,3,4,Full Board,No,No,Yes,Yes,No,Yes,No,177.0,708.0,Clean,2,Extra Towels,3.8,Yes
+BKG0414,Rana Khaled,Female,45,Saudi,2025-10-29,2025-11-21,16,23,4,182,Double,Corporate,Business,2,0,1,Room Only,No,No,Yes,Yes,No,Yes,No,91.8,367.2,Occupied,2,Smoking Area,4.9,Yes
+BKG0415,Hiba Droubi,Female,65,Saudi,2025-07-03,2025-08-04,14,32,5,360,Single,Website,Family,1,1,1,Breakfast,No,Yes,Yes,Yes,No,Yes,No,70.09,350.45,Occupied,2,Late Check-In,4.9,Yes
+BKG0416,Leen Gubari,Female,64,British,2026-02-02,2026-03-07,14,33,6,316,Double,Corporate,Business,1,0,0,Half Board,Yes,No,Yes,Yes,No,Yes,No,106.49,638.94,Needs Service,0,Late Check-In,4.2,Yes
+BKG0417,Omar Qadoumi,Male,22,French,2025-02-02,2025-03-13,14,39,1,113,Suite,Travel Agency,Couple Getaway,4,0,3,Breakfast,No,No,No,Yes,No,Yes,No,149.04,149.04,Occupied,1,Quiet Room,4.4,No
+BKG0418,Abdullah Tareq,Male,28,British,2025-11-19,2025-11-25,14,6,6,421,Suite,Travel Agency,Couple Getaway,2,0,1,Half Board,No,No,Yes,Yes,No,Yes,No,160.08,960.48,Occupied,0,High Floor,5.0,No
+BKG0419,Leen Qadoumi,Female,28,Saudi,2025-07-12,2025-07-16,16,4,7,130,Single,Website,Family,1,0,0,Breakfast,No,No,Yes,Yes,Yes,No,No,70.09,490.63,Needs Service,1,Extra Towels,4.6,Yes
+BKG0420,Hassan Nabil,Male,36,Jordanian,2025-10-07,2025-10-14,16,7,6,314,Double,Website,Leisure,3,0,2,Breakfast,No,No,Yes,No,Yes,Yes,No,91.8,550.8,Needs Service,0,None,3.8,No
+BKG0421,Razan Nasser,Female,55,Egyptian,2025-11-03,2025-12-12,19,39,6,127,Double,Website,Business,2,0,1,Half Board,No,No,Yes,No,Yes,Yes,No,124.24,745.44,Clean,1,None,3.3,Yes
+BKG0422,Khaled Qaisi,Female,47,Egyptian,2025-07-18,2025-08-11,16,24,7,130,Single,Website,Family,1,2,2,Breakfast,Yes,No,Yes,Yes,Yes,Yes,No,70.09,490.63,Clean,2,None,4.2,Yes
+BKG0423,Razan Ali,Male,38,British,2025-02-09,2025-02-17,15,8,1,435,Double,Travel Agency,Leisure,2,1,2,Breakfast,Yes,Yes,Yes,Yes,Yes,Yes,No,84.46,84.46,Needs Service,3,Baby Crib,4.3,No
+BKG0424,Abdullah Nabil,Male,54,Jordanian,2025-05-06,2025-05-23,14,17,5,111,Double,Mobile App,Couple Getaway,2,0,1,Room Only,No,No,Yes,Yes,No,Yes,No,91.8,459.0,Clean,1,Smoking Area,4.6,Yes
+BKG0425,Rana Gubari,Female,57,American,2025-09-13,2025-09-15,14,2,7,486,Family,Website,Leisure,2,3,4,Breakfast,Yes,Yes,Yes,Yes,Yes,Yes,No,129.6,907.2,Occupied,2,Baby Crib,4.9,No
+BKG0426,Khaled Yasin,Female,59,German,2025-10-30,2025-10-31,14,1,2,108,Suite,Corporate,Conference,3,0,2,Breakfast,No,No,Yes,No,No,Yes,No,174.96,349.92,Clean,3,Smoking Area,4.1,Yes
+BKG0427,Alaa Alsmadi,Male,25,American,2025-05-24,2025-07-06,19,43,7,385,Double,Mobile App,Family,2,1,2,Half Board,No,No,Yes,Yes,Yes,Yes,No,116.35,814.45,Occupied,2,Baby Crib,3.9,Yes
+BKG0428,Sara Droubi,Female,25,British,2025-04-22,2025-04-25,16,3,4,233,Family,Mobile App,Leisure,3,3,5,Room Only,No,Yes,Yes,Yes,Yes,Yes,No,129.6,518.4,Clean,2,Quiet Room,4.2,Yes
+BKG0429,Alaa Ali,Male,42,UAE,2025-05-12,2025-06-24,18,43,1,419,Double,Website,Leisure,2,0,1,Breakfast,Yes,No,Yes,Yes,No,Yes,No,108.32,108.32,Clean,2,Baby Crib,4.1,Yes
+BKG0430,Hiba Haddad,Male,29,Saudi,2025-01-16,2025-02-08,12,23,2,395,Double,Corporate,Family,3,0,2,Breakfast,Yes,Yes,Yes,Yes,No,Yes,No,99.14,198.28,Occupied,2,Quiet Room,5.0,Yes
+BKG0431,Hassan Nabil,Male,27,French,2025-11-19,2025-12-15,15,26,5,281,Suite,Travel Agency,Leisure,2,1,2,Full Board,Yes,No,No,Yes,Yes,No,No,203.55,1017.75,Available,3,Sea View,3.3,Yes
+BKG0432,Mariam Malkawi,Female,61,UAE,2025-10-14,2025-10-18,19,4,5,193,Double,Mobile App,Family,3,0,2,Breakfast,No,No,Yes,Yes,Yes,Yes,No,99.14,495.7,Occupied,2,Smoking Area,3.2,Yes
+BKG0433,Hiba Qadoumi,Female,46,French,2026-03-25,2026-03-25,13,0,4,416,Suite,Website,Business,2,0,1,Half Board,No,Yes,Yes,No,No,Yes,No,174.0,696.0,Available,0,Baby Crib,4.1,No
+BKG0434,Zaid Droubi,Female,42,German,2025-02-25,2025-02-27,12,2,6,402,Double,Walk-in,Leisure,3,1,3,Half Board,No,No,Yes,Yes,Yes,Yes,No,98.6,591.6,Available,2,Late Check-In,3.9,No
+BKG0435,Lina Adel,Female,51,Jordanian,2025-05-24,2025-05-30,14,6,7,246,Double,Corporate,Family,3,0,2,Breakfast,Yes,Yes,Yes,No,No,No,No,99.14,693.98,Occupied,1,Baby Crib,3.6,Yes
+BKG0436,Alaa Qaisi,Male,48,Egyptian,2025-03-26,2025-04-13,14,18,1,114,Double,Corporate,Couple Getaway,3,0,2,Full Board,No,Yes,Yes,No,No,Yes,No,106.25,106.25,Needs Service,1,None,3.2,No
+BKG0437,Dana Yasin,Female,56,French,2025-07-09,2025-07-27,19,18,2,360,Double,Corporate,Leisure,2,1,2,Half Board,No,No,Yes,No,No,Yes,No,116.35,232.7,Occupied,3,High Floor,4.9,Yes
+BKG0438,Noor Nasser,Male,52,British,2025-06-21,2025-07-20,16,29,3,517,Family,Website,Business,3,2,4,Breakfast,No,No,Yes,No,No,Yes,No,152.93,458.79,Clean,2,Smoking Area,4.3,Yes
+BKG0439,Alaa Nasser,Male,32,UAE,2025-04-06,2025-05-07,14,31,6,508,Single,Website,Family,1,0,0,Room Only,No,No,Yes,Yes,No,Yes,No,55.0,330.0,Occupied,2,Extra Towels,4.2,No
+BKG0440,Alaa Qaisi,Female,50,Saudi,2025-11-19,2025-12-27,14,38,4,513,Single,Corporate,Couple Getaway,1,0,0,Half Board,No,No,Yes,Yes,No,No,No,80.39,321.56,Available,2,Late Check-In,4.1,Yes
+BKG0441,Shatha Samer,Male,35,American,2026-03-19,2026-04-26,15,38,4,394,Double,Website,Couple Getaway,2,0,1,Breakfast,Yes,No,Yes,No,No,Yes,Yes,112.0,448.0,Available,1,Smoking Area,4.1,No
+BKG0442,Khaled Ali,Male,60,British,2026-03-25,2026-04-28,14,34,2,511,Single,Travel Agency,Couple Getaway,1,0,0,Room Only,Yes,No,Yes,Yes,No,Yes,Yes,61.73,123.46,Available,1,Sea View,5.0,No
+BKG0443,Noor Qaisi,Male,55,Jordanian,2025-03-24,2025-04-14,15,21,3,480,Single,Website,Couple Getaway,1,0,0,Room Only,No,No,Yes,Yes,No,Yes,No,55.0,165.0,Occupied,2,Sea View,4.9,No
+BKG0444,Leen Ali,Female,52,Jordanian,2026-03-25,2026-03-30,12,5,3,320,Single,Corporate,Family,1,0,0,Half Board,No,Yes,Yes,Yes,No,Yes,Yes,77.84,233.52,Occupied,2,Smoking Area,4.4,No
+BKG0445,Lina Haddad,Female,50,UAE,2025-02-17,2025-03-15,16,26,2,187,Double,Corporate,Conference,4,0,3,Half Board,No,No,Yes,Yes,No,Yes,No,106.49,212.98,Occupied,1,High Floor,4.2,Yes
+BKG0446,Razan Nasser,Male,25,German,2025-04-17,2025-05-18,16,31,7,261,Double,Mobile App,Conference,2,0,1,Breakfast,No,No,Yes,Yes,Yes,Yes,No,91.8,642.6,Occupied,1,Smoking Area,5.0,No
+BKG0447,Leen Khaled,Male,50,Saudi,2025-11-30,2025-12-20,15,20,2,252,Double,Website,Business,1,0,0,Breakfast,Yes,Yes,Yes,Yes,No,Yes,No,115.67,231.34,Occupied,2,Sea View,4.9,Yes
+BKG0448,Yousef Haddad,Female,63,British,2025-03-02,2025-03-20,17,18,4,467,Double,Mobile App,Family,2,0,1,Breakfast,No,No,Yes,Yes,No,No,No,91.8,367.2,Needs Service,0,Late Check-In,4.0,No
+BKG0449,Tareq Qaisi,Male,31,French,2026-03-01,2026-03-01,14,0,4,319,Single,Corporate,Leisure,1,0,0,Half Board,No,No,Yes,Yes,No,Yes,No,63.8,255.2,Occupied,0,Extra Towels,3.6,No
+BKG0450,Mariam Yasin,Female,45,UAE,2025-10-27,2025-11-15,15,19,6,102,Single,Website,Conference,1,0,0,Breakfast,Yes,Yes,Yes,Yes,No,Yes,No,64.15,384.9,Available,3,Smoking Area,4.2,Yes
+BKG0451,Zaid Adel,Male,59,Egyptian,2026-02-06,2026-02-19,13,13,2,372,Single,Corporate,Leisure,1,2,2,Room Only,No,No,Yes,Yes,No,Yes,No,55.0,110.0,Occupied,3,Extra Towels,3.9,No
+BKG0452,Yousef Malkawi,Female,60,Egyptian,2025-02-10,2025-02-23,19,13,5,483,Family,Travel Agency,Leisure,3,3,5,Half Board,Yes,No,Yes,No,Yes,Yes,No,128.06,640.3,Clean,2,Baby Crib,4.5,No
+BKG0453,Nour Alsmadi,Male,32,American,2025-01-06,2025-02-03,14,28,2,333,Double,Corporate,Couple Getaway,2,0,1,Room Only,Yes,No,Yes,Yes,No,Yes,No,85.0,170.0,Occupied,1,Smoking Area,4.2,No
+BKG0454,Dana Qaisi,Male,61,Jordanian,2025-09-09,2025-10-09,17,30,2,445,Double,Travel Agency,Conference,3,0,2,Room Only,No,Yes,Yes,Yes,No,Yes,No,78.2,156.4,Clean,3,None,4.2,No
+BKG0455,Rana Haddad,Female,57,Jordanian,2026-03-11,2026-04-25,13,45,3,280,Family,Mobile App,Couple Getaway,3,1,3,Breakfast,No,Yes,Yes,Yes,Yes,Yes,No,139.97,419.91,Available,0,Extra Towels,4.9,Yes
+BKG0456,Noor Ali,Male,64,French,2025-03-02,2025-03-31,16,29,3,128,Single,Corporate,Business,1,0,0,Room Only,Yes,No,Yes,Yes,Yes,Yes,No,55.0,165.0,Clean,1,Quiet Room,4.7,No
+BKG0457,Hiba Tareq,Female,28,German,2025-07-14,2025-08-01,13,18,6,180,Single,Website,Couple Getaway,1,0,0,Room Only,Yes,No,Yes,Yes,No,Yes,No,69.3,415.8,Occupied,0,None,3.7,Yes
+BKG0458,Hiba Tareq,Female,47,American,2025-10-03,2025-10-16,21,13,5,438,Single,Walk-in,Family,1,2,2,Half Board,Yes,No,Yes,Yes,Yes,Yes,No,63.8,319.0,Occupied,3,Baby Crib,4.7,No
+BKG0459,Rana Droubi,Female,60,Jordanian,2025-10-29,2025-11-18,17,20,1,292,Single,Mobile App,Leisure,1,2,2,Breakfast,Yes,Yes,Yes,No,No,Yes,No,59.4,59.4,Available,1,Quiet Room,4.1,No
+BKG0460,Noor Alsmadi,Male,39,UAE,2025-11-04,2025-12-04,16,30,3,271,Suite,Corporate,Family,2,2,3,Full Board,No,Yes,Yes,No,No,No,No,221.25,663.75,Needs Service,4,Late Check-In,4.4,Yes
+BKG0461,Mariam Malkawi,Female,29,French,2026-02-08,2026-02-13,14,5,1,342,Double,Mobile App,Family,2,0,1,Breakfast,Yes,No,Yes,No,Yes,Yes,No,99.14,99.14,Occupied,1,Sea View,4.3,Yes
+BKG0462,Khaled Adel,Male,68,German,2025-12-09,2026-01-07,17,29,4,286,Single,Walk-in,Business,1,0,0,Half Board,No,No,Yes,Yes,No,Yes,No,63.8,255.2,Clean,1,Late Check-In,4.0,No
+BKG0463,Abdullah Gubari,Female,68,Saudi,2025-06-24,2025-06-24,16,0,5,143,Double,Website,Business,2,0,1,Breakfast,Yes,No,Yes,Yes,No,Yes,Yes,132.16,660.8,Needs Service,1,High Floor,3.9,Yes
+BKG0464,Razan Adel,Male,45,Egyptian,2025-06-27,2025-07-03,16,6,6,158,Double,Travel Agency,Leisure,2,0,1,Full Board,No,No,Yes,Yes,No,Yes,No,115.34,692.04,Occupied,2,Baby Crib,4.0,Yes
+BKG0465,Rana Tareq,Male,44,Egyptian,2026-02-07,2026-03-06,15,27,2,273,Single,Corporate,Conference,1,0,0,Breakfast,No,No,Yes,Yes,No,Yes,No,64.15,128.3,Occupied,1,Baby Crib,4.9,Yes
+BKG0466,Zaid Qadoumi,Female,31,British,2025-12-12,2025-12-13,15,1,3,335,Double,Mobile App,Leisure,1,0,0,Half Board,No,No,Yes,Yes,Yes,Yes,No,124.24,372.72,Clean,2,Quiet Room,4.0,Yes
+BKG0467,Nour Haddad,Male,29,German,2025-01-21,2025-02-10,15,20,1,377,Double,Walk-in,Leisure,2,0,1,Breakfast,Yes,No,Yes,No,Yes,No,No,91.8,91.8,Needs Service,0,Extra Towels,4.2,No
+BKG0468,Nour Gubari,Female,23,French,2026-03-14,2026-03-29,16,15,7,426,Single,Corporate,Leisure,1,1,1,Breakfast,No,Yes,Yes,Yes,Yes,Yes,No,59.4,415.8,Clean,1,Smoking Area,4.1,No
+BKG0469,Mariam Haddad,Female,65,UAE,2025-06-12,2025-06-26,14,14,1,458,Single,Website,Conference,1,0,0,Half Board,No,No,Yes,Yes,No,Yes,No,75.28,75.28,Occupied,1,Smoking Area,3.8,Yes
+BKG0470,Razan Droubi,Male,22,French,2025-03-29,2025-04-22,14,24,6,352,Double,Mobile App,Business,4,0,3,Breakfast,Yes,No,Yes,Yes,No,Yes,No,91.8,550.8,Occupied,1,Extra Towels,4.4,No
+BKG0471,Zaid Haddad,Male,58,Saudi,2025-05-01,2025-06-04,13,34,4,373,Double,Website,Business,2,0,1,Full Board,No,No,No,Yes,No,Yes,No,125.38,501.52,Occupied,0,Baby Crib,4.4,Yes
+BKG0472,Nour Qadoumi,Female,49,French,2025-07-20,2025-08-14,15,25,2,475,Single,Corporate,Leisure,1,0,0,Half Board,No,No,Yes,Yes,No,Yes,No,75.28,150.56,Occupied,1,High Floor,4.6,Yes
+BKG0473,Hiba Nasser,Female,30,Saudi,2025-07-29,2025-08-18,16,20,1,336,Family,Website,Family,3,2,4,Full Board,Yes,No,Yes,Yes,No,No,No,177.0,177.0,Occupied,4,Quiet Room,4.1,Yes
+BKG0474,Rana Malkawi,Male,35,French,2025-05-06,2025-06-13,15,38,6,467,Double,Website,Family,2,2,3,Room Only,No,No,Yes,Yes,Yes,No,No,107.1,642.6,Needs Service,2,Sea View,4.2,Yes
+BKG0475,Yousef Adel,Male,61,French,2025-10-03,2025-11-17,17,45,1,312,Double,Walk-in,Leisure,2,2,3,Half Board,Yes,No,Yes,Yes,Yes,Yes,No,98.6,98.6,Occupied,1,High Floor,4.7,No
+BKG0476,Zaid Ali,Male,50,American,2025-12-03,2025-12-12,19,9,3,114,Single,Travel Agency,Business,1,0,0,Full Board,No,No,Yes,Yes,No,Yes,No,79.69,239.07,Available,0,Late Check-In,3.7,Yes
+BKG0477,Zaid Droubi,Female,38,Egyptian,2025-04-24,2025-05-30,14,36,3,365,Double,Mobile App,Conference,3,0,2,Room Only,No,Yes,Yes,No,No,Yes,No,91.8,275.4,Available,1,Baby Crib,4.2,Yes
+BKG0478,Mariam Adel,Male,42,British,2025-07-27,2025-09-04,18,39,4,356,Double,Mobile App,Couple Getaway,2,0,1,Full Board,No,No,Yes,Yes,Yes,Yes,No,106.25,425.0,Occupied,0,High Floor,3.8,No
+BKG0479,Khaled Droubi,Male,67,UAE,2025-08-24,2025-10-03,18,40,5,468,Double,Website,Family,4,0,3,Breakfast,No,No,Yes,Yes,No,Yes,No,99.14,495.7,Occupied,0,Quiet Room,4.4,Yes
+BKG0480,Lina Nasser,Female,37,Saudi,2025-08-22,2025-08-24,20,2,2,143,Suite,Walk-in,Couple Getaway,4,0,3,Room Only,Yes,Yes,Yes,No,No,Yes,No,177.0,354.0,Occupied,1,Smoking Area,4.2,Yes
+BKG0481,Zaid Ali,Female,33,American,2025-09-01,2025-09-07,15,6,2,431,Double,Travel Agency,Couple Getaway,2,0,1,Full Board,No,Yes,Yes,Yes,No,Yes,No,97.75,195.5,Available,1,Smoking Area,4.0,No
+BKG0482,Mariam Gubari,Female,37,French,2025-06-03,2025-07-07,14,34,3,156,Single,Walk-in,Business,1,0,0,Room Only,No,No,Yes,Yes,No,Yes,No,64.9,194.7,Clean,2,Late Check-In,3.9,Yes
+BKG0483,Khaled Malkawi,Female,39,French,2026-01-26,2026-02-08,14,13,2,235,Single,Mobile App,Family,1,1,1,Room Only,Yes,No,Yes,No,No,Yes,No,55.0,110.0,Needs Service,1,Extra Towels,3.5,No
+BKG0484,Hassan Khaled,Female,39,British,2025-08-30,2025-09-18,15,19,7,265,Family,Mobile App,Leisure,2,2,3,Half Board,No,No,Yes,No,No,Yes,Yes,169.82,1188.74,Clean,3,Extra Towels,4.4,No
+BKG0485,Sara Nabil,Male,55,UAE,2025-08-07,2025-08-31,14,24,7,129,Double,Mobile App,Leisure,1,0,0,Half Board,No,No,No,No,No,Yes,No,116.35,814.45,Clean,4,Sea View,4.2,Yes
+BKG0486,Ahmad Yasin,Female,48,Saudi,2025-11-24,2025-12-11,15,17,3,496,Double,Corporate,Business,4,0,3,Half Board,No,No,Yes,Yes,No,Yes,No,116.35,349.05,Occupied,0,Extra Towels,4.0,Yes
+BKG0487,Zaid Adel,Female,40,French,2026-01-30,2026-03-15,17,44,1,109,Suite,Website,Leisure,2,0,1,Breakfast,No,No,Yes,No,No,Yes,No,162.0,162.0,Clean,0,None,4.5,No
+BKG0488,Rana Nasser,Female,40,American,2025-10-17,2025-10-19,19,2,4,332,Double,Travel Agency,Conference,2,0,1,Full Board,No,No,Yes,No,Yes,No,No,97.75,391.0,Available,1,Sea View,5.0,No
+BKG0489,Hiba Malkawi,Male,24,British,2026-04-01,2026-04-10,16,9,6,282,Double,Corporate,Conference,4,0,3,Full Board,No,No,Yes,Yes,Yes,Yes,No,114.75,688.5,Available,0,Quiet Room,4.4,Yes
+BKG0490,Ahmad Yasin,Male,29,American,2026-03-27,2026-05-02,13,36,6,326,Single,Website,Family,1,2,2,Half Board,No,No,Yes,Yes,Yes,Yes,No,68.9,413.4,Available,2,Baby Crib,4.6,Yes
+BKG0491,Dana Tareq,Male,67,German,2025-03-05,2025-03-29,12,24,7,198,Single,Mobile App,Business,1,0,0,Half Board,No,Yes,No,Yes,No,Yes,No,68.9,482.3,Occupied,0,Baby Crib,5.0,Yes
+BKG0492,Rana Droubi,Male,36,French,2025-04-18,2025-05-20,14,32,1,432,Single,Mobile App,Leisure,1,3,3,Room Only,Yes,No,Yes,No,No,Yes,No,55.0,55.0,Available,0,None,4.5,No
+BKG0493,Lina Gubari,Male,31,Egyptian,2025-06-15,2025-06-24,18,9,1,184,Double,Website,Leisure,1,1,1,Breakfast,No,No,Yes,No,Yes,Yes,No,108.32,108.32,Occupied,1,Baby Crib,4.4,Yes
+BKG0494,Omar Nabil,Female,60,American,2025-01-16,2025-01-29,14,13,4,344,Double,Website,Business,1,0,0,Breakfast,No,Yes,Yes,Yes,No,Yes,No,91.8,367.2,Occupied,1,Sea View,4.1,No
+BKG0495,Leen Ali,Male,58,American,2025-08-26,2025-09-29,15,34,4,415,Double,Corporate,Leisure,2,0,1,Full Board,No,Yes,Yes,No,No,Yes,No,106.25,425.0,Clean,2,High Floor,4.6,No
+BKG0496,Yousef Khaled,Female,66,British,2025-02-23,2025-03-09,14,14,2,174,Suite,Mobile App,Family,2,3,4,Breakfast,No,No,Yes,Yes,No,No,No,162.0,324.0,Clean,1,Quiet Room,4.5,No
+BKG0497,Razan Nasser,Male,40,French,2025-11-21,2025-12-06,13,15,1,440,Double,Mobile App,Family,3,1,3,Breakfast,Yes,No,Yes,Yes,Yes,Yes,No,115.67,115.67,Occupied,1,Smoking Area,4.6,Yes
+BKG0498,Noor Qaisi,Male,36,British,2025-02-19,2025-03-12,17,21,6,449,Double,Website,Family,1,3,3,Half Board,Yes,No,Yes,Yes,Yes,Yes,No,98.6,591.6,Needs Service,2,Quiet Room,4.4,No
+BKG0499,Mariam Ali,Female,67,Egyptian,2025-04-24,2025-04-25,13,1,7,126,Double,Travel Agency,Business,2,0,1,Breakfast,No,No,Yes,Yes,No,Yes,No,91.21,638.47,Occupied,0,Sea View,5.0,Yes
+BKG0500,Leen Gubari,Female,46,French,2025-07-25,2025-08-18,18,24,3,182,Double,Walk-in,Leisure,1,1,1,Half Board,Yes,No,Yes,Yes,No,Yes,No,116.35,349.05,Occupied,1,Quiet Room,5.0,Yes
+BKG0501,Khaled Alsmadi,Female,35,Saudi,2025-11-27,2025-12-22,16,25,4,325,Single,Corporate,Business,1,0,0,Breakfast,No,No,Yes,Yes,No,Yes,No,70.09,280.36,Available,1,Smoking Area,3.8,Yes
+BKG0502,Khaled Haddad,Female,59,Egyptian,2025-06-02,2025-06-09,15,7,7,153,Single,Corporate,Couple Getaway,1,0,0,Breakfast,Yes,No,Yes,No,Yes,Yes,No,70.09,490.63,Clean,0,Extra Towels,3.9,Yes
+BKG0503,Khaled Qadoumi,Male,43,French,2025-02-15,2025-03-25,19,38,6,323,Family,Corporate,Leisure,2,2,3,Half Board,No,No,Yes,Yes,No,Yes,No,139.2,835.2,Occupied,1,Smoking Area,4.2,No
+BKG0504,Hassan Alsmadi,Female,65,German,2025-12-07,2025-12-13,21,6,3,504,Double,Corporate,Family,1,0,0,Half Board,No,Yes,Yes,No,Yes,Yes,No,124.24,372.72,Available,0,None,4.5,Yes
+BKG0505,Khaled Ali,Male,53,German,2025-08-14,2025-09-12,16,29,7,329,Family,Travel Agency,Conference,3,1,3,Breakfast,Yes,No,Yes,Yes,Yes,Yes,No,128.77,901.39,Clean,3,Baby Crib,3.9,Yes
+BKG0506,Omar Alsmadi,Female,60,Egyptian,2026-02-06,2026-02-26,15,20,1,308,Single,Walk-in,Family,1,0,0,Breakfast,Yes,No,Yes,No,No,Yes,No,59.4,59.4,Clean,3,High Floor,4.3,No
+BKG0507,Mariam Nabil,Female,68,UAE,2025-06-10,2025-07-11,16,31,5,147,Double,Walk-in,Leisure,3,2,4,Half Board,No,No,Yes,Yes,No,Yes,No,124.24,621.2,Clean,2,High Floor,3.9,Yes
+BKG0508,Ahmad Nasser,Male,36,British,2025-12-31,2026-02-11,15,42,5,215,Double,Mobile App,Couple Getaway,2,0,1,Full Board,No,No,Yes,Yes,Yes,No,No,106.25,531.25,Occupied,1,Extra Towels,4.9,No
+BKG0509,Rana Droubi,Female,34,UAE,2026-03-03,2026-03-17,14,14,6,508,Single,Website,Couple Getaway,1,0,0,Full Board,No,No,Yes,No,No,Yes,No,68.75,412.5,Occupied,0,Sea View,3.3,No
+BKG0510,Hassan Droubi,Male,43,British,2025-07-06,2025-07-22,15,16,7,460,Double,Website,Conference,2,0,1,Half Board,No,No,Yes,Yes,No,No,No,116.35,814.45,Clean,1,Quiet Room,4.1,Yes
+BKG0511,Nour Nasser,Male,56,French,2025-11-27,2025-12-11,15,14,5,321,Double,Mobile App,Leisure,4,0,3,Breakfast,No,Yes,Yes,No,Yes,Yes,Yes,132.16,660.8,Clean,0,None,3.2,Yes
+BKG0512,Zaid Tareq,Female,33,American,2025-12-27,2026-01-04,20,8,7,474,Double,Travel Agency,Leisure,2,2,3,Full Board,Yes,No,Yes,Yes,Yes,Yes,No,97.75,684.25,Occupied,4,High Floor,5.0,No
+BKG0513,Shatha Malkawi,Male,58,Egyptian,2025-03-24,2025-04-05,14,12,6,230,Single,Corporate,Conference,1,0,0,Breakfast,Yes,No,Yes,Yes,No,Yes,No,64.15,384.9,Clean,2,Late Check-In,4.5,Yes
+BKG0514,Omar Yasin,Male,32,British,2025-09-13,2025-09-24,14,11,1,197,Family,Travel Agency,Leisure,3,1,3,Full Board,Yes,No,Yes,Yes,Yes,No,No,138.0,138.0,Occupied,3,Baby Crib,4.1,No
+BKG0515,Hiba Haddad,Female,33,Saudi,2025-11-22,2025-12-23,13,31,5,186,Family,Corporate,Family,2,2,3,Breakfast,No,No,Yes,No,No,Yes,No,152.93,764.65,Needs Service,2,Late Check-In,4.2,Yes
+BKG0516,Zaid Nabil,Female,59,French,2025-02-21,2025-03-05,16,12,4,440,Family,Travel Agency,Leisure,2,1,2,Breakfast,Yes,No,Yes,Yes,Yes,Yes,No,119.23,476.92,Needs Service,0,High Floor,4.5,No
+BKG0517,Zaid Qaisi,Female,64,UAE,2025-12-02,2026-01-04,16,33,3,122,Double,Website,Conference,2,0,1,Half Board,No,No,Yes,Yes,No,Yes,No,98.6,295.8,Occupied,0,None,4.4,No
+BKG0518,Abdullah Yasin,Male,67,British,2025-04-07,2025-04-26,18,19,1,214,Suite,Travel Agency,Business,2,0,1,Breakfast,No,Yes,Yes,No,No,Yes,No,160.96,160.96,Occupied,0,High Floor,3.9,Yes
+BKG0519,Noor Qadoumi,Male,51,Jordanian,2025-12-31,2026-01-04,17,4,3,227,Single,Mobile App,Couple Getaway,1,0,0,Room Only,Yes,No,Yes,No,No,Yes,No,55.0,165.0,Occupied,0,Late Check-In,4.6,No
+BKG0520,Omar Alsmadi,Female,47,UAE,2025-11-15,2025-12-01,18,16,6,159,Family,Travel Agency,Couple Getaway,2,1,2,Breakfast,No,No,Yes,No,Yes,Yes,No,140.69,844.14,Occupied,1,Quiet Room,4.0,Yes
+BKG0521,Noor Haddad,Female,54,Egyptian,2025-03-01,2025-04-01,12,31,2,119,Family,Website,Conference,4,3,6,Breakfast,Yes,No,Yes,No,Yes,No,No,129.6,259.2,Occupied,3,Quiet Room,4.9,No
+BKG0522,Noor Adel,Female,22,Egyptian,2025-08-29,2025-09-04,13,6,4,229,Single,Walk-in,Business,1,0,0,Breakfast,Yes,No,Yes,No,No,Yes,No,59.4,237.6,Clean,1,None,4.2,No
+BKG0523,Shatha Haddad,Male,61,German,2025-03-31,2025-04-29,13,29,3,374,Double,Corporate,Family,2,1,2,Breakfast,No,Yes,Yes,No,Yes,Yes,No,91.8,275.4,Occupied,2,High Floor,4.1,No
+BKG0524,Tareq Alsmadi,Female,40,Jordanian,2025-01-09,2025-01-19,17,10,5,416,Single,Website,Leisure,1,0,0,Breakfast,No,No,Yes,Yes,No,Yes,Yes,72.47,362.35,Available,0,Sea View,5.0,No
+BKG0525,Razan Qaisi,Female,59,British,2025-07-18,2025-08-02,16,15,4,217,Family,Travel Agency,Leisure,4,2,5,Breakfast,Yes,No,No,Yes,Yes,Yes,No,150.23,600.92,Occupied,2,Sea View,4.3,Yes
+BKG0526,Razan Qaisi,Female,45,German,2025-07-25,2025-09-03,14,40,2,492,Double,Mobile App,Couple Getaway,2,0,1,Breakfast,No,Yes,Yes,Yes,No,Yes,No,91.8,183.6,Clean,0,Smoking Area,4.4,No
+BKG0527,Leen Qadoumi,Female,33,Egyptian,2026-02-10,2026-03-05,16,23,4,442,Double,Travel Agency,Leisure,4,3,6,Full Board,No,Yes,Yes,No,No,No,No,97.75,391.0,Occupied,2,Quiet Room,4.3,No
+BKG0528,Dana Qaisi,Female,29,UAE,2025-03-30,2025-05-12,16,43,3,147,Single,Mobile App,Leisure,1,1,1,Half Board,No,No,Yes,Yes,No,Yes,No,63.8,191.4,Occupied,2,None,5.0,No
+BKG0529,Rana Droubi,Female,33,Saudi,2025-06-10,2025-06-22,17,12,3,228,Double,Corporate,Family,3,0,2,Half Board,Yes,Yes,Yes,No,Yes,Yes,No,116.35,349.05,Available,2,Smoking Area,4.5,Yes
+BKG0530,Nour Ali,Male,26,Egyptian,2025-02-28,2025-03-09,18,9,6,447,Family,Mobile App,Leisure,3,2,4,Full Board,No,Yes,Yes,No,No,Yes,No,150.0,900.0,Needs Service,2,Late Check-In,4.1,No
+BKG0531,Yousef Khaled,Male,62,British,2025-07-21,2025-07-28,21,7,2,433,Double,Corporate,Conference,2,0,1,Full Board,No,No,Yes,No,No,Yes,No,125.38,250.76,Needs Service,1,Baby Crib,4.1,Yes
+BKG0532,Dana Adel,Female,47,Jordanian,2025-05-03,2025-05-22,14,19,6,512,Double,Corporate,Family,3,0,2,Room Only,No,No,Yes,Yes,Yes,Yes,No,85.0,510.0,Occupied,0,Sea View,4.2,No
+BKG0533,Hiba Gubari,Male,41,British,2025-09-20,2025-10-17,15,27,7,222,Suite,Travel Agency,Leisure,2,2,3,Full Board,Yes,No,Yes,Yes,Yes,Yes,No,186.3,1304.1,Occupied,2,Late Check-In,4.7,Yes
+BKG0534,Shatha Gubari,Female,20,Saudi,2026-02-03,2026-02-07,11,4,1,452,Single,Travel Agency,Couple Getaway,1,0,0,Breakfast,No,No,Yes,Yes,No,Yes,No,59.02,59.02,Occupied,2,None,5.0,Yes
+BKG0535,Lina Droubi,Female,44,UAE,2025-04-30,2025-05-03,17,3,2,490,Double,Website,Couple Getaway,2,0,1,Breakfast,Yes,No,Yes,Yes,Yes,Yes,No,99.14,198.28,Occupied,2,Quiet Room,4.7,Yes
+BKG0536,Nour Gubari,Male,68,Egyptian,2025-02-08,2025-02-19,18,11,2,519,Double,Corporate,Leisure,2,1,2,Breakfast,Yes,No,Yes,Yes,No,Yes,No,91.8,183.6,Occupied,2,None,4.8,No
+BKG0537,Sara Droubi,Female,65,Jordanian,2025-08-09,2025-09-21,17,43,1,281,Family,Travel Agency,Leisure,3,2,4,Breakfast,No,No,Yes,No,Yes,Yes,No,119.23,119.23,Occupied,1,Late Check-In,4.2,No
+BKG0538,Mariam Nabil,Female,45,French,2025-07-29,2025-08-27,14,29,4,109,Double,Website,Conference,2,0,1,Room Only,Yes,No,No,Yes,No,Yes,No,100.3,401.2,Available,2,Late Check-In,4.6,Yes
+BKG0539,Alaa Qadoumi,Male,32,French,2025-07-20,2025-07-29,14,9,4,249,Double,Mobile App,Couple Getaway,2,0,1,Breakfast,No,No,Yes,No,Yes,No,No,108.32,433.28,Occupied,1,Baby Crib,4.4,Yes
+BKG0540,Ahmad Nasser,Female,33,French,2025-03-14,2025-04-16,19,33,2,290,Single,Mobile App,Business,1,0,0,Half Board,No,No,Yes,Yes,No,Yes,No,63.8,127.6,Clean,3,High Floor,3.5,No
+BKG0541,Alaa Qadoumi,Male,64,British,2025-08-02,2025-08-15,19,13,2,341,Double,Corporate,Leisure,2,0,1,Half Board,No,No,No,No,No,No,No,124.24,248.48,Clean,0,Quiet Room,3.6,Yes
+BKG0542,Razan Yasin,Female,26,Egyptian,2026-04-01,2026-04-21,15,20,1,502,Double,Website,Leisure,2,2,3,Full Board,Yes,No,Yes,No,Yes,Yes,No,106.25,106.25,Available,1,Smoking Area,3.9,No
+BKG0543,Omar Adel,Male,58,UAE,2025-05-20,2025-06-20,20,31,3,339,Family,Travel Agency,Business,3,2,4,Breakfast,No,No,Yes,Yes,No,Yes,No,150.23,450.69,Occupied,2,Sea View,5.0,Yes
+BKG0544,Dana Tareq,Male,55,French,2026-02-02,2026-03-02,16,28,2,192,Suite,Website,Leisure,2,1,2,Breakfast,Yes,Yes,No,Yes,No,Yes,No,162.0,324.0,Occupied,1,Sea View,4.2,No
+BKG0545,Leen Droubi,Male,40,Jordanian,2025-06-17,2025-06-19,16,2,5,180,Suite,Walk-in,Leisure,4,0,3,Room Only,Yes,No,Yes,Yes,No,Yes,No,177.0,885.0,Occupied,1,Sea View,4.2,Yes
+BKG0546,Leen Khaled,Male,48,Saudi,2025-10-08,2025-10-13,17,5,7,362,Suite,Corporate,Leisure,1,1,1,Room Only,No,No,Yes,Yes,No,No,No,150.0,1050.0,Needs Service,3,Sea View,4.4,No
+BKG0547,Rana Haddad,Female,65,Saudi,2026-01-27,2026-02-27,11,31,3,292,Single,Travel Agency,Business,1,0,0,Breakfast,Yes,No,Yes,Yes,No,Yes,No,59.02,177.06,Occupied,0,Extra Towels,5.0,Yes
+BKG0548,Mariam Malkawi,Female,68,British,2025-09-19,2025-09-29,18,10,4,404,Single,Corporate,Leisure,1,1,1,Breakfast,No,No,Yes,No,Yes,Yes,No,59.4,237.6,Occupied,2,Extra Towels,4.5,No
+BKG0549,Khaled Nabil,Male,61,American,2026-02-23,2026-03-18,15,23,3,416,Single,Website,Business,1,0,0,Half Board,No,Yes,Yes,Yes,No,No,No,63.8,191.4,Available,2,Extra Towels,4.6,No
+BKG0550,Lina Malkawi,Female,20,Jordanian,2025-02-24,2025-02-25,16,1,1,426,Double,Mobile App,Family,2,0,1,Breakfast,Yes,No,Yes,Yes,No,Yes,No,91.8,91.8,Clean,2,Quiet Room,4.2,No
+BKG0551,Shatha Yasin,Male,50,Jordanian,2026-01-17,2026-01-18,18,1,6,107,Single,Walk-in,Leisure,1,2,2,Half Board,Yes,Yes,Yes,Yes,No,Yes,No,63.8,382.8,Occupied,2,Smoking Area,4.8,No
+BKG0552,Tareq Adel,Female,37,French,2025-10-23,2025-12-04,12,42,1,146,Single,Website,Family,1,3,3,Breakfast,No,No,No,Yes,No,No,No,70.09,70.09,Available,0,None,4.1,Yes
+BKG0553,Omar Qadoumi,Male,54,British,2025-11-03,2025-12-02,17,29,3,230,Suite,Mobile App,Family,2,1,2,Breakfast,Yes,No,Yes,Yes,Yes,Yes,No,191.16,573.48,Occupied,2,Sea View,3.9,Yes
+BKG0554,Shatha Malkawi,Female,61,French,2026-03-30,2026-04-20,19,21,2,158,Suite,Corporate,Business,1,0,0,Breakfast,No,No,Yes,Yes,No,Yes,No,162.0,324.0,Clean,2,High Floor,4.5,No
+BKG0555,Khaled Alsmadi,Male,56,American,2025-09-14,2025-09-16,15,2,5,430,Family,Travel Agency,Business,2,2,3,Breakfast,Yes,No,Yes,No,Yes,Yes,No,119.23,596.15,Occupied,3,High Floor,3.6,No
+BKG0556,Rana Nasser,Male,32,Saudi,2025-08-21,2025-10-04,18,44,2,161,Double,Corporate,Conference,2,0,1,Half Board,Yes,Yes,Yes,No,Yes,Yes,No,106.49,212.98,Occupied,0,High Floor,4.5,Yes
+BKG0557,Alaa Khaled,Female,64,British,2025-08-05,2025-09-16,15,42,3,295,Double,Website,Leisure,2,0,1,Half Board,Yes,No,Yes,Yes,Yes,Yes,No,98.6,295.8,Occupied,1,Baby Crib,4.1,No
+BKG0558,Zaid Nasser,Male,54,Saudi,2025-01-20,2025-01-25,15,5,4,136,Single,Corporate,Family,1,0,0,Breakfast,Yes,No,Yes,Yes,No,Yes,No,64.15,256.6,Available,2,None,4.9,Yes
+BKG0559,Leen Khaled,Female,56,Jordanian,2025-09-15,2025-10-14,14,29,2,255,Double,Website,Family,2,0,1,Full Board,Yes,No,Yes,Yes,No,Yes,No,106.25,212.5,Occupied,2,Late Check-In,3.8,No
+BKG0560,Shatha Nasser,Female,57,UAE,2025-04-04,2025-04-25,18,21,2,118,Suite,Corporate,Couple Getaway,2,0,1,Room Only,Yes,No,Yes,Yes,No,Yes,No,162.0,324.0,Clean,0,High Floor,4.7,Yes
+BKG0561,Hiba Tareq,Male,24,Saudi,2025-05-23,2025-06-27,17,35,4,160,Double,Corporate,Leisure,2,2,3,Full Board,No,Yes,Yes,Yes,No,Yes,No,133.88,535.52,Occupied,2,Late Check-In,4.3,Yes
+BKG0562,Alaa Nasser,Male,39,German,2025-10-14,2025-10-28,13,14,1,210,Single,Website,Conference,1,0,0,Room Only,No,No,Yes,No,No,No,No,55.0,55.0,Clean,0,Smoking Area,4.3,No
+BKG0563,Dana Gubari,Male,60,Egyptian,2025-02-20,2025-03-16,16,24,2,303,Suite,Corporate,Business,3,0,2,Breakfast,No,Yes,Yes,Yes,No,Yes,No,162.0,324.0,Clean,2,None,3.7,No
+BKG0564,Razan Nabil,Female,43,French,2025-01-15,2025-02-26,17,42,2,461,Double,Corporate,Conference,2,0,1,Half Board,No,No,Yes,No,Yes,Yes,No,98.6,197.2,Clean,1,High Floor,4.1,No
+BKG0565,Alaa Adel,Female,37,American,2026-02-02,2026-03-15,12,41,2,147,Double,Corporate,Couple Getaway,2,0,1,Breakfast,Yes,No,Yes,Yes,No,No,No,91.8,183.6,Available,0,Late Check-In,4.0,No
+BKG0566,Nour Malkawi,Male,59,American,2025-12-21,2026-01-11,15,21,4,503,Double,Corporate,Couple Getaway,2,0,1,Breakfast,No,No,Yes,Yes,No,Yes,No,91.8,367.2,Available,2,Quiet Room,4.2,No
+BKG0567,Hiba Nasser,Female,63,British,2025-03-13,2025-04-26,14,44,7,376,Single,Mobile App,Family,1,0,0,Half Board,Yes,No,Yes,Yes,No,No,No,68.9,482.3,Clean,2,Extra Towels,4.0,Yes
+BKG0568,Shatha Tareq,Male,36,German,2025-06-24,2025-07-10,16,16,2,261,Family,Corporate,Business,2,2,3,Full Board,No,No,Yes,Yes,No,Yes,Yes,215.94,431.88,Occupied,2,Smoking Area,4.9,Yes
+BKG0569,Razan Adel,Male,68,Jordanian,2025-03-03,2025-03-14,13,11,2,222,Family,Website,Family,2,3,4,Breakfast,No,No,Yes,Yes,Yes,Yes,No,139.97,279.94,Occupied,1,Extra Towels,3.9,Yes
+BKG0570,Khaled Ali,Male,68,Egyptian,2025-03-19,2025-04-23,16,35,1,155,Family,Corporate,Business,2,2,3,Room Only,No,No,Yes,Yes,Yes,No,No,120.0,120.0,Occupied,2,Late Check-In,4.1,No
+BKG0571,Dana Khaled,Female,57,French,2025-01-02,2025-02-13,14,42,2,356,Single,Website,Business,1,0,0,Half Board,No,No,Yes,Yes,No,Yes,No,63.8,127.6,Clean,1,Baby Crib,3.5,No
+BKG0572,Omar Nasser,Male,58,British,2025-09-17,2025-10-11,18,24,5,466,Single,Website,Couple Getaway,1,0,0,Half Board,Yes,No,Yes,Yes,No,Yes,No,68.9,344.5,Occupied,0,Quiet Room,5.0,Yes
+BKG0573,Leen Adel,Female,43,Jordanian,2026-02-14,2026-03-10,16,24,1,125,Double,Walk-in,Couple Getaway,1,0,0,Breakfast,Yes,No,No,Yes,Yes,No,No,91.8,91.8,Available,0,None,3.7,No
+BKG0574,Tareq Haddad,Male,30,Jordanian,2026-01-25,2026-01-30,17,5,2,341,Double,Travel Agency,Leisure,2,0,1,Breakfast,No,Yes,Yes,Yes,Yes,No,No,91.21,182.42,Available,0,Late Check-In,3.6,Yes
+BKG0575,Leen Yasin,Male,32,Saudi,2025-08-05,2025-08-20,11,15,2,186,Suite,Website,Conference,2,0,1,Half Board,No,No,Yes,Yes,No,Yes,No,205.32,410.64,Occupied,3,None,4.2,Yes
+BKG0576,Zaid Adel,Female,35,American,2025-01-25,2025-02-03,18,9,4,503,Double,Mobile App,Conference,3,0,2,Room Only,No,Yes,No,Yes,No,Yes,No,85.0,340.0,Clean,0,Smoking Area,3.6,No
+BKG0577,Shatha Gubari,Female,45,German,2025-11-07,2025-12-22,18,45,5,427,Single,Corporate,Business,1,0,0,Room Only,Yes,No,Yes,Yes,No,Yes,No,64.9,324.5,Occupied,1,Quiet Room,3.6,Yes
+BKG0578,Tareq Adel,Male,68,American,2026-01-20,2026-02-17,18,28,2,128,Double,Website,Couple Getaway,4,0,3,Breakfast,No,No,Yes,Yes,Yes,No,No,91.8,183.6,Occupied,2,High Floor,4.7,No
+BKG0579,Ahmad Nasser,Male,47,American,2025-06-29,2025-07-23,18,24,4,307,Double,Travel Agency,Leisure,4,2,5,Breakfast,Yes,Yes,Yes,Yes,No,Yes,No,99.66,398.64,Occupied,2,Baby Crib,4.6,Yes
+BKG0580,Rana Yasin,Female,59,American,2025-06-21,2025-07-30,15,39,7,173,Double,Corporate,Family,4,2,5,Breakfast,No,No,Yes,No,Yes,No,No,108.32,758.24,Occupied,1,Smoking Area,4.4,Yes
+BKG0581,Alaa Gubari,Female,37,UAE,2026-01-26,2026-01-31,16,5,2,134,Single,Mobile App,Couple Getaway,1,0,0,Breakfast,No,No,Yes,Yes,No,Yes,No,64.15,128.3,Occupied,2,Extra Towels,5.0,Yes
+BKG0582,Nour Gubari,Male,51,Saudi,2025-04-23,2025-05-03,19,10,4,226,Suite,Corporate,Leisure,3,0,2,Breakfast,No,No,Yes,No,No,Yes,No,174.96,699.84,Occupied,0,Extra Towels,3.9,Yes
+BKG0583,Leen Tareq,Female,37,American,2025-04-26,2025-04-27,15,1,7,391,Double,Walk-in,Leisure,4,0,3,Full Board,Yes,Yes,Yes,No,No,Yes,No,106.25,743.75,Needs Service,0,Sea View,3.8,No
+BKG0584,Khaled Ali,Female,59,Saudi,2025-06-19,2025-06-24,14,5,3,225,Suite,Corporate,Business,2,0,1,Breakfast,No,No,Yes,Yes,No,Yes,No,191.16,573.48,Needs Service,1,Sea View,3.9,Yes
+BKG0585,Hassan Alsmadi,Female,58,German,2025-11-09,2025-11-19,14,10,7,393,Family,Website,Business,3,2,4,Breakfast,No,Yes,No,No,No,No,No,129.6,907.2,Occupied,2,Baby Crib,4.3,No
+BKG0586,Yousef Alsmadi,Male,41,Jordanian,2025-02-14,2025-02-24,18,10,1,498,Family,Website,Business,2,2,3,Half Board,No,No,Yes,Yes,Yes,Yes,Yes,169.82,169.82,Available,3,Extra Towels,4.6,No
+BKG0587,Khaled Nasser,Female,34,Jordanian,2025-12-25,2025-12-31,15,6,5,177,Double,Mobile App,Business,2,0,1,Breakfast,No,No,Yes,No,No,No,No,108.32,541.6,Clean,0,Quiet Room,4.6,Yes
+BKG0588,Alaa Alsmadi,Male,57,Egyptian,2025-12-27,2025-12-29,12,2,2,118,Single,Mobile App,Business,1,0,0,Room Only,No,No,Yes,Yes,No,Yes,No,64.9,129.8,Needs Service,1,Quiet Room,3.6,Yes
+BKG0589,Rana Tareq,Male,24,Jordanian,2025-07-06,2025-07-31,13,25,2,148,Family,Corporate,Leisure,3,3,5,Half Board,No,No,Yes,No,No,Yes,No,164.26,328.52,Clean,1,Late Check-In,4.4,Yes
+BKG0590,Zaid Tareq,Male,28,French,2025-09-07,2025-09-16,12,9,3,371,Family,Corporate,Conference,2,1,2,Half Board,No,No,Yes,Yes,Yes,Yes,No,139.2,417.6,Occupied,3,Extra Towels,4.0,No
+BKG0591,Hiba Samer,Male,66,French,2025-10-30,2025-12-08,13,39,5,331,Family,Travel Agency,Leisure,4,2,5,Breakfast,No,No,Yes,Yes,No,No,No,140.69,703.45,Needs Service,1,Baby Crib,3.9,Yes
+BKG0592,Nour Alsmadi,Female,34,German,2025-05-16,2025-06-26,18,41,3,127,Double,Travel Agency,Business,4,0,3,Breakfast,No,No,No,No,No,Yes,No,99.66,298.98,Occupied,1,Extra Towels,3.1,Yes
+BKG0593,Shatha Yasin,Female,55,Saudi,2025-09-12,2025-09-25,15,13,5,319,Family,Corporate,Leisure,3,2,4,Room Only,No,No,Yes,Yes,Yes,No,No,120.0,600.0,Clean,3,Extra Towels,4.5,No
+BKG0594,Zaid Nabil,Female,68,American,2025-04-15,2025-04-25,14,10,6,347,Family,Walk-in,Family,2,1,2,Full Board,Yes,No,Yes,No,No,No,No,162.0,972.0,Occupied,2,Smoking Area,4.0,Yes
+BKG0595,Ahmad Adel,Male,42,British,2025-12-09,2025-12-26,17,17,5,300,Single,Corporate,Family,1,0,0,Room Only,No,No,Yes,Yes,Yes,Yes,No,69.3,346.5,Clean,1,Baby Crib,3.8,Yes
+BKG0596,Abdullah Samer,Female,52,UAE,2026-02-10,2026-03-09,13,27,7,102,Single,Travel Agency,Leisure,1,1,1,Half Board,No,No,Yes,No,No,Yes,No,58.7,410.9,Occupied,3,None,3.5,No
+BKG0597,Khaled Ali,Female,43,German,2025-10-20,2025-10-21,21,1,3,375,Suite,Website,Leisure,2,0,1,Room Only,No,No,Yes,Yes,No,Yes,No,150.0,450.0,Occupied,0,Baby Crib,4.6,No
+BKG0598,Omar Qaisi,Male,26,American,2026-02-25,2026-03-15,12,18,4,171,Suite,Corporate,Conference,3,0,2,Full Board,Yes,No,No,No,No,Yes,No,187.5,750.0,Occupied,1,Late Check-In,4.6,No
+BKG0599,Lina Malkawi,Male,43,Saudi,2025-09-26,2025-11-03,18,38,5,307,Family,Walk-in,Leisure,2,1,2,Breakfast,Yes,No,Yes,Yes,No,Yes,No,129.6,648.0,Available,1,Extra Towels,4.2,No
+BKG0600,Yousef Alsmadi,Male,46,British,2026-01-21,2026-02-09,19,19,1,392,Double,Website,Business,4,0,3,Breakfast,Yes,No,Yes,Yes,No,Yes,No,91.8,91.8,Available,1,Late Check-In,4.4,No
+BKG0601,Mariam Qaisi,Female,21,UAE,2025-12-25,2025-12-31,16,6,7,371,Suite,Website,Conference,3,0,2,Half Board,Yes,No,Yes,No,No,Yes,No,205.32,1437.24,Occupied,2,Sea View,4.2,Yes
+BKG0602,Noor Droubi,Female,57,American,2025-05-30,2025-06-07,15,8,3,121,Double,Travel Agency,Couple Getaway,3,0,2,Breakfast,No,Yes,Yes,Yes,No,Yes,No,106.41,319.23,Clean,0,Quiet Room,3.3,Yes
+BKG0603,Abdullah Alsmadi,Female,63,Egyptian,2025-04-29,2025-05-01,17,2,2,204,Family,Website,Business,2,2,3,Half Board,No,Yes,Yes,Yes,Yes,Yes,No,139.2,278.4,Clean,3,Extra Towels,4.1,No
+BKG0604,Zaid Nabil,Male,42,UAE,2026-03-16,2026-03-25,14,9,6,401,Double,Corporate,Leisure,2,0,1,Room Only,No,No,Yes,Yes,Yes,Yes,No,85.0,510.0,Occupied,2,Smoking Area,4.7,No
+BKG0605,Rana Qaisi,Male,48,American,2025-08-21,2025-09-09,16,19,3,438,Family,Corporate,Leisure,2,2,3,Room Only,Yes,No,Yes,No,No,No,No,120.0,360.0,Occupied,1,High Floor,4.1,No
+BKG0606,Hiba Adel,Male,21,Saudi,2025-09-22,2025-10-11,17,19,7,101,Single,Website,Couple Getaway,1,0,0,Half Board,No,No,Yes,No,No,Yes,No,68.9,482.3,Occupied,1,Sea View,4.3,Yes
+BKG0607,Alaa Samer,Female,39,American,2025-09-04,2025-09-15,13,11,2,321,Suite,Website,Business,2,0,1,Half Board,No,No,Yes,Yes,No,Yes,Yes,212.28,424.56,Occupied,1,Baby Crib,4.0,No
+BKG0608,Hiba Malkawi,Male,56,UAE,2025-10-15,2025-11-28,12,44,1,331,Double,Website,Leisure,2,1,2,Room Only,No,No,Yes,Yes,Yes,Yes,Yes,112.0,112.0,Occupied,2,Extra Towels,4.1,Yes
+BKG0609,Hiba Ali,Male,59,Saudi,2025-04-18,2025-05-09,19,21,1,101,Family,Corporate,Family,2,2,3,Breakfast,Yes,Yes,Yes,No,No,Yes,No,139.97,139.97,Clean,2,Quiet Room,4.4,Yes
+BKG0610,Sara Nabil,Female,68,Egyptian,2025-08-07,2025-08-29,19,22,6,472,Single,Website,Family,1,0,0,Breakfast,Yes,Yes,Yes,No,Yes,Yes,No,74.84,449.04,Occupied,0,Late Check-In,4.0,Yes
+BKG0611,Yousef Ali,Female,68,German,2026-01-06,2026-01-29,16,23,2,466,Single,Website,Couple Getaway,1,0,0,Breakfast,Yes,No,Yes,Yes,No,Yes,No,59.4,118.8,Occupied,1,Quiet Room,4.4,No
+BKG0612,Razan Nasser,Female,53,French,2025-09-24,2025-10-29,18,35,6,147,Single,Corporate,Family,1,1,1,Full Board,No,No,Yes,Yes,Yes,Yes,No,68.75,412.5,Clean,2,Sea View,4.8,No
+BKG0613,Khaled Haddad,Male,28,UAE,2026-03-24,2026-03-31,17,7,5,383,Suite,Travel Agency,Couple Getaway,2,0,1,Breakfast,No,No,Yes,Yes,No,No,No,149.04,745.2,Clean,1,High Floor,4.3,No
+BKG0614,Yousef Alsmadi,Female,36,British,2025-02-12,2025-03-17,15,33,3,242,Double,Corporate,Business,2,0,1,Half Board,Yes,No,Yes,Yes,Yes,Yes,No,98.6,295.8,Available,2,Smoking Area,5.0,No
+BKG0615,Dana Tareq,Male,20,Jordanian,2026-03-10,2026-03-11,12,1,3,445,Family,Walk-in,Business,2,1,2,Room Only,Yes,No,Yes,No,No,Yes,No,120.0,360.0,Clean,1,Baby Crib,3.6,No
+BKG0616,Zaid Tareq,Female,68,American,2025-02-28,2025-04-01,16,32,7,340,Single,Travel Agency,Business,1,0,0,Half Board,No,No,Yes,No,No,Yes,No,58.7,410.9,Available,1,None,4.6,No
+BKG0617,Hiba Tareq,Female,62,UAE,2025-01-14,2025-02-21,12,38,1,474,Double,Travel Agency,Business,3,0,2,Breakfast,Yes,No,Yes,Yes,No,Yes,No,91.21,91.21,Occupied,1,Late Check-In,4.7,Yes
+BKG0618,Sara Malkawi,Male,50,German,2025-01-22,2025-03-08,12,45,5,163,Single,Mobile App,Couple Getaway,1,0,0,Breakfast,No,No,Yes,Yes,No,No,No,64.15,320.75,Needs Service,1,Extra Towels,4.2,Yes
+BKG0619,Nour Alsmadi,Male,27,American,2026-03-20,2026-04-05,18,16,4,252,Double,Website,Couple Getaway,2,0,1,Full Board,No,No,Yes,Yes,No,Yes,Yes,129.62,518.48,Occupied,1,Sea View,4.4,No
+BKG0620,Yousef Adel,Female,62,German,2026-01-07,2026-02-09,16,33,2,485,Double,Website,Couple Getaway,3,0,2,Room Only,No,No,Yes,Yes,No,Yes,No,85.0,170.0,Occupied,2,Sea View,3.5,No
+BKG0621,Khaled Droubi,Male,22,German,2025-07-11,2025-07-29,18,18,7,156,Suite,Walk-in,Leisure,2,0,1,Breakfast,No,No,Yes,Yes,No,Yes,No,191.16,1338.12,Occupied,1,None,4.9,Yes
+BKG0622,Hiba Adel,Male,53,American,2025-07-08,2025-08-12,17,35,2,463,Double,Corporate,Leisure,3,0,2,Half Board,Yes,No,Yes,No,No,No,No,116.35,232.7,Occupied,0,Extra Towels,4.2,Yes
+BKG0623,Omar Nabil,Male,26,Saudi,2025-03-04,2025-03-18,17,14,4,485,Suite,Mobile App,Leisure,4,0,3,Room Only,No,No,Yes,Yes,No,Yes,No,150.0,600.0,Needs Service,1,None,4.6,No
+BKG0624,Khaled Droubi,Female,40,Saudi,2025-11-10,2025-12-12,15,32,7,294,Double,Travel Agency,Leisure,2,2,3,Full Board,Yes,Yes,Yes,No,Yes,Yes,No,123.16,862.12,Occupied,3,None,4.6,Yes
+BKG0625,Khaled Samer,Female,36,Saudi,2025-06-20,2025-07-30,17,40,4,304,Family,Corporate,Couple Getaway,4,2,5,Breakfast,No,No,Yes,Yes,No,Yes,No,152.93,611.72,Available,2,Extra Towels,4.1,Yes
+BKG0626,Zaid Haddad,Male,57,German,2025-09-29,2025-10-20,18,21,4,309,Single,Corporate,Business,1,0,0,Breakfast,No,Yes,Yes,Yes,No,Yes,No,59.4,237.6,Occupied,0,Late Check-In,4.3,No
+BKG0627,Ahmad Tareq,Male,41,French,2026-01-18,2026-02-10,16,23,1,179,Family,Mobile App,Couple Getaway,3,1,3,Room Only,Yes,No,Yes,Yes,Yes,No,No,120.0,120.0,Occupied,3,High Floor,4.4,No
+BKG0628,Sara Nabil,Male,67,Saudi,2025-12-17,2025-12-21,14,4,4,224,Family,Walk-in,Leisure,2,3,4,Breakfast,Yes,No,Yes,No,Yes,Yes,No,152.93,611.72,Available,2,Extra Towels,5.0,Yes
+BKG0629,Hiba Qadoumi,Male,48,British,2025-06-05,2025-06-05,17,0,5,463,Double,Mobile App,Family,2,2,3,Room Only,Yes,No,Yes,No,Yes,Yes,No,100.3,501.5,Available,2,Baby Crib,4.1,Yes
+BKG0630,Omar Malkawi,Male,31,French,2025-02-03,2025-02-21,14,18,7,368,Family,Travel Agency,Business,3,3,5,Half Board,No,No,Yes,Yes,Yes,Yes,No,138.31,968.17,Clean,0,Smoking Area,3.8,Yes
+BKG0631,Leen Qadoumi,Female,57,UAE,2025-06-01,2025-07-05,17,34,2,387,Single,Travel Agency,Leisure,1,2,2,Full Board,No,No,Yes,No,No,Yes,No,79.69,159.38,Clean,3,Sea View,4.3,Yes
+BKG0632,Zaid Yasin,Female,55,Egyptian,2025-01-29,2025-03-09,17,39,4,437,Double,Website,Conference,4,0,3,Room Only,No,No,Yes,No,No,Yes,No,85.0,340.0,Available,0,Quiet Room,3.9,No
+BKG0633,Hassan Tareq,Male,38,British,2025-10-15,2025-10-16,18,1,7,423,Family,Corporate,Business,2,3,4,Breakfast,No,No,Yes,Yes,Yes,Yes,No,129.6,907.2,Occupied,1,Sea View,4.4,No
+BKG0634,Sara Qaisi,Female,50,Saudi,2025-02-07,2025-02-20,11,13,7,116,Suite,Walk-in,Business,2,0,1,Breakfast,No,No,Yes,Yes,No,Yes,No,162.0,1134.0,Occupied,0,Extra Towels,4.4,No
+BKG0635,Nour Alsmadi,Male,20,German,2026-03-03,2026-04-02,17,30,2,243,Double,Corporate,Leisure,4,0,3,Full Board,No,Yes,Yes,Yes,No,Yes,No,106.25,212.5,Occupied,1,None,4.7,No
+BKG0636,Yousef Khaled,Female,67,Jordanian,2025-02-11,2025-03-23,16,40,3,466,Double,Walk-in,Couple Getaway,2,0,1,Full Board,No,No,Yes,Yes,No,Yes,No,106.25,318.75,Clean,1,Sea View,3.8,No
+BKG0637,Omar Samer,Male,46,Egyptian,2025-08-18,2025-09-12,17,25,2,202,Double,Travel Agency,Business,4,0,3,Half Board,No,No,Yes,No,No,No,No,97.97,195.94,Occupied,1,Extra Towels,4.2,Yes
+BKG0638,Zaid Alsmadi,Female,28,British,2025-04-14,2025-04-28,13,14,4,263,Suite,Website,Leisure,4,0,3,Breakfast,Yes,Yes,Yes,No,No,Yes,No,162.0,648.0,Occupied,2,Quiet Room,4.8,No
+BKG0639,Rana Ali,Female,42,Saudi,2025-03-09,2025-04-09,16,31,4,128,Single,Mobile App,Couple Getaway,1,0,0,Breakfast,Yes,No,Yes,Yes,No,Yes,No,59.4,237.6,Occupied,1,Sea View,5.0,No
+BKG0640,Mariam Ali,Female,26,French,2025-05-02,2025-05-15,16,13,4,366,Double,Corporate,Couple Getaway,3,0,2,Breakfast,No,No,Yes,No,No,No,No,91.8,367.2,Clean,0,High Floor,3.5,No
+BKG0641,Alaa Gubari,Female,67,French,2025-08-03,2025-09-08,16,36,2,460,Single,Mobile App,Couple Getaway,1,0,0,Full Board,No,No,Yes,Yes,No,Yes,Yes,83.88,167.76,Occupied,0,None,4.3,No
+BKG0642,Dana Alsmadi,Male,63,French,2025-10-29,2025-12-08,15,40,5,182,Double,Website,Couple Getaway,2,0,1,Full Board,No,No,Yes,Yes,No,Yes,No,125.38,626.9,Available,1,Baby Crib,4.5,Yes
+BKG0643,Khaled Tareq,Male,43,British,2025-02-14,2025-03-29,18,43,4,420,Double,Mobile App,Business,2,0,1,Breakfast,No,No,Yes,Yes,No,Yes,No,99.14,396.56,Needs Service,0,Extra Towels,4.2,Yes
+BKG0644,Omar Ali,Male,21,Egyptian,2025-11-08,2025-11-26,17,18,5,278,Family,Website,Leisure,2,2,3,Half Board,No,No,Yes,Yes,Yes,Yes,No,139.2,696.0,Clean,3,High Floor,3.9,No
+BKG0645,Alaa Qadoumi,Male,68,French,2025-08-20,2025-09-23,15,34,6,373,Single,Corporate,Leisure,1,0,0,Breakfast,No,No,No,Yes,No,Yes,No,59.4,356.4,Occupied,0,Smoking Area,3.8,No
+BKG0646,Ahmad Alsmadi,Female,59,French,2025-09-10,2025-10-14,13,34,4,285,Suite,Website,Couple Getaway,2,0,1,Breakfast,No,No,Yes,Yes,No,Yes,No,162.0,648.0,Available,0,Extra Towels,4.4,No
+BKG0647,Noor Alsmadi,Female,41,Jordanian,2026-01-22,2026-02-15,17,24,4,373,Single,Website,Leisure,1,0,0,Half Board,Yes,No,Yes,No,No,Yes,No,63.8,255.2,Occupied,0,Quiet Room,4.3,No
+BKG0648,Dana Haddad,Male,34,Saudi,2026-01-14,2026-01-31,17,17,5,412,Double,Website,Business,3,0,2,Breakfast,No,No,No,Yes,No,Yes,No,99.14,495.7,Available,2,Quiet Room,3.8,Yes
+BKG0649,Lina Malkawi,Male,52,German,2026-02-05,2026-02-28,13,23,6,347,Double,Website,Family,2,3,4,Full Board,No,Yes,Yes,Yes,Yes,Yes,No,114.75,688.5,Occupied,2,High Floor,4.2,Yes
+BKG0650,Khaled Gubari,Female,53,UAE,2025-11-03,2025-11-13,12,10,4,319,Double,Website,Couple Getaway,2,0,1,Breakfast,Yes,No,Yes,Yes,Yes,Yes,No,91.8,367.2,Clean,0,High Floor,4.5,No
+BKG0651,Alaa Khaled,Female,59,Egyptian,2025-08-18,2025-09-07,12,20,7,240,Suite,Travel Agency,Business,4,0,3,Half Board,Yes,No,Yes,Yes,No,Yes,No,160.08,1120.56,Occupied,1,Late Check-In,5.0,No
+BKG0652,Dana Haddad,Female,53,German,2025-07-04,2025-07-19,18,15,2,273,Single,Website,Leisure,1,2,2,Half Board,No,Yes,Yes,No,No,Yes,No,80.39,160.78,Occupied,2,Smoking Area,4.1,Yes
+BKG0653,Noor Gubari,Female,41,British,2026-01-15,2026-02-01,15,17,6,258,Suite,Mobile App,Conference,2,0,1,Room Only,Yes,No,Yes,No,No,Yes,No,150.0,900.0,Occupied,0,None,4.8,No
+BKG0654,Tareq Ali,Male,34,UAE,2025-07-10,2025-07-24,16,14,6,246,Single,Corporate,Couple Getaway,1,0,0,Half Board,No,No,Yes,Yes,No,Yes,No,75.28,451.68,Available,1,High Floor,4.1,Yes
+BKG0655,Omar Haddad,Female,44,Egyptian,2026-03-12,2026-04-14,16,33,5,212,Double,Corporate,Couple Getaway,2,0,1,Breakfast,No,No,Yes,Yes,Yes,Yes,No,91.8,459.0,Clean,2,Quiet Room,4.5,No
+BKG0656,Leen Haddad,Male,26,UAE,2026-02-17,2026-02-28,17,11,7,462,Family,Website,Family,4,2,5,Half Board,Yes,No,Yes,Yes,Yes,Yes,No,150.34,1052.38,Available,3,Smoking Area,4.0,Yes
+BKG0657,Lina Tareq,Female,31,French,2025-02-14,2025-03-15,13,29,6,128,Double,Website,Couple Getaway,2,0,1,Breakfast,Yes,Yes,Yes,Yes,Yes,Yes,No,99.14,594.84,Clean,0,Quiet Room,4.3,Yes
+BKG0658,Shatha Malkawi,Female,27,Egyptian,2025-10-09,2025-10-20,17,11,7,188,Single,Walk-in,Business,1,0,0,Half Board,No,No,Yes,No,No,No,No,63.8,446.6,Occupied,2,Quiet Room,4.5,No
+BKG0659,Khaled Yasin,Male,62,American,2025-02-21,2025-03-20,17,27,6,514,Single,Travel Agency,Leisure,1,0,0,Half Board,No,No,Yes,No,No,Yes,No,58.7,352.2,Occupied,1,Smoking Area,3.6,No
+BKG0660,Zaid Malkawi,Female,56,American,2025-07-21,2025-08-05,19,15,3,355,Family,Travel Agency,Couple Getaway,2,1,2,Breakfast,No,No,Yes,Yes,Yes,Yes,No,140.69,422.07,Occupied,4,Smoking Area,4.3,Yes
+BKG0661,Zaid Haddad,Male,40,UAE,2026-01-04,2026-01-17,15,13,1,360,Single,Website,Family,1,3,3,Room Only,Yes,No,Yes,Yes,Yes,Yes,Yes,72.47,72.47,Clean,2,Smoking Area,3.5,Yes
+BKG0662,Abdullah Nabil,Female,33,British,2026-03-19,2026-04-16,14,28,5,278,Single,Travel Agency,Leisure,1,0,0,Half Board,No,No,Yes,Yes,No,Yes,No,58.7,293.5,Clean,0,High Floor,4.7,No
+BKG0663,Hiba Tareq,Male,66,Jordanian,2026-03-04,2026-03-14,19,10,7,341,Suite,Travel Agency,Business,4,0,3,Full Board,No,No,Yes,Yes,No,No,No,186.3,1304.1,Occupied,1,None,5.0,Yes
+BKG0664,Leen Nabil,Male,25,Egyptian,2025-02-12,2025-03-27,16,43,2,167,Double,Travel Agency,Conference,2,0,1,Room Only,No,No,No,Yes,No,Yes,No,78.2,156.4,Clean,1,Sea View,4.2,No
+BKG0665,Zaid Nabil,Female,22,Egyptian,2025-04-03,2025-04-10,16,7,1,177,Suite,Travel Agency,Couple Getaway,3,0,2,Full Board,Yes,No,Yes,Yes,No,Yes,No,172.5,172.5,Occupied,0,Extra Towels,4.1,No
+BKG0666,Omar Gubari,Female,25,Jordanian,2026-01-27,2026-02-14,13,18,7,480,Suite,Walk-in,Family,2,0,1,Room Only,No,No,Yes,Yes,Yes,Yes,No,162.0,1134.0,Clean,3,Sea View,3.5,Yes
+BKG0667,Omar Malkawi,Female,33,Egyptian,2026-01-12,2026-01-12,17,0,6,481,Suite,Travel Agency,Couple Getaway,3,0,2,Breakfast,No,Yes,Yes,No,No,Yes,No,149.04,894.24,Clean,2,Extra Towels,4.8,No
+BKG0668,Dana Adel,Male,50,German,2026-02-03,2026-02-04,13,1,2,234,Single,Travel Agency,Leisure,1,1,1,Breakfast,Yes,No,Yes,No,Yes,Yes,No,54.65,109.3,Occupied,3,High Floor,4.8,No
+BKG0669,Hassan Ali,Male,20,American,2026-03-19,2026-05-01,16,43,2,318,Single,Website,Business,1,0,0,Breakfast,No,No,Yes,No,No,Yes,No,64.15,128.3,Available,0,Baby Crib,3.5,Yes
+BKG0670,Yousef Tareq,Male,26,American,2026-03-08,2026-03-23,14,15,2,365,Double,Website,Business,1,0,0,Room Only,No,Yes,Yes,No,No,Yes,No,85.0,170.0,Occupied,3,Smoking Area,4.0,No
+BKG0671,Hassan Haddad,Female,66,French,2025-01-22,2025-01-22,15,0,5,242,Single,Travel Agency,Couple Getaway,1,0,0,Room Only,Yes,Yes,Yes,Yes,No,Yes,Yes,61.73,308.65,Clean,3,Extra Towels,3.7,No
+BKG0672,Nour Tareq,Male,31,UAE,2025-09-09,2025-09-21,17,12,3,181,Single,Travel Agency,Business,1,0,0,Breakfast,No,No,Yes,Yes,No,Yes,No,54.65,163.95,Occupied,2,Quiet Room,4.5,No
+BKG0673,Abdullah Nabil,Female,47,German,2026-02-26,2026-03-26,19,28,7,230,Family,Website,Family,2,3,4,Room Only,Yes,No,Yes,Yes,No,Yes,Yes,146.4,1024.8,Occupied,3,Smoking Area,4.7,No
+BKG0674,Khaled Alsmadi,Male,35,American,2025-01-20,2025-03-02,14,41,1,134,Double,Mobile App,Family,3,0,2,Room Only,Yes,No,Yes,Yes,No,Yes,No,85.0,85.0,Needs Service,0,Smoking Area,4.2,No
+BKG0675,Hiba Qadoumi,Female,27,German,2025-04-12,2025-05-19,15,37,4,159,Double,Walk-in,Business,4,0,3,Full Board,Yes,No,No,Yes,No,Yes,No,106.25,425.0,Clean,1,Extra Towels,4.0,No
+BKG0676,Razan Gubari,Male,36,German,2025-11-09,2025-11-09,12,0,4,143,Family,Corporate,Business,2,1,2,Breakfast,No,No,Yes,Yes,Yes,Yes,No,129.6,518.4,Occupied,1,High Floor,4.5,No
+BKG0677,Hassan Haddad,Female,59,Egyptian,2025-05-01,2025-06-13,17,43,3,363,Family,Website,Leisure,2,2,3,Full Board,No,No,Yes,No,No,No,No,189.0,567.0,Occupied,3,Smoking Area,4.7,Yes
+BKG0678,Zaid Malkawi,Female,52,French,2026-01-13,2026-02-18,20,36,2,356,Family,Travel Agency,Business,2,1,2,Breakfast,Yes,No,Yes,Yes,Yes,Yes,No,119.23,238.46,Occupied,1,Late Check-In,4.4,No
+BKG0679,Sara Nasser,Female,30,Egyptian,2025-12-12,2026-01-18,14,37,7,383,Double,Walk-in,Family,4,2,5,Breakfast,No,No,Yes,Yes,Yes,No,No,91.8,642.6,Occupied,2,Sea View,4.1,No
+BKG0680,Rana Malkawi,Male,63,British,2025-11-25,2025-12-06,15,11,2,414,Suite,Mobile App,Conference,2,0,1,Half Board,No,No,Yes,Yes,Yes,Yes,No,219.24,438.48,Available,0,Quiet Room,4.5,Yes
+BKG0681,Razan Droubi,Male,39,Saudi,2025-08-08,2025-08-25,15,17,1,357,Double,Website,Leisure,2,0,1,Full Board,No,No,Yes,Yes,No,Yes,No,125.38,125.38,Needs Service,0,Sea View,4.2,Yes
+BKG0682,Mariam Droubi,Female,28,German,2025-04-27,2025-04-29,18,2,5,309,Double,Corporate,Conference,2,0,1,Breakfast,No,No,Yes,Yes,Yes,Yes,No,91.8,459.0,Clean,0,Late Check-In,4.3,No
+BKG0683,Shatha Adel,Male,46,British,2025-02-25,2025-03-10,15,13,2,433,Single,Website,Couple Getaway,1,0,0,Breakfast,No,No,Yes,Yes,No,Yes,No,59.4,118.8,Clean,1,High Floor,4.0,No
+BKG0684,Abdullah Qaisi,Male,37,German,2025-01-17,2025-01-29,17,12,7,383,Double,Website,Conference,2,0,1,Full Board,No,No,Yes,Yes,No,Yes,No,106.25,743.75,Occupied,1,Sea View,5.0,No
+BKG0685,Hiba Ali,Female,37,Saudi,2025-03-16,2025-04-02,12,17,1,453,Suite,Corporate,Family,4,1,4,Full Board,No,No,Yes,No,Yes,No,No,187.5,187.5,Occupied,1,Sea View,3.8,No
+BKG0686,Khaled Qaisi,Female,36,Jordanian,2026-03-20,2026-04-09,14,20,1,406,Single,Travel Agency,Conference,1,0,0,Half Board,Yes,No,Yes,Yes,No,Yes,No,58.7,58.7,Available,2,None,4.9,No
+BKG0687,Yousef Khaled,Female,33,British,2025-10-03,2025-11-07,17,35,7,251,Single,Corporate,Family,1,0,0,Breakfast,Yes,No,Yes,Yes,Yes,Yes,No,64.15,449.05,Clean,3,Extra Towels,4.0,Yes
+BKG0688,Khaled Samer,Female,67,German,2025-07-12,2025-08-24,18,43,4,501,Double,Website,Conference,2,0,1,Room Only,No,No,Yes,Yes,No,Yes,No,100.3,401.2,Available,0,Baby Crib,4.4,Yes
+BKG0689,Lina Yasin,Male,28,British,2025-09-17,2025-10-25,12,38,7,178,Double,Mobile App,Leisure,2,1,2,Half Board,Yes,No,Yes,Yes,No,Yes,No,106.49,745.43,Occupied,2,Late Check-In,4.8,Yes
+BKG0690,Ahmad Gubari,Female,50,American,2025-05-31,2025-06-28,15,28,2,375,Double,Walk-in,Family,2,0,1,Room Only,No,Yes,Yes,No,No,No,No,107.1,214.2,Occupied,1,None,3.8,Yes
+BKG0691,Yousef Khaled,Female,45,French,2025-01-08,2025-02-07,16,30,1,205,Family,Website,Couple Getaway,2,2,3,Breakfast,No,Yes,Yes,Yes,No,Yes,No,139.97,139.97,Occupied,2,High Floor,4.4,Yes
+BKG0692,Zaid Adel,Female,50,UAE,2025-09-28,2025-10-12,17,14,3,230,Double,Walk-in,Conference,4,0,3,Breakfast,No,No,Yes,Yes,No,No,No,91.8,275.4,Occupied,2,Quiet Room,4.8,No
+BKG0693,Abdullah Nasser,Female,63,American,2025-07-05,2025-07-22,12,17,7,497,Double,Mobile App,Family,2,0,1,Breakfast,No,Yes,Yes,Yes,No,Yes,No,108.32,758.24,Available,0,High Floor,4.2,Yes
+BKG0694,Rana Adel,Male,38,French,2025-07-23,2025-08-05,14,13,7,466,Single,Website,Couple Getaway,1,0,0,Breakfast,No,No,Yes,Yes,Yes,Yes,No,70.09,490.63,Occupied,0,None,4.6,Yes
+BKG0695,Shatha Adel,Female,34,Egyptian,2025-11-22,2025-11-24,15,2,2,189,Double,Corporate,Leisure,2,0,1,Room Only,No,No,Yes,Yes,Yes,No,No,85.0,170.0,Occupied,1,High Floor,3.8,No
+BKG0696,Nour Nabil,Female,43,American,2025-05-23,2025-06-08,19,16,3,176,Double,Corporate,Business,2,0,1,Breakfast,Yes,No,Yes,Yes,No,Yes,No,108.32,324.96,Clean,0,Quiet Room,4.5,Yes
+BKG0697,Rana Yasin,Female,36,German,2025-10-02,2025-11-03,15,32,4,238,Family,Travel Agency,Conference,4,1,4,Breakfast,No,No,Yes,No,Yes,Yes,No,119.23,476.92,Occupied,4,Sea View,4.3,No
+BKG0698,Hiba Haddad,Female,57,Egyptian,2025-03-09,2025-04-13,16,35,2,209,Double,Website,Conference,2,0,1,Room Only,No,No,Yes,No,Yes,No,No,85.0,170.0,Occupied,2,None,4.6,No
+BKG0699,Lina Khaled,Male,27,Egyptian,2025-03-27,2025-04-03,12,7,2,381,Single,Corporate,Business,1,0,0,Half Board,No,No,Yes,No,No,Yes,No,63.8,127.6,Available,0,Sea View,4.4,No
+BKG0700,Mariam Adel,Male,44,American,2025-02-12,2025-03-02,13,18,7,259,Single,Walk-in,Couple Getaway,1,0,0,Breakfast,Yes,No,Yes,Yes,No,Yes,No,59.4,415.8,Clean,0,Late Check-In,4.4,No
+BKG0701,Shatha Tareq,Male,63,Jordanian,2025-07-29,2025-09-04,14,37,7,443,Single,Walk-in,Couple Getaway,1,0,0,Breakfast,No,No,Yes,No,No,Yes,No,59.4,415.8,Occupied,0,None,4.4,No
+BKG0702,Hassan Gubari,Female,20,British,2025-07-19,2025-08-05,13,17,4,388,Double,Website,Business,3,0,2,Full Board,Yes,No,Yes,Yes,Yes,Yes,No,125.38,501.52,Available,0,None,4.4,Yes
+BKG0703,Hassan Khaled,Female,32,Egyptian,2026-01-25,2026-02-21,15,27,2,290,Double,Walk-in,Family,2,0,1,Breakfast,Yes,No,Yes,Yes,No,Yes,No,99.14,198.28,Needs Service,0,High Floor,3.8,Yes
+BKG0704,Hiba Adel,Male,49,French,2026-02-16,2026-03-15,13,27,5,172,Family,Website,Family,2,2,3,Breakfast,No,No,Yes,No,Yes,Yes,No,129.6,648.0,Occupied,2,None,4.1,No
+BKG0705,Shatha Ali,Female,52,Saudi,2025-02-07,2025-03-08,14,29,7,191,Double,Mobile App,Conference,3,0,2,Room Only,Yes,No,Yes,Yes,No,Yes,No,91.8,642.6,Occupied,0,Late Check-In,3.9,Yes
+BKG0706,Ahmad Qaisi,Male,41,French,2025-03-25,2025-05-02,19,38,2,396,Single,Walk-in,Couple Getaway,1,0,0,Full Board,No,No,Yes,Yes,No,Yes,No,74.25,148.5,Clean,1,Late Check-In,4.8,Yes
+BKG0707,Rana Khaled,Male,20,Jordanian,2025-03-14,2025-04-06,15,23,2,130,Single,Mobile App,Couple Getaway,1,0,0,Full Board,No,No,Yes,Yes,No,No,No,68.75,137.5,Occupied,1,Baby Crib,4.4,No
+BKG0708,Lina Qadoumi,Male,53,Egyptian,2025-02-15,2025-03-20,16,33,4,291,Suite,Walk-in,Leisure,2,0,1,Breakfast,No,No,Yes,Yes,No,Yes,No,162.0,648.0,Available,0,High Floor,4.0,No
+BKG0709,Ahmad Nasser,Male,26,British,2025-01-01,2025-01-12,18,11,5,232,Single,Website,Couple Getaway,1,0,0,Half Board,Yes,No,Yes,Yes,No,Yes,Yes,77.84,389.2,Occupied,1,None,4.0,No
+BKG0710,Alaa Samer,Female,52,British,2025-12-25,2026-02-04,12,41,7,513,Suite,Website,Family,3,0,2,Breakfast,No,Yes,Yes,Yes,No,Yes,No,162.0,1134.0,Occupied,1,Late Check-In,4.4,No
+BKG0711,Shatha Haddad,Male,66,Jordanian,2025-06-09,2025-07-13,12,34,7,131,Double,Website,Leisure,2,1,2,Breakfast,Yes,No,Yes,No,No,Yes,No,108.32,758.24,Occupied,1,Late Check-In,4.4,Yes
+BKG0712,Leen Malkawi,Male,47,German,2025-07-27,2025-08-13,20,17,7,171,Double,Travel Agency,Business,3,0,2,Breakfast,Yes,No,Yes,Yes,Yes,Yes,No,99.66,697.62,Needs Service,0,Extra Towels,5.0,Yes
+BKG0713,Ahmad Alsmadi,Female,48,American,2025-10-04,2025-10-25,14,21,1,408,Suite,Mobile App,Leisure,2,0,1,Full Board,Yes,No,Yes,Yes,Yes,No,No,202.5,202.5,Needs Service,1,Extra Towels,4.1,Yes
+BKG0714,Omar Alsmadi,Female,26,German,2025-02-22,2025-02-28,19,6,2,191,Single,Corporate,Business,1,0,0,Breakfast,Yes,No,Yes,Yes,No,Yes,Yes,78.27,156.54,Clean,1,Extra Towels,4.1,Yes
+BKG0715,Sara Nasser,Female,48,British,2025-01-01,2025-02-12,13,42,1,245,Family,Website,Business,2,1,2,Room Only,Yes,Yes,Yes,Yes,No,No,No,120.0,120.0,Available,1,Baby Crib,4.2,No
+BKG0716,Mariam Droubi,Male,48,Egyptian,2025-01-23,2025-02-23,13,31,7,397,Double,Travel Agency,Couple Getaway,3,0,2,Breakfast,Yes,Yes,Yes,No,Yes,Yes,No,84.46,591.22,Needs Service,0,None,3.1,No
+BKG0717,Khaled Malkawi,Male,22,German,2025-03-02,2025-03-19,14,17,1,292,Single,Travel Agency,Couple Getaway,1,0,0,Breakfast,Yes,No,Yes,Yes,No,Yes,No,54.65,54.65,Available,2,Baby Crib,4.6,No
+BKG0718,Alaa Haddad,Female,43,Saudi,2025-12-18,2026-01-08,13,21,5,237,Single,Mobile App,Leisure,1,2,2,Room Only,Yes,No,Yes,No,No,Yes,No,55.0,275.0,Occupied,3,Quiet Room,4.1,No
+BKG0719,Dana Ali,Male,33,American,2025-12-22,2025-12-30,17,8,6,167,Double,Walk-in,Couple Getaway,4,0,3,Room Only,No,No,Yes,No,No,Yes,No,100.3,601.8,Occupied,1,Sea View,4.7,Yes
+BKG0720,Ahmad Alsmadi,Female,54,Egyptian,2025-07-20,2025-08-07,13,18,2,492,Double,Travel Agency,Family,2,2,3,Breakfast,Yes,No,Yes,Yes,No,Yes,No,99.66,199.32,Clean,2,Quiet Room,4.4,Yes
+BKG0721,Omar Yasin,Male,35,Egyptian,2025-10-04,2025-10-30,15,26,5,404,Family,Website,Leisure,2,2,3,Breakfast,No,No,Yes,Yes,No,No,No,129.6,648.0,Available,2,Late Check-In,4.8,No
+BKG0722,Khaled Droubi,Male,45,UAE,2026-01-13,2026-02-09,14,27,5,485,Family,Website,Family,4,2,5,Breakfast,Yes,Yes,Yes,No,No,Yes,No,129.6,648.0,Needs Service,3,Late Check-In,4.6,No
+BKG0723,Razan Haddad,Male,64,Saudi,2025-10-09,2025-10-20,13,11,1,142,Double,Travel Agency,Family,1,2,2,Breakfast,Yes,No,Yes,Yes,Yes,Yes,Yes,103.04,103.04,Occupied,2,Baby Crib,3.8,No
+BKG0724,Yousef Gubari,Female,49,Egyptian,2026-01-09,2026-01-29,16,20,5,361,Suite,Website,Family,1,0,0,Full Board,Yes,No,Yes,No,No,Yes,No,187.5,937.5,Occupied,1,Smoking Area,4.7,No
+BKG0725,Rana Alsmadi,Male,62,Egyptian,2025-05-22,2025-06-10,18,19,3,209,Single,Walk-in,Business,1,0,0,Room Only,No,No,Yes,Yes,No,Yes,No,64.9,194.7,Occupied,2,Smoking Area,4.3,Yes
+BKG0726,Noor Droubi,Female,24,British,2026-01-10,2026-02-12,17,33,2,153,Double,Walk-in,Conference,3,0,2,Half Board,No,Yes,Yes,No,No,Yes,No,98.6,197.2,Clean,2,Baby Crib,4.5,No
+BKG0727,Ahmad Alsmadi,Male,68,Saudi,2025-05-05,2025-06-19,13,45,3,183,Double,Corporate,Leisure,2,0,1,Full Board,Yes,No,Yes,No,No,Yes,No,125.38,376.14,Available,0,High Floor,4.0,Yes
+BKG0728,Yousef Yasin,Male,63,French,2025-11-03,2025-11-29,16,26,1,391,Double,Corporate,Business,4,0,3,Breakfast,No,Yes,Yes,Yes,No,No,No,99.14,99.14,Occupied,2,Sea View,4.2,Yes
+BKG0729,Sara Ali,Female,46,Jordanian,2025-02-11,2025-02-23,19,12,7,398,Double,Mobile App,Family,2,2,3,Half Board,No,No,Yes,No,Yes,Yes,No,98.6,690.2,Occupied,2,Baby Crib,3.8,No
+BKG0730,Tareq Yasin,Female,22,German,2025-05-27,2025-06-12,14,16,7,231,Double,Website,Leisure,3,1,3,Breakfast,Yes,No,Yes,Yes,Yes,No,No,108.32,758.24,Occupied,3,High Floor,3.5,Yes
+BKG0731,Nour Qadoumi,Female,67,British,2025-04-21,2025-05-17,16,26,7,450,Double,Website,Family,4,1,4,Full Board,No,No,No,No,Yes,Yes,No,114.75,803.25,Occupied,3,High Floor,4.2,Yes
+BKG0732,Zaid Nasser,Male,41,Egyptian,2025-07-14,2025-07-28,13,14,3,308,Suite,Corporate,Leisure,2,3,4,Full Board,No,No,Yes,Yes,No,No,No,221.25,663.75,Occupied,2,Baby Crib,4.3,Yes
+BKG0733,Leen Tareq,Female,49,American,2025-01-15,2025-02-01,15,17,3,473,Double,Corporate,Leisure,3,1,3,Full Board,No,No,Yes,Yes,Yes,No,No,114.75,344.25,Occupied,1,Extra Towels,3.0,Yes
+BKG0734,Hassan Qadoumi,Female,24,UAE,2025-11-01,2025-12-03,15,32,7,296,Family,Website,Business,2,1,2,Breakfast,No,No,Yes,No,No,Yes,Yes,186.57,1305.99,Occupied,1,Baby Crib,4.2,Yes
+BKG0735,Tareq Gubari,Male,35,French,2025-07-23,2025-08-20,13,28,3,263,Family,Website,Leisure,3,1,3,Breakfast,No,No,Yes,No,No,Yes,No,152.93,458.79,Occupied,1,High Floor,5.0,Yes
+BKG0736,Razan Ali,Female,23,German,2026-03-30,2026-04-12,17,13,3,263,Single,Walk-in,Leisure,1,3,3,Half Board,Yes,No,Yes,Yes,No,Yes,No,63.8,191.4,Available,3,High Floor,3.9,No
+BKG0737,Noor Samer,Female,62,Egyptian,2025-03-22,2025-04-14,17,23,2,328,Double,Corporate,Conference,2,0,1,Half Board,No,No,Yes,Yes,No,Yes,No,98.6,197.2,Clean,1,Baby Crib,4.9,No
+BKG0738,Sara Khaled,Female,45,German,2025-08-25,2025-09-02,16,8,4,178,Single,Mobile App,Business,1,0,0,Full Board,No,Yes,Yes,Yes,No,Yes,No,68.75,275.0,Occupied,1,None,4.7,No
+BKG0739,Yousef Malkawi,Male,28,American,2025-09-05,2025-10-18,13,43,7,118,Single,Mobile App,Couple Getaway,1,0,0,Breakfast,No,No,Yes,Yes,No,Yes,No,64.15,449.05,Occupied,0,Smoking Area,4.6,Yes
+BKG0740,Noor Yasin,Female,42,Egyptian,2025-04-12,2025-04-24,15,12,1,178,Double,Mobile App,Couple Getaway,1,0,0,Half Board,No,No,Yes,Yes,Yes,Yes,No,98.6,98.6,Clean,0,Quiet Room,4.8,No
+BKG0741,Sara Haddad,Male,59,Egyptian,2025-11-24,2025-12-22,14,28,6,196,Single,Mobile App,Leisure,1,1,1,Full Board,No,No,Yes,Yes,Yes,Yes,No,81.12,486.72,Occupied,2,Smoking Area,4.4,Yes
+BKG0742,Rana Haddad,Male,27,UAE,2025-07-19,2025-08-19,17,31,5,233,Double,Website,Leisure,2,0,1,Half Board,No,No,Yes,No,No,Yes,No,116.35,581.75,Occupied,0,Sea View,4.6,Yes
+BKG0743,Yousef Yasin,Female,48,Egyptian,2026-02-04,2026-03-06,13,30,4,476,Single,Corporate,Couple Getaway,1,0,0,Full Board,No,Yes,Yes,Yes,Yes,Yes,No,74.25,297.0,Occupied,2,Late Check-In,4.6,Yes
+BKG0744,Khaled Qaisi,Female,59,UAE,2025-07-01,2025-07-04,15,3,4,387,Double,Website,Leisure,3,1,3,Half Board,No,No,Yes,Yes,Yes,Yes,No,124.24,496.96,Occupied,2,Baby Crib,4.3,Yes
+BKG0745,Hiba Nabil,Male,40,Jordanian,2025-06-06,2025-06-13,16,7,7,510,Family,Website,Conference,2,1,2,Breakfast,Yes,No,Yes,No,No,Yes,No,163.3,1143.1,Occupied,2,Extra Towels,3.8,Yes
+BKG0746,Sara Nasser,Female,25,American,2025-03-31,2025-05-12,12,42,6,512,Single,Travel Agency,Couple Getaway,1,0,0,Breakfast,No,Yes,Yes,Yes,No,Yes,No,54.65,327.9,Occupied,1,Late Check-In,3.9,No
+BKG0747,Leen Khaled,Female,30,Egyptian,2025-01-01,2025-01-09,11,8,7,390,Suite,Website,Couple Getaway,2,0,1,Room Only,No,Yes,Yes,Yes,No,Yes,No,150.0,1050.0,Available,1,Smoking Area,3.8,No
+BKG0748,Mariam Alsmadi,Female,47,French,2025-09-25,2025-10-08,12,13,4,451,Single,Corporate,Couple Getaway,1,0,0,Breakfast,No,No,Yes,Yes,No,Yes,No,59.4,237.6,Available,0,Quiet Room,4.0,No
+BKG0749,Hiba Alsmadi,Male,27,German,2025-10-20,2025-12-03,14,44,6,334,Double,Website,Couple Getaway,3,0,2,Half Board,No,Yes,Yes,Yes,Yes,Yes,No,116.35,698.1,Clean,1,Extra Towels,3.9,Yes
+BKG0750,Rana Qaisi,Male,23,Egyptian,2026-02-14,2026-03-16,11,30,3,270,Double,Travel Agency,Leisure,2,1,2,Breakfast,No,No,Yes,No,No,Yes,No,84.46,253.38,Occupied,3,None,3.8,No
+BKG0751,Hiba Nasser,Male,40,French,2025-01-17,2025-02-12,14,26,1,469,Single,Travel Agency,Leisure,1,0,0,Breakfast,Yes,No,Yes,No,No,Yes,No,54.65,54.65,Occupied,1,Baby Crib,4.1,No
+BKG0752,Rana Qaisi,Male,30,French,2025-01-05,2025-01-28,14,23,2,250,Double,Website,Leisure,4,2,5,Half Board,No,No,Yes,Yes,Yes,Yes,No,98.6,197.2,Occupied,2,Baby Crib,4.0,No
+BKG0753,Noor Samer,Female,24,Saudi,2026-01-17,2026-02-05,17,19,2,125,Double,Corporate,Family,3,0,2,Half Board,No,No,Yes,Yes,No,No,No,98.6,197.2,Occupied,1,Late Check-In,3.7,No
+BKG0754,Zaid Adel,Female,58,UAE,2025-10-31,2025-12-02,15,32,3,199,Family,Travel Agency,Family,3,2,4,Room Only,Yes,No,No,No,Yes,Yes,No,130.27,390.81,Clean,1,Extra Towels,4.2,Yes
+BKG0755,Lina Yasin,Female,43,French,2025-05-27,2025-07-11,17,45,6,499,Family,Website,Conference,2,1,2,Room Only,Yes,No,Yes,No,Yes,Yes,No,151.2,907.2,Clean,3,Baby Crib,4.7,Yes
+BKG0756,Dana Tareq,Female,45,German,2025-02-28,2025-03-29,14,29,2,299,Single,Travel Agency,Family,1,2,2,Full Board,No,No,Yes,No,No,No,No,68.31,136.62,Occupied,2,Extra Towels,4.0,Yes
+BKG0757,Zaid Droubi,Female,54,Jordanian,2025-04-24,2025-04-28,14,4,1,455,Family,Website,Business,3,2,4,Full Board,No,Yes,Yes,Yes,Yes,Yes,No,150.0,150.0,Occupied,3,Sea View,4.1,No
+BKG0758,Tareq Nabil,Male,54,Jordanian,2025-12-12,2026-01-23,15,42,7,339,Double,Corporate,Couple Getaway,2,0,1,Half Board,Yes,No,Yes,Yes,Yes,No,No,106.49,745.43,Available,0,Smoking Area,3.6,Yes
+BKG0759,Mariam Yasin,Male,40,Egyptian,2025-05-15,2025-05-17,14,2,2,367,Single,Corporate,Couple Getaway,1,0,0,Full Board,Yes,No,Yes,Yes,No,Yes,No,74.25,148.5,Clean,0,Quiet Room,4.3,Yes
+BKG0760,Noor Gubari,Male,21,British,2025-03-20,2025-04-03,11,14,5,345,Double,Corporate,Business,4,0,3,Breakfast,Yes,No,Yes,Yes,No,Yes,No,91.8,459.0,Occupied,1,Sea View,4.4,No
+BKG0761,Sara Yasin,Male,40,Jordanian,2025-11-09,2025-12-01,17,22,5,377,Single,Travel Agency,Business,1,0,0,Room Only,No,No,Yes,Yes,No,Yes,No,59.71,298.55,Occupied,0,Late Check-In,4.1,Yes
+BKG0762,Alaa Adel,Male,57,Saudi,2025-06-01,2025-06-05,19,4,4,234,Double,Website,Business,3,0,2,Breakfast,No,Yes,Yes,No,No,Yes,No,108.32,433.28,Occupied,0,Smoking Area,4.2,Yes
+BKG0763,Leen Tareq,Male,58,American,2025-07-31,2025-09-08,17,39,1,489,Single,Mobile App,Family,1,0,0,Full Board,Yes,No,Yes,Yes,No,Yes,No,68.75,68.75,Available,0,Baby Crib,4.5,No
+BKG0764,Omar Nasser,Male,52,UAE,2025-10-01,2025-11-15,14,45,3,126,Double,Travel Agency,Leisure,3,0,2,Breakfast,Yes,Yes,Yes,Yes,No,Yes,No,91.21,273.63,Needs Service,0,None,3.3,Yes
+BKG0765,Yousef Khaled,Male,22,Egyptian,2026-03-18,2026-04-18,14,31,7,285,Double,Travel Agency,Family,2,0,1,Breakfast,No,No,Yes,Yes,Yes,No,No,91.21,638.47,Clean,2,Late Check-In,4.3,Yes
+BKG0766,Tareq Haddad,Male,44,German,2026-03-15,2026-03-24,13,9,3,366,Suite,Walk-in,Leisure,4,0,3,Full Board,No,No,Yes,Yes,No,No,No,187.5,562.5,Occupied,2,None,3.4,No
+BKG0767,Mariam Yasin,Male,41,American,2025-09-13,2025-10-21,16,38,5,407,Double,Corporate,Business,2,0,1,Half Board,No,No,Yes,No,No,Yes,No,98.6,493.0,Occupied,0,Sea View,4.1,No
+BKG0768,Lina Nabil,Female,31,French,2026-01-15,2026-02-10,14,26,3,266,Double,Corporate,Business,2,0,1,Room Only,No,No,Yes,Yes,No,Yes,No,85.0,255.0,Available,1,Extra Towels,4.6,No
+BKG0769,Razan Adel,Female,29,British,2026-03-19,2026-04-14,14,26,7,150,Suite,Walk-in,Leisure,2,0,1,Half Board,Yes,No,Yes,No,No,No,No,174.0,1218.0,Available,1,None,4.0,No
+BKG0770,Razan Yasin,Male,54,Jordanian,2025-04-10,2025-04-16,14,6,2,323,Double,Travel Agency,Couple Getaway,3,0,2,Room Only,No,Yes,Yes,Yes,No,Yes,No,78.2,156.4,Occupied,0,Baby Crib,3.8,No
+BKG0771,Zaid Nasser,Female,45,Jordanian,2025-10-06,2025-11-09,15,34,4,226,Single,Travel Agency,Family,1,0,0,Breakfast,No,No,Yes,No,No,Yes,No,54.65,218.6,Available,1,Smoking Area,3.2,No
+BKG0772,Omar Khaled,Female,67,German,2026-03-02,2026-04-04,14,33,3,246,Double,Corporate,Conference,3,0,2,Room Only,No,Yes,Yes,Yes,No,Yes,No,91.8,275.4,Occupied,1,Extra Towels,4.6,Yes
+BKG0773,Lina Droubi,Female,27,French,2025-03-25,2025-04-10,15,16,5,382,Family,Corporate,Family,4,2,5,Breakfast,No,Yes,Yes,Yes,Yes,Yes,No,129.6,648.0,Occupied,1,Quiet Room,4.0,No
+BKG0774,Razan Droubi,Female,47,Jordanian,2025-01-11,2025-01-25,18,14,1,101,Suite,Walk-in,Conference,1,0,0,Breakfast,Yes,Yes,Yes,Yes,No,Yes,No,174.96,174.96,Occupied,0,Quiet Room,4.5,Yes
+BKG0775,Mariam Samer,Male,46,Jordanian,2025-07-01,2025-08-14,13,44,5,518,Single,Mobile App,Conference,1,0,0,Room Only,No,No,Yes,Yes,No,No,No,64.9,324.5,Occupied,0,Sea View,4.7,Yes
+BKG0776,Hassan Malkawi,Male,60,German,2025-09-05,2025-09-10,15,5,4,196,Single,Mobile App,Leisure,1,1,1,Full Board,Yes,No,Yes,Yes,No,Yes,No,68.75,275.0,Available,3,Quiet Room,4.8,No
+BKG0777,Rana Samer,Female,24,British,2025-08-25,2025-10-02,17,38,6,495,Suite,Walk-in,Couple Getaway,1,0,0,Full Board,No,No,Yes,Yes,No,Yes,No,187.5,1125.0,Occupied,0,High Floor,4.8,No
+BKG0778,Leen Adel,Female,48,Saudi,2025-02-08,2025-02-16,15,8,5,457,Double,Travel Agency,Business,4,0,3,Breakfast,No,No,Yes,Yes,No,Yes,No,84.46,422.3,Needs Service,0,Sea View,4.2,No
+BKG0779,Abdullah Ali,Female,30,Saudi,2026-02-25,2026-03-31,15,34,4,422,Single,Mobile App,Leisure,1,0,0,Breakfast,No,No,Yes,Yes,No,Yes,No,59.4,237.6,Clean,0,None,4.8,No
+BKG0780,Nour Gubari,Female,57,Saudi,2025-09-01,2025-10-10,15,39,2,359,Suite,Travel Agency,Leisure,1,0,0,Half Board,No,No,Yes,Yes,No,No,No,172.89,345.78,Occupied,3,Quiet Room,4.1,Yes
+BKG0781,Ahmad Adel,Female,35,French,2026-03-10,2026-03-17,15,7,3,188,Double,Travel Agency,Business,3,0,2,Breakfast,No,No,Yes,Yes,Yes,Yes,Yes,103.04,309.12,Available,0,Sea View,4.0,No
+BKG0782,Dana Nasser,Female,28,Jordanian,2025-03-02,2025-03-04,13,2,7,257,Double,Website,Family,1,2,2,Room Only,No,No,Yes,No,Yes,No,No,85.0,595.0,Available,3,None,4.4,No
+BKG0783,Mariam Khaled,Female,59,American,2025-12-08,2026-01-11,16,34,7,284,Family,Walk-in,Business,2,2,3,Room Only,No,No,Yes,Yes,Yes,Yes,No,120.0,840.0,Occupied,2,Baby Crib,4.2,No
+BKG0784,Shatha Adel,Male,56,French,2025-07-18,2025-07-24,16,6,3,453,Family,Travel Agency,Couple Getaway,2,3,4,Breakfast,No,No,Yes,Yes,Yes,Yes,No,140.69,422.07,Available,2,Quiet Room,4.5,Yes
+BKG0785,Dana Malkawi,Female,38,American,2025-03-04,2025-03-18,14,14,1,277,Single,Travel Agency,Business,1,0,0,Breakfast,No,No,Yes,No,No,Yes,No,54.65,54.65,Occupied,2,High Floor,4.7,No
+BKG0786,Hassan Qadoumi,Female,28,German,2025-11-09,2025-12-06,18,27,5,215,Suite,Website,Couple Getaway,2,0,1,Room Only,Yes,No,Yes,Yes,No,Yes,No,189.0,945.0,Needs Service,2,Baby Crib,4.0,Yes
+BKG0787,Alaa Samer,Male,34,British,2025-11-04,2025-11-24,13,20,4,499,Single,Corporate,Couple Getaway,1,0,0,Breakfast,No,Yes,Yes,No,No,Yes,No,59.4,237.6,Occupied,0,High Floor,3.6,No
+BKG0788,Alaa Adel,Male,51,German,2025-11-24,2026-01-03,20,40,2,415,Suite,Travel Agency,Family,2,0,1,Breakfast,No,No,Yes,Yes,No,Yes,No,160.96,321.92,Clean,2,Baby Crib,4.1,Yes
+BKG0789,Hiba Ali,Male,23,British,2025-02-13,2025-02-17,12,4,4,460,Double,Website,Leisure,2,0,1,Half Board,No,No,Yes,Yes,No,Yes,No,98.6,394.4,Occupied,0,Baby Crib,4.4,No
+BKG0790,Zaid Haddad,Male,38,Jordanian,2026-02-17,2026-03-18,13,29,5,190,Double,Mobile App,Family,2,0,1,Breakfast,Yes,No,Yes,Yes,No,No,No,91.8,459.0,Needs Service,1,Smoking Area,4.0,No
+BKG0791,Lina Haddad,Female,31,French,2026-02-20,2026-02-24,14,4,5,390,Single,Website,Family,1,0,0,Half Board,Yes,Yes,Yes,Yes,No,Yes,No,63.8,319.0,Occupied,0,None,4.6,No
+BKG0792,Rana Malkawi,Male,50,American,2026-03-19,2026-04-10,15,22,1,275,Double,Mobile App,Business,2,0,1,Half Board,No,No,Yes,No,No,Yes,No,106.49,106.49,Available,2,Sea View,4.2,Yes
+BKG0793,Leen Ali,Male,21,Saudi,2025-01-27,2025-03-05,16,37,5,477,Single,Travel Agency,Leisure,1,0,0,Room Only,No,No,Yes,Yes,Yes,Yes,No,50.6,253.0,Available,2,Extra Towels,4.2,No
+BKG0794,Razan Qadoumi,Female,68,British,2025-09-21,2025-10-24,14,33,7,439,Double,Travel Agency,Couple Getaway,3,0,2,Full Board,Yes,No,Yes,Yes,No,Yes,No,105.57,738.99,Occupied,2,Smoking Area,4.6,Yes
+BKG0795,Zaid Nabil,Female,28,UAE,2025-12-06,2026-01-15,18,40,7,143,Double,Corporate,Leisure,1,0,0,Breakfast,No,No,No,No,No,Yes,No,91.8,642.6,Occupied,1,Sea View,3.3,No
+BKG0796,Lina Nasser,Female,33,German,2025-04-04,2025-04-17,16,13,6,340,Family,Website,Business,2,3,4,Half Board,Yes,No,Yes,Yes,No,Yes,No,139.2,835.2,Needs Service,2,Late Check-In,4.8,No
+BKG0797,Lina Nabil,Female,55,German,2025-10-23,2025-11-15,14,23,1,395,Double,Website,Conference,1,0,0,Half Board,Yes,No,Yes,No,No,Yes,No,106.49,106.49,Available,2,None,4.4,Yes
+BKG0798,Mariam Tareq,Male,35,French,2025-05-04,2025-06-10,12,37,7,136,Double,Travel Agency,Leisure,2,1,2,Room Only,Yes,No,Yes,No,No,Yes,Yes,112.58,788.06,Occupied,1,Smoking Area,4.5,Yes
+BKG0799,Tareq Nasser,Female,44,Egyptian,2025-06-25,2025-07-28,15,33,6,441,Family,Website,Conference,2,3,4,Breakfast,Yes,No,Yes,Yes,No,Yes,No,152.93,917.58,Needs Service,1,Baby Crib,4.4,Yes
+BKG0800,Razan Qadoumi,Female,44,UAE,2025-05-07,2025-06-17,14,41,1,316,Double,Travel Agency,Leisure,3,0,2,Breakfast,Yes,No,Yes,Yes,No,No,No,99.66,99.66,Occupied,1,Late Check-In,4.4,Yes
+BKG0801,Shatha Qaisi,Male,41,American,2026-01-28,2026-02-21,15,24,6,236,Single,Website,Couple Getaway,1,0,0,Breakfast,No,No,Yes,No,No,Yes,No,64.15,384.9,Occupied,0,Extra Towels,4.5,Yes
+BKG0802,Hiba Tareq,Male,62,Egyptian,2025-01-22,2025-01-29,12,7,3,395,Double,Website,Leisure,2,0,1,Room Only,No,No,Yes,Yes,No,Yes,No,85.0,255.0,Occupied,1,None,4.2,No
+BKG0803,Noor Qaisi,Male,36,Egyptian,2026-02-13,2026-03-11,15,26,1,352,Single,Travel Agency,Couple Getaway,1,0,0,Full Board,No,No,Yes,No,No,No,No,63.25,63.25,Occupied,0,Smoking Area,4.4,No
+BKG0804,Zaid Samer,Female,21,Saudi,2025-03-05,2025-03-22,18,17,4,475,Suite,Walk-in,Couple Getaway,3,0,2,Half Board,No,Yes,Yes,Yes,No,Yes,No,187.92,751.68,Occupied,1,Baby Crib,3.9,Yes
+BKG0805,Omar Alsmadi,Female,50,Jordanian,2025-04-30,2025-05-25,14,25,2,188,Family,Website,Conference,2,1,2,Full Board,Yes,No,Yes,Yes,Yes,Yes,No,150.0,300.0,Occupied,0,Extra Towels,4.6,No
+BKG0806,Nour Ali,Male,59,British,2026-03-18,2026-04-01,18,14,7,151,Double,Website,Leisure,2,0,1,Half Board,No,No,Yes,Yes,Yes,Yes,No,98.6,690.2,Occupied,1,Smoking Area,4.2,No
+BKG0807,Yousef Tareq,Female,54,Jordanian,2025-11-21,2025-11-30,17,9,2,152,Double,Walk-in,Leisure,3,3,5,Full Board,No,Yes,Yes,Yes,Yes,Yes,No,106.25,212.5,Occupied,4,Quiet Room,4.2,No
+BKG0808,Omar Qadoumi,Female,32,German,2025-02-25,2025-04-05,12,39,5,285,Double,Website,Leisure,1,0,0,Breakfast,No,No,Yes,No,No,Yes,No,99.14,495.7,Clean,2,Late Check-In,3.6,Yes
+BKG0809,Lina Samer,Female,20,French,2025-04-11,2025-05-15,16,34,4,377,Double,Mobile App,Business,2,0,1,Room Only,No,No,Yes,No,Yes,Yes,No,85.0,340.0,Clean,0,High Floor,4.0,No
+BKG0810,Alaa Qaisi,Female,52,Saudi,2026-02-21,2026-03-29,12,36,4,104,Suite,Mobile App,Business,1,0,0,Half Board,Yes,No,Yes,No,No,No,No,174.0,696.0,Occupied,2,High Floor,4.6,No
+BKG0811,Hiba Ali,Male,23,UAE,2025-08-21,2025-09-09,14,19,3,257,Suite,Website,Conference,4,0,3,Breakfast,Yes,No,Yes,Yes,No,Yes,No,162.0,486.0,Occupied,0,None,4.2,No
+BKG0812,Hassan Qadoumi,Male,50,German,2026-01-15,2026-02-12,17,28,7,377,Double,Website,Business,2,0,1,Breakfast,Yes,No,Yes,Yes,No,Yes,No,91.8,642.6,Occupied,1,Baby Crib,4.6,No
+BKG0813,Noor Samer,Male,26,Saudi,2025-06-29,2025-07-23,12,24,1,338,Double,Corporate,Family,3,0,2,Breakfast,No,No,Yes,No,No,No,No,108.32,108.32,Occupied,0,Sea View,3.5,Yes
+BKG0814,Leen Qadoumi,Female,37,French,2025-07-14,2025-07-14,15,0,1,474,Double,Travel Agency,Leisure,3,1,3,Room Only,No,No,Yes,Yes,No,Yes,No,92.28,92.28,Occupied,1,Quiet Room,3.7,Yes
+BKG0815,Noor Qaisi,Female,34,American,2025-11-17,2025-11-29,17,12,2,108,Double,Website,Couple Getaway,1,0,0,Room Only,Yes,No,Yes,Yes,Yes,Yes,Yes,112.0,224.0,Occupied,2,Smoking Area,4.7,Yes
+BKG0816,Leen Gubari,Male,68,Jordanian,2025-07-03,2025-07-03,18,0,3,102,Single,Website,Family,1,0,0,Breakfast,No,No,Yes,Yes,Yes,Yes,No,70.09,210.27,Clean,1,High Floor,4.5,Yes
+BKG0817,Razan Tareq,Male,68,UAE,2025-01-12,2025-01-17,15,5,5,346,Single,Mobile App,Couple Getaway,1,0,0,Half Board,No,No,Yes,No,No,Yes,No,68.9,344.5,Occupied,0,High Floor,4.2,Yes
+BKG0818,Noor Khaled,Female,21,UAE,2025-05-13,2025-05-28,12,15,4,197,Single,Website,Business,1,0,0,Half Board,No,Yes,Yes,No,No,Yes,No,63.8,255.2,Occupied,2,Extra Towels,4.2,No
+BKG0819,Noor Droubi,Male,43,British,2025-11-22,2026-01-03,11,42,3,495,Suite,Website,Leisure,2,0,1,Breakfast,No,No,Yes,Yes,No,Yes,No,174.96,524.88,Occupied,1,None,4.0,Yes
+BKG0820,Shatha Ali,Male,28,French,2025-10-04,2025-11-17,15,44,1,182,Double,Walk-in,Couple Getaway,2,0,1,Full Board,Yes,No,Yes,Yes,No,Yes,No,106.25,106.25,Occupied,0,Quiet Room,4.9,No
+BKG0821,Sara Nasser,Male,38,Egyptian,2025-04-24,2025-05-23,11,29,3,409,Double,Corporate,Family,2,1,2,Room Only,Yes,No,Yes,Yes,Yes,Yes,No,91.8,275.4,Occupied,1,None,4.6,Yes
+BKG0822,Razan Droubi,Male,46,Jordanian,2025-03-30,2025-04-02,14,3,2,292,Single,Travel Agency,Family,1,0,0,Room Only,No,No,Yes,No,Yes,Yes,No,50.6,101.2,Occupied,1,Extra Towels,4.1,No
+BKG0823,Mariam Droubi,Male,40,American,2025-01-06,2025-02-02,15,27,4,259,Double,Walk-in,Couple Getaway,2,0,1,Room Only,Yes,No,No,No,No,Yes,Yes,103.7,414.8,Available,1,Smoking Area,4.2,No
+BKG0824,Hassan Malkawi,Female,42,Saudi,2025-09-09,2025-09-18,14,9,7,458,Double,Mobile App,Business,4,0,3,Half Board,No,Yes,Yes,No,No,No,No,98.6,690.2,Occupied,0,Sea View,4.6,No
+BKG0825,Tareq Yasin,Male,37,French,2026-02-05,2026-02-14,18,9,4,165,Family,Mobile App,Family,2,2,3,Breakfast,No,No,Yes,Yes,Yes,Yes,No,139.97,559.88,Occupied,2,Smoking Area,3.8,Yes
+BKG0826,Rana Gubari,Male,39,American,2025-05-01,2025-05-18,17,17,3,245,Suite,Corporate,Conference,2,0,1,Full Board,Yes,No,Yes,No,No,Yes,No,187.5,562.5,Occupied,1,Sea View,4.2,No
+BKG0827,Hiba Gubari,Female,26,UAE,2025-11-26,2025-12-01,17,5,7,315,Double,Website,Business,2,0,1,Full Board,No,No,Yes,Yes,No,No,No,125.38,877.66,Occupied,1,Extra Towels,4.4,Yes
+BKG0828,Khaled Nasser,Female,21,Saudi,2025-10-02,2025-10-27,15,25,1,173,Family,Corporate,Business,2,2,3,Breakfast,No,No,Yes,Yes,No,Yes,No,129.6,129.6,Occupied,1,None,4.3,No
+BKG0829,Lina Samer,Male,44,Jordanian,2025-02-21,2025-04-03,18,41,6,155,Single,Website,Conference,1,0,0,Room Only,No,No,Yes,No,Yes,Yes,No,55.0,330.0,Needs Service,3,Smoking Area,4.3,No
+BKG0830,Abdullah Qaisi,Female,57,German,2026-01-20,2026-02-20,17,31,6,369,Single,Walk-in,Couple Getaway,1,0,0,Half Board,No,Yes,No,Yes,No,No,No,68.9,413.4,Needs Service,0,Extra Towels,4.1,Yes
+BKG0831,Abdullah Nabil,Male,60,Saudi,2025-06-18,2025-07-11,19,23,7,313,Single,Mobile App,Leisure,1,0,0,Half Board,Yes,No,Yes,Yes,No,Yes,Yes,98.07,686.49,Occupied,1,Quiet Room,3.6,Yes
+BKG0832,Razan Khaled,Male,52,French,2025-02-24,2025-02-25,16,1,4,445,Family,Website,Couple Getaway,3,3,5,Breakfast,No,Yes,Yes,Yes,Yes,Yes,No,129.6,518.4,Clean,2,Extra Towels,4.4,No
+BKG0833,Abdullah Ali,Female,42,Jordanian,2026-01-06,2026-02-10,14,35,6,304,Single,Travel Agency,Family,1,0,0,Half Board,Yes,No,No,Yes,No,Yes,Yes,71.61,429.66,Needs Service,0,Baby Crib,3.5,No
+BKG0834,Mariam Samer,Female,48,Saudi,2025-12-08,2025-12-09,15,1,4,287,Double,Walk-in,Leisure,3,2,4,Breakfast,No,No,Yes,Yes,No,Yes,No,108.32,433.28,Clean,2,None,4.3,Yes
+BKG0835,Dana Qaisi,Male,36,American,2025-01-24,2025-03-06,15,41,7,218,Family,Walk-in,Conference,2,2,3,Breakfast,Yes,No,Yes,Yes,Yes,No,No,129.6,907.2,Clean,1,None,3.7,No
+BKG0836,Rana Malkawi,Female,24,French,2025-01-24,2025-01-30,15,6,2,356,Suite,Walk-in,Conference,4,0,3,Half Board,No,No,Yes,No,No,Yes,No,174.0,348.0,Occupied,1,High Floor,4.3,No
+BKG0837,Rana Yasin,Female,57,Saudi,2025-08-04,2025-08-13,15,9,3,293,Double,Website,Leisure,3,2,4,Room Only,No,Yes,Yes,Yes,No,Yes,No,100.3,300.9,Clean,2,Baby Crib,4.1,Yes
+BKG0838,Sara Qaisi,Female,58,Egyptian,2026-03-14,2026-03-16,17,2,6,357,Single,Mobile App,Business,1,0,0,Half Board,No,No,No,No,No,Yes,No,63.8,382.8,Occupied,1,Quiet Room,4.1,No
+BKG0839,Leen Khaled,Female,36,UAE,2025-08-26,2025-09-18,15,23,1,183,Double,Walk-in,Business,2,0,1,Breakfast,Yes,Yes,Yes,Yes,No,No,No,91.8,91.8,Occupied,2,Late Check-In,4.1,No
+BKG0840,Mariam Droubi,Female,68,German,2025-10-16,2025-11-06,14,21,2,381,Family,Corporate,Business,2,2,3,Full Board,No,No,Yes,Yes,No,Yes,No,150.0,300.0,Needs Service,1,Baby Crib,4.6,No
+BKG0841,Zaid Qaisi,Male,42,UAE,2025-07-25,2025-08-20,16,26,4,410,Family,Mobile App,Family,2,1,2,Half Board,No,No,No,Yes,Yes,Yes,No,164.26,657.04,Occupied,2,None,4.3,Yes
+BKG0842,Hiba Droubi,Male,46,British,2026-01-31,2026-03-02,13,30,2,115,Double,Mobile App,Couple Getaway,3,0,2,Breakfast,No,No,Yes,Yes,No,Yes,No,91.8,183.6,Clean,1,High Floor,4.2,No
+BKG0843,Lina Tareq,Female,31,UAE,2025-05-04,2025-06-06,14,33,7,185,Family,Walk-in,Business,3,2,4,Room Only,Yes,No,Yes,Yes,No,Yes,No,151.2,1058.4,Available,2,Smoking Area,3.7,Yes
+BKG0844,Lina Malkawi,Female,54,Saudi,2025-01-30,2025-02-17,13,18,7,237,Double,Corporate,Leisure,2,0,1,Room Only,Yes,No,Yes,Yes,No,Yes,Yes,103.7,725.9,Occupied,2,None,3.3,No
+BKG0845,Mariam Yasin,Male,24,German,2025-04-05,2025-04-30,14,25,6,312,Double,Corporate,Leisure,4,2,5,Full Board,No,Yes,Yes,Yes,No,No,No,106.25,637.5,Available,2,Quiet Room,4.7,No
+BKG0846,Lina Droubi,Female,37,UAE,2026-03-04,2026-03-15,14,11,4,410,Family,Corporate,Leisure,2,3,4,Full Board,No,Yes,Yes,Yes,No,Yes,No,150.0,600.0,Occupied,1,Baby Crib,4.8,No
+BKG0847,Yousef Nasser,Male,49,French,2025-04-23,2025-05-31,14,38,6,186,Single,Corporate,Business,1,0,0,Breakfast,No,No,Yes,Yes,No,Yes,Yes,78.27,469.62,Clean,0,Baby Crib,4.2,Yes
+BKG0848,Hiba Qaisi,Female,33,American,2025-10-11,2025-10-30,14,19,6,188,Double,Travel Agency,Leisure,2,0,1,Full Board,No,No,Yes,Yes,No,Yes,No,97.75,586.5,Occupied,1,High Floor,3.7,No
+BKG0849,Dana Adel,Female,24,American,2025-11-01,2025-11-11,13,10,1,131,Family,Website,Business,2,1,2,Breakfast,Yes,Yes,No,Yes,Yes,No,No,129.6,129.6,Occupied,2,Baby Crib,4.6,No
+BKG0850,Razan Khaled,Female,38,Jordanian,2025-02-28,2025-03-14,21,14,5,278,Single,Mobile App,Family,1,1,1,Breakfast,No,Yes,Yes,No,Yes,Yes,No,64.15,320.75,Occupied,3,None,4.4,Yes
+BKG0851,Alaa Nasser,Male,34,Egyptian,2025-10-16,2025-11-19,21,34,6,259,Family,Corporate,Conference,2,1,2,Breakfast,Yes,No,Yes,No,No,Yes,Yes,158.11,948.66,Occupied,2,High Floor,4.6,No
+BKG0852,Alaa Adel,Female,20,Egyptian,2025-10-29,2025-11-15,13,17,3,178,Double,Corporate,Family,2,2,3,Breakfast,No,Yes,Yes,Yes,Yes,Yes,No,99.14,297.42,Occupied,3,Extra Towels,3.4,Yes
+BKG0853,Sara Samer,Female,45,German,2025-12-08,2026-01-09,16,32,7,186,Single,Corporate,Conference,1,0,0,Full Board,No,No,Yes,Yes,No,Yes,No,74.25,519.75,Occupied,3,Extra Towels,4.2,Yes
+BKG0854,Abdullah Qadoumi,Female,34,British,2025-12-28,2026-01-01,14,4,1,165,Single,Website,Business,1,0,0,Half Board,Yes,No,Yes,Yes,Yes,No,No,63.8,63.8,Occupied,0,Extra Towels,3.8,No
+BKG0855,Mariam Malkawi,Male,29,UAE,2025-07-11,2025-07-27,18,16,6,221,Suite,Website,Conference,2,0,1,Full Board,No,No,Yes,No,No,Yes,No,221.25,1327.5,Occupied,0,Quiet Room,3.6,Yes
+BKG0856,Razan Yasin,Female,55,British,2026-01-23,2026-03-01,16,37,2,497,Single,Corporate,Couple Getaway,1,0,0,Room Only,No,No,Yes,Yes,Yes,Yes,No,55.0,110.0,Clean,2,Quiet Room,4.0,No
+BKG0857,Hassan Khaled,Male,50,German,2025-06-14,2025-07-11,17,27,6,487,Suite,Website,Family,2,0,1,Breakfast,Yes,No,Yes,No,No,Yes,Yes,249.03,1494.18,Available,1,Late Check-In,4.3,Yes
+BKG0858,Nour Droubi,Female,62,Egyptian,2025-02-24,2025-03-07,14,11,5,436,Suite,Corporate,Leisure,2,0,1,Half Board,No,No,Yes,No,No,Yes,No,187.92,939.6,Occupied,0,None,3.7,Yes
+BKG0859,Hiba Samer,Male,48,Egyptian,2025-08-02,2025-08-12,18,10,4,226,Double,Website,Couple Getaway,4,0,3,Half Board,Yes,No,Yes,Yes,No,Yes,Yes,141.94,567.76,Clean,1,High Floor,4.2,Yes
+BKG0860,Sara Nasser,Male,31,Egyptian,2025-07-09,2025-07-21,15,12,7,324,Double,Mobile App,Business,2,0,1,Breakfast,Yes,Yes,No,No,Yes,Yes,Yes,132.16,925.12,Occupied,2,Sea View,3.4,Yes
+BKG0861,Tareq Droubi,Female,65,Jordanian,2026-03-22,2026-04-16,14,25,2,148,Single,Mobile App,Leisure,1,0,0,Breakfast,No,No,Yes,Yes,No,No,No,59.4,118.8,Clean,2,Extra Towels,4.8,No
+BKG0862,Nour Ali,Male,65,German,2025-08-11,2025-08-19,19,8,3,193,Double,Corporate,Leisure,4,0,3,Room Only,No,No,Yes,Yes,No,No,No,100.3,300.9,Occupied,0,Extra Towels,4.5,Yes
+BKG0863,Khaled Ali,Female,24,British,2025-11-16,2025-12-03,18,17,1,277,Family,Website,Family,2,3,4,Half Board,No,Yes,Yes,Yes,Yes,Yes,No,164.26,164.26,Occupied,3,Late Check-In,4.2,Yes
+BKG0864,Omar Alsmadi,Female,52,American,2025-08-08,2025-08-29,17,21,7,107,Double,Walk-in,Business,2,0,1,Breakfast,No,No,Yes,No,No,Yes,No,115.67,809.69,Occupied,2,Extra Towels,4.4,Yes
+BKG0865,Lina Ali,Female,41,French,2025-01-02,2025-01-23,14,21,5,214,Suite,Website,Business,3,0,2,Breakfast,No,No,Yes,Yes,No,Yes,Yes,197.64,988.2,Available,1,Sea View,4.8,No
+BKG0866,Hassan Alsmadi,Female,33,Jordanian,2025-08-22,2025-09-24,14,33,5,253,Double,Mobile App,Family,2,1,2,Full Board,No,No,Yes,Yes,Yes,Yes,No,106.25,531.25,Available,0,High Floor,4.7,No
+BKG0867,Shatha Gubari,Male,53,Jordanian,2026-03-28,2026-04-02,15,5,6,320,Single,Mobile App,Conference,1,0,0,Breakfast,Yes,No,Yes,Yes,No,No,No,59.4,356.4,Available,1,Baby Crib,5.0,No
+BKG0868,Hiba Alsmadi,Female,35,American,2025-01-18,2025-01-20,14,2,3,244,Family,Travel Agency,Leisure,2,3,4,Half Board,Yes,No,Yes,No,Yes,No,No,128.06,384.18,Occupied,3,Smoking Area,4.4,No
+BKG0869,Dana Gubari,Female,52,German,2026-02-02,2026-03-13,11,39,1,427,Double,Travel Agency,Leisure,2,2,3,Breakfast,No,No,Yes,Yes,Yes,Yes,No,91.21,91.21,Clean,0,None,4.4,Yes
+BKG0870,Yousef Qadoumi,Female,60,Egyptian,2025-06-15,2025-06-16,18,1,7,447,Single,Website,Leisure,1,0,0,Full Board,No,No,Yes,No,No,Yes,No,81.12,567.84,Occupied,0,Sea View,4.6,Yes
+BKG0871,Yousef Tareq,Male,57,Saudi,2026-03-27,2026-04-26,13,30,1,401,Suite,Travel Agency,Family,2,0,1,Room Only,No,No,Yes,No,Yes,Yes,No,138.0,138.0,Available,0,Extra Towels,4.4,No
+BKG0872,Mariam Khaled,Male,64,Saudi,2025-05-30,2025-05-31,14,1,2,289,Suite,Website,Leisure,3,1,3,Half Board,Yes,No,Yes,No,No,No,No,187.92,375.84,Available,2,Smoking Area,4.6,Yes
+BKG0873,Lina Adel,Male,37,American,2025-05-13,2025-06-15,13,33,5,431,Suite,Website,Business,2,0,1,Full Board,No,No,Yes,Yes,No,Yes,No,221.25,1106.25,Occupied,2,Quiet Room,3.9,Yes
+BKG0874,Abdullah Yasin,Female,61,Egyptian,2025-09-28,2025-10-01,13,3,5,306,Family,Travel Agency,Business,2,3,4,Half Board,Yes,Yes,Yes,Yes,No,Yes,No,128.06,640.3,Occupied,2,High Floor,3.8,No
+BKG0875,Nour Malkawi,Male,46,American,2025-03-18,2025-03-28,16,10,5,298,Family,Corporate,Leisure,4,1,4,Breakfast,No,No,No,No,Yes,Yes,No,139.97,699.85,Occupied,2,High Floor,4.2,Yes
+BKG0876,Yousef Alsmadi,Female,45,Egyptian,2026-03-16,2026-03-26,17,10,1,230,Single,Website,Business,1,0,0,Room Only,No,No,Yes,No,No,Yes,No,55.0,55.0,Clean,2,Sea View,4.1,No
+BKG0877,Razan Malkawi,Male,51,Saudi,2025-06-21,2025-08-03,17,43,5,237,Single,Walk-in,Leisure,1,1,1,Half Board,Yes,No,Yes,Yes,Yes,Yes,No,75.28,376.4,Needs Service,2,Late Check-In,3.8,Yes
+BKG0878,Hassan Gubari,Male,65,UAE,2025-10-19,2025-11-13,18,25,4,243,Double,Travel Agency,Leisure,2,2,3,Breakfast,Yes,No,Yes,Yes,Yes,Yes,No,84.46,337.84,Occupied,1,Smoking Area,4.3,No
+BKG0879,Tareq Qadoumi,Female,64,Egyptian,2025-12-14,2025-12-29,18,15,1,138,Single,Corporate,Family,1,3,3,Breakfast,Yes,No,Yes,Yes,Yes,Yes,No,70.09,70.09,Occupied,1,Sea View,4.5,Yes
+BKG0880,Hassan Tareq,Male,51,Egyptian,2025-03-08,2025-04-14,14,37,3,413,Suite,Corporate,Business,2,0,1,Breakfast,No,No,Yes,Yes,No,No,No,162.0,486.0,Needs Service,1,Quiet Room,3.7,No
+BKG0881,Nour Qaisi,Male,57,UAE,2025-10-30,2025-12-11,17,42,5,227,Double,Travel Agency,Leisure,4,1,4,Breakfast,No,No,Yes,No,Yes,Yes,No,99.66,498.3,Occupied,2,Extra Towels,3.3,Yes
+BKG0882,Khaled Qaisi,Male,67,Saudi,2025-02-18,2025-03-02,16,12,3,118,Single,Website,Business,1,0,0,Room Only,Yes,No,Yes,Yes,No,Yes,No,55.0,165.0,Clean,0,Extra Towels,5.0,No
+BKG0883,Dana Qadoumi,Male,39,Jordanian,2026-03-22,2026-04-27,12,36,3,464,Single,Corporate,Leisure,1,0,0,Half Board,No,Yes,Yes,Yes,No,Yes,No,63.8,191.4,Clean,1,None,4.5,No
+BKG0884,Hassan Tareq,Female,34,UAE,2025-11-29,2025-12-02,15,3,2,374,Single,Corporate,Couple Getaway,1,0,0,Breakfast,No,Yes,Yes,Yes,No,Yes,No,70.09,140.18,Needs Service,0,None,4.4,Yes
+BKG0885,Rana Nabil,Male,43,Jordanian,2025-03-09,2025-03-14,15,5,1,464,Double,Mobile App,Business,2,0,1,Breakfast,No,Yes,Yes,No,No,Yes,No,99.14,99.14,Occupied,3,Smoking Area,4.2,Yes
+BKG0886,Nour Droubi,Male,62,French,2025-03-25,2025-04-08,20,14,3,399,Suite,Mobile App,Leisure,1,0,0,Breakfast,No,Yes,No,Yes,No,Yes,No,162.0,486.0,Available,1,Baby Crib,4.6,No
+BKG0887,Khaled Adel,Female,53,UAE,2025-11-02,2025-11-06,16,4,6,134,Single,Website,Leisure,1,0,0,Breakfast,No,No,Yes,Yes,Yes,Yes,No,59.4,356.4,Occupied,1,Late Check-In,4.8,No
+BKG0888,Mariam Ali,Female,46,Saudi,2026-03-30,2026-05-13,18,44,1,119,Suite,Travel Agency,Conference,2,0,1,Full Board,No,No,No,Yes,No,No,No,172.5,172.5,Available,1,Sea View,4.1,No
+BKG0889,Ahmad Khaled,Male,42,British,2025-11-06,2025-11-10,16,4,7,246,Double,Walk-in,Conference,3,0,2,Breakfast,No,No,Yes,Yes,No,Yes,No,91.8,642.6,Needs Service,1,Smoking Area,4.6,No
+BKG0890,Rana Alsmadi,Female,20,British,2025-01-06,2025-01-21,18,15,5,456,Family,Website,Leisure,2,2,3,Room Only,No,Yes,Yes,Yes,No,Yes,No,120.0,600.0,Occupied,2,Sea View,3.3,No
+BKG0891,Tareq Ali,Male,54,Egyptian,2026-01-16,2026-02-27,15,42,1,111,Double,Website,Conference,1,0,0,Full Board,Yes,No,Yes,No,No,Yes,No,114.75,114.75,Occupied,0,Smoking Area,4.8,Yes
+BKG0892,Mariam Alsmadi,Female,47,Jordanian,2025-09-15,2025-09-18,17,3,5,175,Double,Corporate,Family,4,0,3,Room Only,No,No,Yes,Yes,No,Yes,No,85.0,425.0,Clean,2,High Floor,4.3,No
+BKG0893,Alaa Nasser,Female,41,British,2026-02-20,2026-03-16,13,24,4,240,Double,Mobile App,Couple Getaway,2,0,1,Half Board,Yes,No,Yes,No,No,Yes,No,98.6,394.4,Occupied,3,None,4.3,No
+BKG0894,Yousef Samer,Male,66,Egyptian,2025-07-06,2025-07-23,14,17,6,268,Family,Corporate,Business,3,2,4,Breakfast,Yes,No,Yes,Yes,Yes,No,No,152.93,917.58,Occupied,2,Sea View,4.0,Yes
+BKG0895,Shatha Qaisi,Female,20,UAE,2025-12-26,2026-01-31,15,36,7,105,Family,Website,Leisure,3,2,4,Breakfast,No,No,Yes,No,Yes,Yes,No,139.97,979.79,Occupied,3,Quiet Room,4.2,Yes
+BKG0896,Hassan Qadoumi,Male,61,German,2025-07-09,2025-07-17,17,8,1,340,Double,Website,Family,2,2,3,Breakfast,No,No,Yes,No,Yes,Yes,Yes,132.16,132.16,Available,3,Smoking Area,3.8,Yes
+BKG0897,Razan Qadoumi,Male,27,German,2025-12-23,2026-01-15,14,23,5,245,Single,Travel Agency,Family,1,0,0,Full Board,No,No,Yes,No,No,Yes,No,63.25,316.25,Available,1,Extra Towels,4.3,No
+BKG0898,Sara Adel,Male,25,Jordanian,2025-12-22,2026-01-12,14,21,3,459,Double,Website,Family,2,1,2,Breakfast,Yes,No,Yes,Yes,No,Yes,No,91.8,275.4,Clean,2,Smoking Area,4.2,No
+BKG0899,Abdullah Samer,Male,46,German,2025-07-28,2025-07-28,14,0,4,448,Family,Mobile App,Leisure,2,2,3,Half Board,No,No,Yes,Yes,No,Yes,No,164.26,657.04,Occupied,2,High Floor,5.0,Yes
+BKG0900,Abdullah Qadoumi,Female,26,German,2026-01-07,2026-01-12,15,5,6,128,Single,Travel Agency,Family,1,0,0,Room Only,Yes,Yes,Yes,Yes,No,Yes,No,50.6,303.6,Occupied,0,Baby Crib,4.3,No
+BKG0901,Abdullah Khaled,Male,67,German,2025-06-13,2025-07-12,13,29,6,496,Double,Walk-in,Leisure,3,1,3,Breakfast,No,Yes,Yes,No,No,Yes,No,115.67,694.02,Available,3,Baby Crib,3.3,Yes
+BKG0902,Tareq Ali,Male,50,American,2025-04-06,2025-05-20,15,44,2,121,Single,Website,Family,1,1,1,Room Only,No,No,Yes,Yes,No,Yes,No,55.0,110.0,Occupied,1,Sea View,4.4,No
+BKG0903,Hiba Nabil,Male,40,Egyptian,2025-04-06,2025-05-11,19,35,7,229,Family,Corporate,Couple Getaway,2,2,3,Breakfast,No,No,Yes,Yes,Yes,Yes,No,129.6,907.2,Occupied,3,None,4.8,No
+BKG0904,Leen Khaled,Male,32,Egyptian,2025-12-19,2025-12-23,15,4,1,327,Double,Website,Business,2,0,1,Half Board,No,No,Yes,Yes,No,Yes,No,116.35,116.35,Occupied,0,Late Check-In,4.7,Yes
+BKG0905,Abdullah Nasser,Male,59,UAE,2025-06-15,2025-07-21,16,36,4,212,Double,Website,Business,3,0,2,Breakfast,Yes,No,Yes,Yes,No,No,No,108.32,433.28,Clean,1,Smoking Area,4.5,Yes
+BKG0906,Alaa Gubari,Male,52,German,2025-04-15,2025-05-11,18,26,1,463,Double,Website,Leisure,4,0,3,Breakfast,Yes,No,Yes,Yes,No,Yes,No,91.8,91.8,Occupied,2,None,4.1,No
+BKG0907,Leen Malkawi,Female,51,Jordanian,2025-06-02,2025-06-05,13,3,6,508,Suite,Corporate,Leisure,3,0,2,Breakfast,No,No,Yes,No,No,Yes,No,191.16,1146.96,Occupied,2,Baby Crib,3.5,Yes
+BKG0908,Sara Qadoumi,Female,48,British,2025-05-15,2025-05-19,14,4,4,479,Double,Travel Agency,Business,2,0,1,Breakfast,No,No,Yes,No,No,Yes,No,84.46,337.84,Available,1,Sea View,4.7,No
+BKG0909,Dana Qadoumi,Male,38,Egyptian,2025-11-14,2025-12-04,11,20,3,248,Family,Walk-in,Leisure,2,2,3,Full Board,Yes,No,Yes,Yes,No,Yes,No,177.0,531.0,Clean,3,High Floor,5.0,Yes
+BKG0910,Zaid Droubi,Male,20,Egyptian,2025-10-15,2025-10-29,14,14,3,352,Suite,Mobile App,Conference,4,0,3,Room Only,No,No,No,Yes,No,Yes,No,150.0,450.0,Clean,0,Smoking Area,4.1,No
+BKG0911,Tareq Nasser,Male,53,Egyptian,2025-02-02,2025-03-06,17,32,7,483,Single,Travel Agency,Family,1,0,0,Breakfast,No,No,Yes,Yes,No,Yes,No,54.65,382.55,Available,2,Sea View,4.3,No
+BKG0912,Razan Khaled,Female,37,Jordanian,2025-10-22,2025-11-25,20,34,5,394,Suite,Mobile App,Leisure,2,0,1,Half Board,No,No,Yes,No,No,No,No,174.0,870.0,Occupied,2,None,4.4,No
+BKG0913,Yousef Ali,Male,45,Jordanian,2026-03-27,2026-04-22,12,26,2,341,Single,Mobile App,Couple Getaway,1,0,0,Half Board,No,No,Yes,Yes,No,No,No,63.8,127.6,Clean,2,High Floor,4.0,No
+BKG0914,Tareq Khaled,Female,44,British,2025-08-09,2025-08-09,11,0,3,174,Double,Corporate,Couple Getaway,4,0,3,Breakfast,Yes,Yes,Yes,Yes,Yes,Yes,No,115.67,347.01,Occupied,1,Smoking Area,4.8,Yes
+BKG0915,Yousef Khaled,Female,46,Jordanian,2026-02-15,2026-02-27,13,12,7,509,Double,Website,Leisure,2,0,1,Room Only,Yes,No,Yes,No,No,No,No,91.8,642.6,Occupied,2,None,4.4,Yes
+BKG0916,Dana Yasin,Male,67,Jordanian,2025-12-22,2025-12-25,15,3,3,385,Family,Walk-in,Leisure,2,1,2,Breakfast,No,Yes,Yes,Yes,No,No,No,152.93,458.79,Clean,2,Extra Towels,4.5,Yes
+BKG0917,Noor Alsmadi,Female,59,Jordanian,2025-05-18,2025-05-31,14,13,1,322,Double,Corporate,Leisure,2,2,3,Half Board,No,No,No,Yes,Yes,Yes,No,106.49,106.49,Available,0,None,3.9,Yes
+BKG0918,Abdullah Adel,Male,37,Jordanian,2025-01-01,2025-02-15,16,45,2,413,Family,Corporate,Leisure,2,3,4,Breakfast,Yes,No,Yes,Yes,Yes,Yes,No,139.97,279.94,Clean,1,Sea View,4.1,Yes
+BKG0919,Ahmad Droubi,Female,52,American,2025-07-07,2025-08-18,14,42,1,430,Family,Walk-in,Conference,2,2,3,Half Board,Yes,No,Yes,Yes,No,Yes,No,164.26,164.26,Occupied,1,Sea View,4.1,Yes
+BKG0920,Abdullah Haddad,Female,59,Egyptian,2025-07-04,2025-08-08,15,35,6,357,Double,Corporate,Leisure,2,0,1,Full Board,Yes,Yes,Yes,No,Yes,No,No,133.88,803.28,Needs Service,1,High Floor,4.2,Yes
+BKG0921,Hiba Khaled,Female,43,American,2025-03-18,2025-03-27,18,9,3,119,Double,Travel Agency,Couple Getaway,4,0,3,Full Board,Yes,No,Yes,Yes,Yes,Yes,No,97.75,293.25,Occupied,1,Smoking Area,4.5,No
+BKG0922,Abdullah Droubi,Female,37,Jordanian,2025-12-29,2026-01-25,14,27,7,208,Suite,Travel Agency,Couple Getaway,4,0,3,Breakfast,No,Yes,Yes,Yes,No,Yes,No,149.04,1043.28,Needs Service,0,None,4.5,No
+BKG0923,Leen Nabil,Female,24,French,2025-08-25,2025-08-29,14,4,5,178,Double,Travel Agency,Leisure,2,1,2,Half Board,No,No,Yes,Yes,Yes,Yes,No,114.3,571.5,Occupied,2,Smoking Area,4.4,Yes
+BKG0924,Ahmad Malkawi,Male,31,Jordanian,2025-05-02,2025-05-27,16,25,5,306,Double,Mobile App,Business,4,0,3,Breakfast,Yes,No,Yes,Yes,No,Yes,No,91.8,459.0,Occupied,2,Smoking Area,4.9,No
+BKG0925,Khaled Droubi,Male,27,French,2025-07-18,2025-08-25,12,38,6,262,Double,Website,Conference,2,0,1,Room Only,No,No,Yes,No,No,No,No,100.3,601.8,Occupied,3,None,3.9,Yes
+BKG0926,Hassan Yasin,Female,52,UAE,2025-01-23,2025-02-23,14,31,4,430,Family,Website,Leisure,2,3,4,Breakfast,Yes,Yes,Yes,No,Yes,Yes,No,129.6,518.4,Occupied,1,None,4.4,No
+BKG0927,Sara Samer,Male,63,American,2025-02-17,2025-03-19,16,30,5,306,Suite,Website,Business,2,0,1,Breakfast,Yes,No,Yes,Yes,No,Yes,No,162.0,810.0,Occupied,1,Baby Crib,4.5,No
+BKG0928,Ahmad Malkawi,Female,68,Saudi,2025-10-02,2025-10-09,14,7,4,490,Suite,Travel Agency,Leisure,4,1,4,Breakfast,No,Yes,Yes,Yes,No,Yes,No,149.04,596.16,Occupied,2,Extra Towels,3.9,No
+BKG0929,Abdullah Samer,Female,47,Jordanian,2025-04-29,2025-05-26,17,27,7,154,Single,Website,Business,1,0,0,Breakfast,Yes,No,Yes,No,No,No,No,59.4,415.8,Occupied,0,Late Check-In,4.1,No
+BKG0930,Leen Khaled,Male,33,Egyptian,2025-09-18,2025-10-23,17,35,4,339,Double,Website,Family,4,1,4,Half Board,No,No,Yes,Yes,No,Yes,Yes,120.29,481.16,Occupied,1,Sea View,4.3,No
+BKG0931,Ahmad Yasin,Female,50,German,2025-04-17,2025-05-05,17,18,3,185,Single,Website,Conference,1,0,0,Breakfast,No,No,Yes,Yes,No,No,No,59.4,178.2,Available,1,Baby Crib,3.9,No
+BKG0932,Razan Tareq,Male,56,American,2025-02-09,2025-03-23,13,42,5,248,Family,Website,Conference,2,2,3,Half Board,No,No,Yes,Yes,No,Yes,No,139.2,696.0,Occupied,1,Late Check-In,4.3,No
+BKG0933,Dana Droubi,Male,21,German,2025-12-07,2025-12-22,20,15,6,302,Family,Travel Agency,Couple Getaway,3,3,5,Half Board,Yes,No,Yes,Yes,Yes,Yes,No,151.12,906.72,Occupied,2,Late Check-In,4.2,Yes
+BKG0934,Abdullah Qadoumi,Male,22,Egyptian,2025-05-04,2025-05-15,17,11,3,137,Single,Walk-in,Leisure,1,1,1,Breakfast,Yes,No,Yes,No,No,No,No,59.4,178.2,Occupied,2,Smoking Area,4.1,No
+BKG0935,Alaa Gubari,Male,45,American,2025-06-17,2025-07-27,14,40,2,166,Double,Travel Agency,Business,3,0,2,Breakfast,No,No,Yes,Yes,No,No,No,99.66,199.32,Occupied,1,Quiet Room,4.9,Yes
+BKG0936,Dana Adel,Female,68,German,2025-07-14,2025-07-18,16,4,2,133,Family,Travel Agency,Leisure,3,3,5,Half Board,Yes,No,Yes,Yes,Yes,Yes,No,161.36,322.72,Clean,1,Late Check-In,4.5,Yes
+BKG0937,Noor Adel,Female,37,American,2026-01-09,2026-01-22,18,13,6,148,Family,Mobile App,Business,2,2,3,Breakfast,Yes,No,No,Yes,No,Yes,No,129.6,777.6,Available,3,Quiet Room,4.0,No
+BKG0938,Razan Nasser,Female,49,British,2025-02-28,2025-04-13,17,44,3,225,Single,Website,Conference,1,0,0,Breakfast,No,No,Yes,Yes,No,Yes,Yes,72.47,217.41,Occupied,1,High Floor,4.2,No
+BKG0939,Shatha Alsmadi,Male,40,Saudi,2025-02-13,2025-02-26,16,13,3,381,Double,Mobile App,Family,2,0,1,Half Board,No,No,Yes,Yes,No,Yes,No,98.6,295.8,Occupied,2,None,4.8,No
+BKG0940,Noor Yasin,Male,47,UAE,2025-11-30,2025-11-30,13,0,7,248,Family,Walk-in,Leisure,2,2,3,Room Only,Yes,Yes,Yes,No,Yes,Yes,No,120.0,840.0,Needs Service,2,Baby Crib,4.1,No
+BKG0941,Khaled Qaisi,Male,29,German,2026-01-15,2026-01-21,14,6,1,401,Double,Website,Leisure,2,1,2,Breakfast,Yes,No,Yes,No,Yes,Yes,No,91.8,91.8,Occupied,2,Baby Crib,4.3,No
+BKG0942,Yousef Samer,Female,43,Egyptian,2025-03-08,2025-04-19,13,42,2,476,Suite,Website,Family,2,0,1,Room Only,No,No,Yes,Yes,Yes,Yes,No,162.0,324.0,Occupied,3,Quiet Room,3.4,Yes
+BKG0943,Khaled Tareq,Female,46,British,2025-11-03,2025-11-24,18,21,3,485,Single,Mobile App,Family,1,0,0,Half Board,No,No,Yes,Yes,No,Yes,No,63.8,191.4,Clean,0,Baby Crib,4.2,No
+BKG0944,Hassan Gubari,Female,35,British,2025-08-21,2025-10-02,15,42,6,227,Single,Mobile App,Leisure,1,0,0,Half Board,Yes,Yes,Yes,No,No,Yes,No,63.8,382.8,Occupied,0,Late Check-In,4.2,No
+BKG0945,Dana Samer,Female,46,American,2026-03-23,2026-04-24,12,32,6,388,Single,Mobile App,Couple Getaway,1,0,0,Breakfast,No,No,Yes,Yes,No,No,No,64.15,384.9,Clean,1,Quiet Room,4.0,Yes
+BKG0946,Dana Ali,Male,46,British,2025-10-25,2025-12-08,17,44,6,209,Suite,Website,Business,4,0,3,Half Board,No,No,Yes,Yes,No,Yes,No,205.32,1231.92,Available,0,Quiet Room,5.0,Yes
+BKG0947,Lina Tareq,Female,52,UAE,2025-12-04,2025-12-30,16,26,3,501,Suite,Website,Conference,2,0,1,Breakfast,Yes,No,Yes,Yes,No,Yes,No,191.16,573.48,Occupied,2,High Floor,5.0,Yes
+BKG0948,Leen Droubi,Male,25,UAE,2025-09-21,2025-10-03,16,12,6,241,Single,Corporate,Leisure,1,0,0,Breakfast,Yes,No,Yes,Yes,No,Yes,No,64.15,384.9,Available,0,Late Check-In,4.2,Yes
+BKG0949,Nour Nabil,Female,27,German,2025-10-21,2025-10-28,13,7,2,336,Suite,Travel Agency,Leisure,3,0,2,Breakfast,Yes,Yes,Yes,No,No,No,No,149.04,298.08,Occupied,0,Quiet Room,4.2,No
+BKG0950,Mariam Adel,Female,57,Jordanian,2025-03-13,2025-04-19,18,37,6,213,Single,Corporate,Leisure,1,2,2,Room Only,No,Yes,Yes,No,No,Yes,No,59.4,356.4,Occupied,2,Quiet Room,4.3,Yes
+BKG0951,Mariam Alsmadi,Male,44,Egyptian,2025-11-04,2025-11-06,13,2,1,241,Double,Walk-in,Business,2,0,1,Half Board,No,No,Yes,No,Yes,Yes,No,98.6,98.6,Occupied,1,Smoking Area,3.5,No
+BKG0952,Tareq Alsmadi,Female,56,Saudi,2025-10-01,2025-10-07,14,6,7,183,Suite,Corporate,Couple Getaway,2,0,1,Breakfast,Yes,No,Yes,Yes,Yes,Yes,No,162.0,1134.0,Available,0,None,3.9,No
+BKG0953,Sara Samer,Female,46,Saudi,2025-01-20,2025-02-22,16,33,2,264,Double,Travel Agency,Business,4,0,3,Full Board,No,No,Yes,No,No,Yes,No,105.57,211.14,Needs Service,2,Late Check-In,3.9,Yes
+BKG0954,Noor Ali,Male,50,French,2025-04-12,2025-05-09,12,27,1,338,Family,Corporate,Business,4,3,6,Room Only,Yes,No,Yes,No,No,Yes,No,129.6,129.6,Clean,3,None,4.8,Yes
+BKG0955,Shatha Samer,Male,53,American,2025-12-09,2025-12-09,13,0,7,410,Single,Website,Family,1,2,2,Breakfast,Yes,No,Yes,No,Yes,No,No,70.09,490.63,Occupied,2,Extra Towels,3.7,Yes
+BKG0956,Yousef Tareq,Male,25,French,2025-02-06,2025-03-13,17,35,2,135,Double,Corporate,Family,2,2,3,Full Board,Yes,No,Yes,Yes,Yes,Yes,Yes,129.62,259.24,Occupied,3,Sea View,4.1,No
+BKG0957,Shatha Tareq,Male,41,British,2025-07-28,2025-08-13,17,16,5,410,Single,Travel Agency,Conference,1,0,0,Full Board,Yes,No,Yes,No,Yes,Yes,No,74.63,373.15,Available,0,Baby Crib,3.8,Yes
+BKG0958,Abdullah Yasin,Male,58,Jordanian,2025-05-25,2025-06-30,20,36,5,300,Single,Website,Couple Getaway,1,0,0,Half Board,Yes,No,Yes,No,No,Yes,No,75.28,376.4,Clean,0,High Floor,4.4,Yes
+BKG0959,Lina Malkawi,Male,43,American,2025-07-26,2025-09-05,14,41,2,103,Double,Website,Business,1,0,0,Breakfast,No,No,Yes,Yes,No,Yes,No,99.14,198.28,Needs Service,0,Smoking Area,4.3,Yes
+BKG0960,Tareq Khaled,Male,58,American,2025-01-02,2025-01-28,15,26,6,375,Family,Corporate,Business,2,2,3,Room Only,No,Yes,Yes,Yes,No,Yes,No,120.0,720.0,Occupied,2,Late Check-In,4.5,No
+BKG0961,Abdullah Malkawi,Male,53,British,2025-05-23,2025-06-12,18,20,4,175,Family,Travel Agency,Leisure,2,2,3,Breakfast,No,No,Yes,Yes,Yes,Yes,No,140.69,562.76,Clean,2,Baby Crib,4.7,Yes
+BKG0962,Khaled Ali,Male,28,German,2025-03-26,2025-05-06,15,41,7,140,Double,Travel Agency,Couple Getaway,2,0,1,Breakfast,No,No,Yes,Yes,Yes,Yes,No,84.46,591.22,Occupied,2,Baby Crib,4.1,No
+BKG0963,Khaled Nasser,Male,52,American,2025-11-10,2025-11-18,17,8,3,386,Double,Travel Agency,Conference,2,0,1,Full Board,Yes,Yes,Yes,Yes,No,Yes,Yes,119.25,357.75,Occupied,3,None,3.6,No
+BKG0964,Shatha Qadoumi,Male,26,French,2025-10-27,2025-11-03,16,7,7,321,Double,Corporate,Leisure,3,1,3,Room Only,No,No,No,No,No,Yes,No,85.0,595.0,Clean,2,None,3.9,No
+BKG0965,Tareq Qadoumi,Male,42,German,2025-10-18,2025-10-21,16,3,6,383,Single,Website,Business,1,0,0,Breakfast,No,No,Yes,Yes,No,Yes,No,59.4,356.4,Occupied,1,High Floor,4.6,No
+BKG0966,Rana Yasin,Female,21,UAE,2025-01-30,2025-02-21,14,22,2,209,Double,Mobile App,Family,2,2,3,Breakfast,Yes,No,Yes,No,Yes,No,No,99.14,198.28,Occupied,2,Late Check-In,4.1,Yes
+BKG0967,Ahmad Yasin,Male,37,French,2025-06-04,2025-06-04,17,0,5,243,Suite,Mobile App,Conference,2,0,1,Full Board,No,Yes,Yes,Yes,No,No,No,221.25,1106.25,Needs Service,2,Sea View,3.5,Yes
+BKG0968,Nour Qadoumi,Male,68,UAE,2025-03-26,2025-04-23,12,28,3,147,Suite,Travel Agency,Leisure,2,0,1,Full Board,No,No,Yes,No,No,Yes,No,172.5,517.5,Needs Service,2,Late Check-In,4.3,No
+BKG0969,Sara Samer,Male,30,Egyptian,2025-08-15,2025-08-21,15,6,2,163,Single,Website,Leisure,1,2,2,Room Only,Yes,No,Yes,No,No,Yes,No,64.9,129.8,Clean,3,Baby Crib,3.2,Yes
+BKG0970,Shatha Nabil,Female,22,British,2026-03-06,2026-04-12,13,37,2,293,Single,Website,Leisure,1,1,1,Room Only,No,No,Yes,Yes,No,Yes,No,55.0,110.0,Available,3,Baby Crib,4.6,No
+BKG0971,Leen Alsmadi,Female,65,French,2025-03-16,2025-04-06,15,21,2,422,Single,Walk-in,Leisure,1,1,1,Room Only,No,No,Yes,Yes,Yes,Yes,No,55.0,110.0,Clean,3,High Floor,4.5,No
+BKG0972,Shatha Droubi,Female,38,German,2025-08-28,2025-10-01,17,34,4,320,Double,Walk-in,Couple Getaway,2,0,1,Half Board,Yes,No,Yes,Yes,No,No,No,98.6,394.4,Needs Service,0,Sea View,3.5,No
+BKG0973,Razan Alsmadi,Female,50,Saudi,2025-06-24,2025-07-16,13,22,1,327,Single,Corporate,Business,1,0,0,Room Only,No,No,Yes,Yes,Yes,Yes,Yes,79.18,79.18,Occupied,1,Smoking Area,4.5,Yes
+BKG0974,Noor Qadoumi,Female,60,UAE,2025-01-13,2025-02-22,18,40,4,260,Double,Website,Business,2,0,1,Breakfast,No,Yes,Yes,No,No,Yes,No,99.14,396.56,Occupied,1,Extra Towels,4.4,Yes
+BKG0975,Lina Nasser,Male,67,French,2025-04-09,2025-04-11,12,2,1,438,Family,Walk-in,Leisure,3,2,4,Full Board,No,Yes,Yes,Yes,No,Yes,No,162.0,162.0,Occupied,4,Extra Towels,4.6,Yes
+BKG0976,Noor Nasser,Male,41,British,2025-10-11,2025-11-23,15,43,2,194,Family,Corporate,Business,2,2,3,Half Board,Yes,No,Yes,Yes,Yes,Yes,No,139.2,278.4,Clean,4,High Floor,4.5,No
+BKG0977,Noor Adel,Female,35,British,2025-05-24,2025-06-15,14,22,3,103,Suite,Mobile App,Conference,2,0,1,Full Board,Yes,No,Yes,Yes,No,Yes,No,221.25,663.75,Clean,1,Sea View,4.4,Yes
+BKG0978,Rana Alsmadi,Female,46,German,2025-07-31,2025-08-08,20,8,5,238,Double,Mobile App,Business,3,0,2,Room Only,No,Yes,Yes,Yes,No,Yes,No,107.1,535.5,Occupied,1,Quiet Room,4.8,Yes
+BKG0979,Noor Adel,Female,27,German,2026-03-20,2026-03-24,13,4,2,160,Family,Travel Agency,Couple Getaway,2,2,3,Breakfast,No,No,Yes,No,No,Yes,Yes,145.46,290.92,Needs Service,2,Smoking Area,4.7,No
+BKG0980,Omar Droubi,Female,23,Jordanian,2026-03-19,2026-04-06,17,18,5,303,Single,Travel Agency,Family,1,0,0,Breakfast,No,No,No,Yes,Yes,Yes,No,54.65,273.25,Available,0,Baby Crib,3.7,No
+BKG0981,Noor Tareq,Female,32,UAE,2025-09-07,2025-10-05,11,28,4,519,Suite,Corporate,Conference,3,0,2,Breakfast,Yes,Yes,Yes,No,No,Yes,No,162.0,648.0,Clean,0,Extra Towels,4.1,No
+BKG0982,Ahmad Haddad,Male,68,German,2025-05-10,2025-06-13,14,34,7,290,Family,Travel Agency,Leisure,4,3,6,Breakfast,No,Yes,Yes,Yes,Yes,Yes,No,150.23,1051.61,Occupied,3,Late Check-In,3.4,Yes
+BKG0983,Razan Malkawi,Male,23,UAE,2025-08-03,2025-09-08,17,36,3,125,Single,Travel Agency,Conference,1,0,0,Room Only,No,Yes,Yes,Yes,No,Yes,No,50.6,151.8,Occupied,2,None,3.9,No
+BKG0984,Hassan Haddad,Male,68,American,2025-04-21,2025-05-23,16,32,5,126,Double,Website,Leisure,2,0,1,Breakfast,No,No,Yes,No,Yes,Yes,Yes,120.96,604.8,Occupied,2,Baby Crib,4.3,Yes
+BKG0985,Lina Tareq,Female,26,British,2025-04-11,2025-05-20,16,39,1,148,Double,Mobile App,Leisure,3,0,2,Room Only,No,No,Yes,Yes,No,Yes,No,85.0,85.0,Occupied,0,Smoking Area,3.7,No
+BKG0986,Hassan Samer,Female,47,Saudi,2025-02-24,2025-03-29,19,33,3,231,Single,Travel Agency,Couple Getaway,1,0,0,Breakfast,Yes,No,Yes,Yes,No,Yes,No,59.02,177.06,Clean,0,Quiet Room,4.6,Yes
+BKG0987,Omar Alsmadi,Female,42,British,2025-07-02,2025-08-05,12,34,6,270,Double,Website,Leisure,2,0,1,Breakfast,No,No,Yes,Yes,No,Yes,Yes,132.16,792.96,Needs Service,0,None,4.0,Yes
+BKG0988,Sara Yasin,Female,47,UAE,2025-10-04,2025-10-21,19,17,7,264,Single,Corporate,Business,1,0,0,Room Only,No,Yes,Yes,Yes,No,Yes,No,55.0,385.0,Clean,2,Baby Crib,4.4,No
+BKG0989,Alaa Nasser,Female,39,Saudi,2025-03-06,2025-04-08,15,33,7,483,Family,Website,Family,3,2,4,Breakfast,No,No,Yes,No,Yes,Yes,No,129.6,907.2,Clean,0,Smoking Area,4.8,No
+BKG0990,Sara Adel,Female,52,Egyptian,2026-01-22,2026-01-29,18,7,1,479,Double,Walk-in,Leisure,2,0,1,Room Only,No,Yes,Yes,Yes,Yes,Yes,No,85.0,85.0,Occupied,2,Quiet Room,4.2,No
+BKG0991,Nour Droubi,Male,50,German,2025-12-04,2026-01-17,16,44,4,288,Family,Travel Agency,Family,2,3,4,Breakfast,No,No,Yes,Yes,Yes,Yes,No,128.77,515.08,Occupied,3,None,4.2,Yes
+BKG0992,Sara Gubari,Female,63,British,2025-03-19,2025-04-06,19,18,2,159,Single,Mobile App,Business,1,0,0,Half Board,Yes,Yes,Yes,Yes,No,Yes,No,63.8,127.6,Occupied,2,Sea View,4.2,No
+BKG0993,Khaled Adel,Female,25,Jordanian,2025-06-21,2025-07-31,16,40,4,248,Suite,Website,Business,3,0,2,Full Board,No,Yes,Yes,Yes,No,Yes,No,221.25,885.0,Clean,0,Quiet Room,4.8,Yes
+BKG0994,Omar Nasser,Male,51,Egyptian,2025-09-17,2025-11-01,14,45,5,455,Single,Travel Agency,Leisure,1,0,0,Breakfast,Yes,No,Yes,Yes,No,No,No,59.02,295.1,Available,1,Quiet Room,4.3,Yes
+BKG0995,Leen Gubari,Male,43,Egyptian,2025-03-13,2025-04-24,15,42,7,109,Double,Travel Agency,Leisure,4,2,5,Full Board,No,Yes,Yes,No,No,Yes,No,97.75,684.25,Occupied,2,Extra Towels,4.1,No
+BKG0996,Ahmad Nabil,Female,41,UAE,2025-06-13,2025-07-20,11,37,1,130,Family,Mobile App,Business,4,2,5,Half Board,No,No,Yes,Yes,No,No,No,164.26,164.26,Needs Service,3,Quiet Room,3.6,Yes
+BKG0997,Nour Alsmadi,Male,53,Saudi,2025-01-30,2025-02-01,16,2,6,126,Double,Travel Agency,Conference,3,0,2,Breakfast,No,No,Yes,Yes,No,Yes,No,91.21,547.26,Occupied,0,Late Check-In,3.3,Yes
+BKG0998,Abdullah Malkawi,Male,36,French,2025-11-15,2025-11-29,12,14,6,458,Double,Website,Conference,2,0,1,Breakfast,No,No,Yes,Yes,Yes,Yes,No,99.14,594.84,Occupied,1,Extra Towels,5.0,Yes
+BKG0999,Tareq Yasin,Male,42,Saudi,2025-05-12,2025-06-10,18,29,7,442,Family,Corporate,Business,4,2,5,Half Board,No,Yes,Yes,Yes,Yes,Yes,No,164.26,1149.82,Needs Service,3,High Floor,4.6,Yes
+BKG1000,Ahmad Nabil,Female,46,Jordanian,2025-08-05,2025-08-19,15,14,5,474,Suite,Website,Couple Getaway,2,0,1,Half Board,Yes,No,Yes,No,No,Yes,No,205.32,1026.6,Occupied,2,Baby Crib,4.2,Yes
